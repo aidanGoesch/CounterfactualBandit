@@ -357,6 +357,7 @@ var all_done = {
   choices: ['space'],
   on_finish: function(data) {
     console.log(invalidProbeTrials)
+    let invalid_copy = invalidProbeTrials
     data.contextArray_ind = contextArray_ind;
     data.validImageProbes = valid_probe_images_ind;
     data.invalidImageProbes = invalid_probe_images_ind;
@@ -364,6 +365,8 @@ var all_done = {
     data.pRew_White = pRew_White;
     data.pRew_Black = pRew_Black;
     data.availableForMemProbe = availableForMemProbe;
+    data.invalidProbeTrials = invalidProbeTrials;
+    data.invalidProbeTrials_copy = invalid_copy
     data.mem_probe_trials = mem_probe_trials;
     data.choice_blocks = choice_blocks;
   }
