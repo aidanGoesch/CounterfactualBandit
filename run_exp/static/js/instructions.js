@@ -364,8 +364,6 @@ var all_done = {
     data.pRew_White = pRew_White;
     data.pRew_Black = pRew_Black;
     data.availableForMemProbe = availableForMemProbe;
-    data.invalidProbeTrials = invalidProbeTrials;
-    data.invalidProbeTrials_copy = invalidProbeTrials_copy;
     data.choice_blocks = choice_blocks;
   }
 }

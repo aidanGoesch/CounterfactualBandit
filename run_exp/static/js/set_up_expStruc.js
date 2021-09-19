@@ -92,11 +92,6 @@ mem_probe_trials = mem_probe_trials
 // These will be the invalid probes (novel images).
 var invalidProbeTrials  = getRandom(mem_probe_trials,num_invalid_probes)
 
-var invalidProbeTrials_copy = []
-for (let elem = 0; elem < num_invalid_probes; elem++) {
-  invalidProbeTrials_copy.push(invalidProbeTrials[elem])
-}
-
 // Now first sampleWindow trials of each context are available for later memory probes
 
 var availableForMemProbe = [];
@@ -112,25 +107,6 @@ availableForMemProbe = availableForMemProbe
   .sort((a, b) => a.sort - b.sort)
   .map(({ value }) => value)
 
-// // Initialize contexts and probe images
-// var contexts = Array.apply(null, Array(num_trials)).map(Number.prototype.valueOf,0);
-// //
-// // // First context is short, 1-20 have probes
-// contexts = contexts.map(function(x) {if (x < (block_len-context_offset+1)) {return 0} else {return x}})
-// //
-// //
-// for (let ci = 1; ci < num_blocks; ci++) {
-//   var sp = (block_len - context_offset) + ((ci-1)*block_len);
-//   var ep = sp + block_len;
-//   for (let j = sp; j < ep; j++) {
-//     contexts[j] = ci;
-//   }
-// }
-//
-// var last_block = Math.max(...contexts)+1;
-// for (let j = ep; j < contexts.length; j++) {
-//   contexts[j] = last_block;
-// }
 
 var payout = new Array(num_bandits);
 
