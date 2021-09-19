@@ -2,7 +2,6 @@ console.log('hi')
 
 var welcome = "<div class='center'><p>Welcome! This is the first day of the experiment which will last ~30 minutes. In this experiment, you are the head captain of a pirate ship traveling around the world to different places. You will complete several different tasks during this experiment. Here is an overview of these tasks:</p><br><p>Day 1</p><p>1. Tutorial and quiz</p><p>2. Pick a pirate game in 6 different places</p><br><p>Day 2</p><p>3. Pick a pirate game and memory game</p><p>4. Final questions and payment</p><br><p>If you complete the entire experiment, you will receive $15 and a possible bonus payment.</p><p><b>[Press the space bar to begin the tutorial]</b></p></div>";
 
-
 var goal_of_game_1 = "<div class='center'><p>You are the head captain of a pirate ship.</p><p> Your pirates rob other ships as they leave the marketplace port.</p> These ships have just sold all their goods at the marketplace, so they have lots and lots of gold on them.</p><p><img src='run_exp/static/images/ship_center.png' height='400'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
 var goal_of_game_2 = "<div class='center'><p>As the head captain, you do not have to rob any ships yourself.</p><p>You get to choose which pirate you want to rob the next ship. </p><p>If they are successful at robbing the ship, then you will get gold coins.</p><p> If they are not successful, then you will get no gold coins.</p><p> The more coins you collect, the more bonus money you will win. So, choose your pirate wisely.</p><p><img src='run_exp/static/images/goal.png' height='400'></p><p><b>[Press the space bar to continue]</b></p><div>";
@@ -350,28 +349,11 @@ var fourth_q = {
   }
 }
 
-var take_a_break= {
-  type: 'html-keyboard-response',
-  stimulus:rest,
-  choices: ['space'],
-  trial_duration:120000
-}
 
-var test_phase_begin = {
-  type: 'html-keyboard-response',
-  stimulus:final_place,
-  choices: ['space'],
-}
-
-var explain_probe = {
-  type: 'html-keyboard-response',
-  stimulus:recognition,
-  choices: ['space'],
-}
 
 var all_done = {
   type: 'html-keyboard-response',
-  stimulus:"<div class='center'>You are all done with the first part of the experiment! Thank you for participating. In 24 hours, you will recieve an invite to participate in the next phase of the experiment. <p><b>[Press the space bar to end the experiment]</b></p></div>",
+  stimulus:"<div class='center'>You are all done with the first part of the experiment! Thank you for participating. Tomorrow, you will recieve an invite to participate in the next phase of the experiment which you must complete by the end of the day. <p><b>[Press the space bar to end the experiment]</b></p></div>",
   choices: ['space'],
   on_finish: function(data) {
     data.contextArray_ind = contextArray_ind;

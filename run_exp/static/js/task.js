@@ -360,11 +360,9 @@ function  make_learn_phase() {
 	}
 
 	jsPsych.addNodeToEndOfTimeline({timeline: [bye,all_done,pavlovia_finish],}, jsPsych.resumeExperiment);
-	make_test_phase()
 
 }
 
-}
 
 var timeline = []
 
