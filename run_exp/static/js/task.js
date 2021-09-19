@@ -303,7 +303,7 @@ function  make_learn_phase() {
 	// welcome
 	jsPsych.addNodeToEndOfTimeline({timeline: [welcome],}, jsPsych.resumeExperiment);
 
-	for (let i = 0; i < 2; i++) {
+	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial],}, jsPsych.resumeExperiment);
 	}
 	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
@@ -314,7 +314,7 @@ function  make_learn_phase() {
 	jsPsych.addNodeToEndOfTimeline({timeline: [travel,welcome],}, jsPsych.resumeExperiment);
 
 	// context 2
-	for (let i = 0; i < 2; i++) {
+	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial],}, jsPsych.resumeExperiment);
 	}
 	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
@@ -324,7 +324,7 @@ function  make_learn_phase() {
 	jsPsych.addNodeToEndOfTimeline({timeline: [travel, welcome],}, jsPsych.resumeExperiment);
 
 	// context 3
-	for (let i = 0; i < 2; i++) {
+	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial],}, jsPsych.resumeExperiment);
 	}
 	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
@@ -334,7 +334,7 @@ function  make_learn_phase() {
 	jsPsych.addNodeToEndOfTimeline({timeline: [travel,welcome],}, jsPsych.resumeExperiment);
 
 	// context 4
-	for (let i = 0; i < 2; i++) {
+	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial],}, jsPsych.resumeExperiment);
 	}
 	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
@@ -345,7 +345,7 @@ function  make_learn_phase() {
 	jsPsych.addNodeToEndOfTimeline({timeline: [travel, welcome],}, jsPsych.resumeExperiment);
 
 	//context 5
-	for (let i = 0; i < 2; i++) {
+	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial],}, jsPsych.resumeExperiment);
 	}
 	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
@@ -356,7 +356,7 @@ function  make_learn_phase() {
 	jsPsych.addNodeToEndOfTimeline({timeline: [travel, welcome],}, jsPsych.resumeExperiment);
 
 	//context 6
-	for (let i = 0; i < 2; i++) {
+	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial],}, jsPsych.resumeExperiment);
 	}
 
@@ -374,30 +374,30 @@ timeline.push({
 
 
 timeline.push(pavlovia_init);
-// timeline.push(instruc1);
-// timeline.push(instruc2);
-// timeline.push(instruc3);
-// timeline.push(instruc4);
-// timeline.push(blue_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_no_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_no_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_win);
-// timeline.push(blue_alone);
-// timeline.push(blue_win);
-// timeline.push(instruc5);
+timeline.push(instruc1);
+timeline.push(instruc2);
+timeline.push(instruc3);
+timeline.push(instruc4);
+timeline.push(blue_win);
+timeline.push(blue_alone);
+timeline.push(blue_win);
+timeline.push(blue_alone);
+timeline.push(blue_win);
+timeline.push(blue_alone);
+timeline.push(blue_no_win);
+timeline.push(blue_alone);
+timeline.push(blue_win);
+timeline.push(blue_alone);
+timeline.push(blue_win);
+timeline.push(blue_alone);
+timeline.push(blue_win);
+timeline.push(blue_alone);
+timeline.push(blue_no_win);
+timeline.push(blue_alone);
+timeline.push(blue_win);
+timeline.push(blue_alone);
+timeline.push(blue_win);
+timeline.push(instruc5);
 timeline.push(instruc6);
 
 
