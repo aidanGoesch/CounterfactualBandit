@@ -373,31 +373,31 @@ timeline.push({
 });
 
 
-timeline.push(pavlovia_init);
-timeline.push(instruc1);
-timeline.push(instruc2);
-timeline.push(instruc3);
-timeline.push(instruc4);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_no_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_no_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(instruc5);
+// timeline.push(pavlovia_init);
+// timeline.push(instruc1);
+// timeline.push(instruc2);
+// timeline.push(instruc3);
+// timeline.push(instruc4);
+// timeline.push(blue_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_no_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_no_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_win);
+// timeline.push(blue_alone);
+// timeline.push(blue_win);
+// timeline.push(instruc5);
 timeline.push(instruc6);
 
 

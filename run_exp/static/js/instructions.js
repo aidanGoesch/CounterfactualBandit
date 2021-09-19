@@ -356,14 +356,15 @@ var all_done = {
   stimulus:"<div class='center'>You are all done with the first part of the experiment! Thank you for participating. Tomorrow, you will recieve an invite to participate in the next phase of the experiment which you must complete by the end of the day. <p><b>[Press the space bar to end the experiment]</b></p></div>",
   choices: ['space'],
   on_finish: function(data) {
+    console.log(invalidProbeTrials)
     data.contextArray_ind = contextArray_ind;
     data.validImageProbes = valid_probe_images_ind;
     data.invalidImageProbes = invalid_probe_images_ind;
     data.pRew_Red = pRew_Red;
     data.pRew_White = pRew_White;
     data.pRew_Black = pRew_Black;
-    data.invalidProbeTrials = invalidProbeTrials;
     data.availableForMemProbe = availableForMemProbe;
+    data.invalidProbeTrials = invalidProbeTrials;
     data.choice_blocks = choice_blocks;
   }
 }
