@@ -373,7 +373,7 @@ timeline.push({
 });
 
 
-// timeline.push(pavlovia_init);
+timeline.push(pavlovia_init);
 // timeline.push(instruc1);
 // timeline.push(instruc2);
 // timeline.push(instruc3);
