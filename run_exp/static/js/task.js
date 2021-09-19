@@ -76,7 +76,7 @@ makeObject('run_exp/static/images/context_city.png','city')]
 
 let contextArray_ind = [0,1,2,3,4,5]
 contextArray_ind = randomize(contextArray_ind);
-contextArray = []
+let contextArray = []
 for (let i = 0; i < 6; i++) {
   contextArray.push(contextArray_true[contextArray_ind])
 }
