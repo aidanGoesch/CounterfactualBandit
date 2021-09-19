@@ -357,8 +357,8 @@ var all_done = {
   choices: ['space'],
   on_finish: function(data) {
     data.contextArray_ind = contextArray_ind;
-    data.validImageProbes = valid_probe_images;
-    data.invalidImageProbes = invalid_probe_images;
+    data.validImageProbes = valid_probe_images_ind;
+    data.invalidImageProbes = invalid_probe_images_ind;
     data.pRew_Red = pRew_Red;
     data.pRew_White = pRew_White;
     data.pRew_Black = pRew_Black;

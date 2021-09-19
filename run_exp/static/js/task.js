@@ -409,7 +409,7 @@ jsPsych.init({
   on_finish: function() {
 
     document.body.innerHTML = '<p> <center>Thank you for participating in the first part of the study! Please wait seconds while your data saves. After 10 seconds, you will be redirected to Prolific. </center> </p>';
-      setTimeout(function () {var end_link = "https://nyu.qualtrics.com/jfe/form/SV_3dWo2Ef6Yk1vSjc/" + "?id=" +subject_id; window.location = end_link;}, 10000)
+      setTimeout(function () {var end_link = "https://app.prolific.co/submissions/complete?cc=4BF4B7EF"; window.location = end_link;}, 10000)
 
 }
 })
