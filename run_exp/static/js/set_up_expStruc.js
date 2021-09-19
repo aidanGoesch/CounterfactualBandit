@@ -92,6 +92,11 @@ mem_probe_trials = mem_probe_trials
 // These will be the invalid probes (novel images).
 var invalidProbeTrials  = getRandom(mem_probe_trials,num_invalid_probes)
 
+var invalidProbeTrials_copy = []
+for (let elem = 0; elem < num_invalid_probes; elem++) {
+  invalidProbeTrials_copy.push(invalidProbeTrials[elem])
+}
+
 // Now first sampleWindow trials of each context are available for later memory probes
 
 var availableForMemProbe = [];
