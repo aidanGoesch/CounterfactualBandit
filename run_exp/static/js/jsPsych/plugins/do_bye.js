@@ -1,12 +1,4 @@
-/**
- * jspsych-c-keyboard-response
- * Chris Jungerius (modified from Josh de Leeuw)
- *
- * a jsPsych plugin for displaying a c stimulus and getting a keyboard response
- *
- * documentation: docs.jspsych.org
- *
- **/
+
 
 jsPsych.plugins["do_bye"] = (function () {
 

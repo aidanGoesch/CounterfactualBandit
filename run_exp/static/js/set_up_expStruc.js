@@ -22,7 +22,7 @@ var context_offset = 10;
 var sample_window = 10; // first sample_window trials of each context are available for later memory probes
 var num_blocks = 6;
 var num_contexts = 6;
-var block_len =40;
+var block_len = 40;
 var ctx_bump = 4;
 
 var num_bandits = 3;
@@ -33,7 +33,7 @@ var decay_lambda = 0.6;
 var drift_sigma = 8;
 var drift_noise = 8;
 
-var num_trials = block_len * num_blocks + (30 * num_blocks);
+var num_trials = block_len * num_blocks * 2;
 var num_probes = sample_window * (num_blocks-1);
 var num_invalid_probes = Math.round(num_probes/5);
 num_probes = num_probes + num_invalid_probes;
@@ -53,8 +53,8 @@ const sum_mer = (accumulator, curr) => accumulator + curr;
 const cumulativeSum = (sum => value => sum += value)(0);
 const mean = (array) => array.reduce((a, b) => a + b) / array.length;
 
-var rotation_trials = [10,50,90,130,170,210,250,280,310,340,379,400];
-var deterministic_trials = [0,40,80,120,160,200,240,270,300,330,360,390];
+var rotation_trials = [10,50,90,130,170,210,250,290,330,370,410,450];
+var deterministic_trials = [0,40,80,120,160,200,240,280,320,360,400,440];
 
 for (let i = 0; i < num_contexts; i++) {
   for (let j = 1; j < ctx_bump; j++) {
@@ -63,11 +63,11 @@ for (let i = 0; i < num_contexts; i++) {
   }
 }
 
-while ((choice_blocks.reduce(sum_mer) != (30 * num_blocks)) | (choice_blocks.some(isBelowThreshold)) | (choice_blocks.some(isAboveThreshold))) {
+while ((choice_blocks.reduce(sum_mer) != (block_len * num_blocks)) | (choice_blocks.some(isBelowThreshold)) | (choice_blocks.some(isAboveThreshold))) {
   // 1. randomly select index
   var ind = parseInt(Math.ceil(Math.random()*num_probes),10) - 1;
   // 2. make equal to num_trials/2
-  choice_blocks[ind] = choice_blocks[ind] - Math.sign(choice_blocks.reduce(sum_mer) - (30 * num_blocks));
+  choice_blocks[ind] = choice_blocks[ind] - Math.sign(choice_blocks.reduce(sum_mer) - (block_len * num_blocks));
   // 3. ensure no element goes below threshold
   choice_blocks = choice_blocks.map(function(x) {if (x < min_ct) {return min_ct} else {return x}});
   // 4. ensure no element goes above threshold

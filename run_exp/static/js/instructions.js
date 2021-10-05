@@ -2,61 +2,75 @@ console.log('hi')
 
 var welcome = "<div class='center'><p>Welcome! This is the first day of the experiment which will last ~30 minutes. In this experiment, you are the head captain of a pirate ship traveling around the world to different places. You will complete several different tasks during this experiment. Here is an overview of these tasks:</p><br><p>Day 1</p><p>1. Tutorial and quiz</p><p>2. Pick a pirate game in 6 different places</p><br><p>Day 2</p><p>3. Pick a pirate game and memory game</p><p>4. Final questions and payment</p><br><p>If you complete the entire experiment, you will receive $15 and a possible bonus payment.</p><p><b>[Press the space bar to begin the tutorial]</b></p></div>";
 
-var goal_of_game_1 = "<div class='center'><p>You are the head captain of a pirate ship.</p><p> Your pirates rob other ships as they leave the marketplace port.</p> These ships have just sold all their goods at the marketplace, so they have lots and lots of gold on them.</p><p><img src='run_exp/static/images/ship_center.png' height='400'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var different_places = "<div class='center'><p>You’ll stop at these 6 islands on your journey. You'll be able to see them in the distance from your ship.</p><p><img src='run_exp/static/images/contexts/all_contexts.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var goal_of_game_2 = "<div class='center'><p>As the head captain, you do not have to rob any ships yourself.</p><p>You get to choose which pirate you want to rob the next ship. </p><p>If they are successful at robbing the ship, then you will get gold coins.</p><p> If they are not successful, then you will get no gold coins.</p><p> The more coins you collect, the more bonus money you will win. So, choose your pirate wisely.</p><p><img src='run_exp/static/images/goal.png' height='400'></p><p><b>[Press the space bar to continue]</b></p><div>";
+var goal_of_game_1 = "<div class='center'><p> The pirates on your ship will rob other ships as they leave island</p> These ships have just sold their things to the people living on the island, so they will have lots and lots of gold on them.</p><p><img src='run_exp/static/images/tutorial/ship_center.png' height='400'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var probabilistic = "<div class='center'><p>Even the most skilled pirate will not be able to rob EVERY ship.</p><p> Some ships will have very strong defenses against attacks.</p><p> For example, blue beard, here,  is very good at robbing ships.</p><p> You can press the <b>‘1’</b> button on the keyboard to choose him.</p><p> Try choosing him 10 times to see how often he is successful at robbing ships. </p><p><img src='run_exp/static/images/blue.png' height='500'></p></div>";
+var goal_of_game_2 = "<div class='center'><p>As the head captain, you do not have to rob any ships yourself.</p><p>Another pirate will be doing the robbing for you. </p><p><img src='run_exp/static/images/tutorial/pirates_all_crop.png' height='200'></p><p>If they could rob the ship, then you will get a stack of gold coins like this:</p><p><img src='run_exp/static/images/tutorial/reward.png' height='150'></p><p> If they couldn't rob the ship, then you will get no gold coins and you'll see a big red x like this: </p><p><img src='run_exp/static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><p><b>[Press the space bar to continue]</b></p><div>";
 
-var blue_beard_outcome = "<div class='center'><p> See, he was successful at robbing the ships most of the time but not every time. </p><p><b>[Press the space bar to continue]</b></p></div>";
+var probabilistic = "<div class='center'><p>Even the most skilled pirate can not rob EVERY ship.</p><p> Some ships will have very strong defenses against pirate attacks.</p><p> For example, blue beard, here, is very, very good at robbing ships.</p><p> You can press the <b>‘1’</b> button on the keyboard to choose him.</p><p> Try choosing him 10 times to see how often he can rob a ship. </p><p><img src='run_exp/static/images/tutorial/blue.png' height='500'></p></div>";
 
-var pick_pirate = "<div class='center'><p>In the game, you will get to choose which of three pirates you want to rob the next ship. <p>Press the <b>‘1’</b> button on your keyboard to pick the pirate with the red beard.</p><p> Press <b>‘2’</b> to pick the pirate with the white beard.</p><p> Press <b>‘3’</b> to pick the pirate with the black beard.</p><p>Try picking a pirate now!</p><p><img src='run_exp/static/images/all_pirates.png' height='500'></p></div>";
+var blue_beard_outcome = "<div class='center'><p> See, he could rob the ships most of the time but not every time. </p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var red_won = "<div class='center'><p>This pirate was successful at robbing the ship!</p><p><img src='run_exp/static/images/red_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var pick_pirate = "<div class='center'><p>You will get to choose which of three pirates you want to rob the next ship. <p>Press the <b>‘1’</b> button on your keyboard to pick the pirate with the red beard.</p><p> Press <b>‘2’</b> to pick the pirate with the white beard.</p><p> Press <b>‘3’</b> to pick the pirate with the black beard.</p><p>Try picking a pirate now!</p><p><img src='run_exp/static/images/tutorial/all_pirates.png' height='500'></p></div>";
 
-var white_won = "<div class='center'><p>This pirate was successful at robbing the ship!</p><p><img src='run_exp/static/images/white_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var red_won = "<div class='center'><p>This pirate could rob the ship!</p><p><img src='run_exp/static/images/tutorial/red_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var black_won = "<div class='center'><p>This pirate was successful at robbing the ship!</p><p><img src='run_exp/static/images/black_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var white_won = "<div class='center'><p>This pirate could rob the ship!</p><p><img src='run_exp/static/images/tutorial/white_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var pick_pirate_agin = "<div class='center'><p>Now try choosing another</p><p><img src='run_exp/static/images/all_pirates.png' height='500'></p></div>";
+var black_won = "<div class='center'><p>This pirate could rob the ship!</p><p><img src='run_exp/static/images/tutorial/black_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var red_loss = "<div class='center'><p>This pirate was not successful at robbing the ship!</p><p><img src='run_exp/static/images/red_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var pick_pirate_agin = "<div class='center'><p>Now try choosing another</p><p><img src='run_exp/static/images/tutorial/all_pirates.png' height='500'></p></div>";
 
-var white_loss = "<div class='center'><p>This pirate was not successful at robbing the ship!</p><p><img src='run_exp/static/images/white_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var red_loss = "<div class='center'><p>This pirate could not rob the ship.</p><p><img src='run_exp/static/images/tutorial/red_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var black_loss = "<div class='center'><p>This pirate was not successful at robbing the ship!</p><p><img src='run_exp/static/images/black_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var white_loss = "<div class='center'><p>This pirate could not rob the ship!</p><p><img src='run_exp/static/images/tutorial/white_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var different_places = "<div class='center'><p>You’ll stop at these 6 places on your journey.</p><p><img src='run_exp/static/images/all_contexts.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var black_loss = "<div class='center'><p>This pirate could not rob the ship!</p><p><img src='run_exp/static/images/tutorial/black_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var changepoint = "<div class='center'><p>How good a pirate is at robbing ships will depend on the current place.</p><p> Some pirates will have been to the place before, and will have more experience robbing ships there.</p><p>So, they will be more successful at stealing gold and bringing it back to you.</p><p><b>[Press the space bar to continue]</b></p></div>";
+var time_out = "<div class='center'><p>If you don’t make your choice fast enough, you’ll have to wait a few seconds before you can make another one. </p><p>You can’t collect more gold coins. You just have to sit and wait.</p><p><img src='run_exp/static/images/miscellaneous/hurry_up.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var drift = "<div class='center'><p>How successful a pirate is at robbing ships can also change in a place.<p> Ships may hear about the pirates coming and will improve their defenses. This may make it more difficult to rob them.</p><p> Ships may also grow lazy and lower their defenses. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='run_exp/static/images/contingency.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var probe = "<div class='center'><p>Once you choose a pirate, you’ll be shown the ship they are robbing.</p><p>You will never rob the same ship twice.</p><p>Ships can be told apart from one another by the image on them.</p><p> Every time you see a ship, you will have to remember on which island you saw it.</p><p> Remembering correctly will help you win more bonus money!</p><p>A helpful strategy is to try to come up with a story of the object on the ship interacting with the current island scene.</p><p> For example, here, you could imagine a mug full of water in the desert. </p><p>For a ship with an apple on it on the forest island, you could imagine an apple falling from a tree in the forest.</p><p><img src='run_exp/static/images/tutorial/example_probe.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var probe = "<div class='center'><p>Once you choose a pirate to rob a ship, you’ll be shown the ship they are robbing.</p><p>The ship will have a picture of the item they sold at the marketplace.</p><p> Try your best to remember the ship and where you saw the ship.</p><p> You’ll have to remember this for later, and remembering this correctly will help you win more bonus money!</p><p>You can remember the ship by remembering the item they sold at the marketplace</p><p>A helpful strategy is to try to come up with a story of the chosen pirate and ship’s item interacting with the scene.</p><p> For example, a ship might have sold travel mugs and you could imagine red beard walking through the city with a travel mug. </p><p>Or imagine an apple falling from a tree into white beard's hands in the forest.</p><p><img src='run_exp/static/images/example_probe.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var changepoint = "<div class='center'><p>How good a pirate is at robbing ships will depend on the current island.</p><p> A pirate may have visited the island many times before and gained a lot of practice robbing ships there.</p><p>So, they're more likely to bring back gold coins than a pirate who has never visited this island before. </p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var time_out = "<div class='center'><p>If you don’t make your choice fast enough, you’ll have to wait a few seconds before you can make another one. </p><p>You can’t win more gold. You just have to sit and wait.</p><p><img src='run_exp/static/images/hurry_up.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
+var drift = "<div class='center'><p>How good a pirate is at robbing ships can also change over the time spent on the island<p> Ships may hear from islanders about the pirates coming and will improve their protection against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and lower their protection. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='run_exp/static/images/tutorial/contingency.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var summary = "<div class='center'><p>Again, you have two important things to do: </p><b><p> 1. Pick the pirate who you think will be most successful at robbing the next ship.</p></b><b><p> 2. Remember where a pirate robbed a ship.</p> </b><p>Both are important in determining how much bonus money you’ll win.</p><br><p>Let’s try a practice game. The game will start by showing you the pirates. First pick a pirate using the <b> 1, 2, 3 </b> buttons on your keyboard. When you are shown a ship, try to remember the place you’re in by making up a story.</p><p> You only have 3 seconds to pick a pirate, so please make a choice quickly! If you are too slow, you’ll have to wait a bit during the time out.</p><p> Don’t feel rushed, but please do try to make a choice every time.</p><p>How good a pirate is at robbing a ship will change depending on the place they are in and how good the defenses are of the ship.</p> <p>This is just a practice game, so you’re not playing for money. </p><p>You’ll receive a bag which may or may not contain gold coins.</p><p> In the real game, though, you’ll be able to see whether or not you received the gold coins.</p><p> Good luck, remember press <b>'1'</b> to choose red beard, <b>'2'</b> to choose white beard, and <b>'3'</b> to choose black beard</p><p><b>[Press the space bar to begin the practice game]</b></p></div>";
+var summary = "<div class='center'><p>Let's go over the instructions quickly again.You have two important things to do: </p><b><p> 1. Pick the pirate who is the best at robbing ships on the current island.</p></b><b><p> 2. Remember on which island a ship was robbed.</p> </b><p>How much bonus money you make is based on both. </p><br><p>Let’s try a practice game. The game will start by showing you the pirates. First pick a pirate using the <b> 1, 2, 3 </b> buttons on your keyboard. When you are shown a ship, try to remember the island you’re on by making up a story.</p><p> You only have 3 seconds to pick a pirate, so please make a choice quickly! If you are too slow, you’ll have to wait a bit during the time out.</p><p> Don’t feel rushed, but please do try to make a choice every time.</p><p>This is just a practice game, so you’re not playing for money. </p><p> Good luck, remember press <b>'1'</b> to choose red beard, <b>'2'</b> to choose white beard, and <b>'3'</b> to choose black beard</p><p><b>[Press the space bar to begin the practice game]</b></p></div>";
 
-var quiz_intro = "<div class='center'><p>Great job on the practice game!</p><p> Now, you will be asked you some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p><p><b>[Press the space bar to begin the quiz]</b></p></div>";
+// practice goes here
+
+// add in source memory
+
+// add in which pirate was the best question --> tell them
+
+//
+
+
+var quiz_intro = "<div class='center'><p>Good job on the practice game! Now, you will be asked you some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p><p><b>[Press the space bar to begin the quiz]</b></p></div>";
 
 var q1 = "<div class='center'><p>You win bonus money by making choices as fast as possible.</p><p>Press 1 for true and press  2 for false.</p></div>"
 
-var q2 = "<div class='center'><p>You press the <b>‘3’</b> button on the keyboard to choose the red bearded pirate? </p><p>Press 1 for true and press  2 for false.</p></div>"
+var q2 = "<div class='center'><p>You press the <b>‘3’</b> button on the keyboard to choose the red bearded pirate. </p><p>Press 1 for true and press  2 for false.</p></div>"
 
-var q3 = "<div class='center'><p>A pirate will always be equally successful at robbing ships in each place</p><p>Press 1 for true and press  2 for false.</p></div>";
+var q3 = "<div class='center'><p>The pirate who is the best at robbing ships on the first island will be the best on every other island.</p><p>Press 1 for true and press  2 for false.</p></div>";
 
-var q4 = "<div class='center'><p>You should remember the place where a pirate robbed a ship.</p><p>Press 1 for true and press  2 for false.</p></div>";
+var q4 = "<div class='center'><p>You should remember the island where a pirate robbed a ship.</p><p>Press 1 for true and press  2 for false.</p></div>";
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var final_place = "<div class='center'><p>You’ve arrived at the final destination of your journey! Unfortunately, it’s very foggy out, so you won’t be able to see it in the distance like in previous places you've visited.</p><p>You’ll still be deciding which pirates you want to rob ships. However, because of the fog you also won’t be able to see the ship in the distance. </p><p><b>[Press the space bar to continue]</b></p></div>";
+var final_place = "<div class='center'><p>You’ve arrived at the final island of your journey! Unfortunately, it’s very foggy out, so you won’t be able to see it in the distance like the previous islands you've visited.</p><p>You’ll still be deciding which pirate you want to rob a ship like before. However, because of the fog, you also won’t be able to see the ship.</p><p>This means you do not have to remember the ships you rob on this island.</p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var recognition = "<div class='center'><p> Sometimes you’ll be asked if you’ve seen a ship before (see the example below). You will use the 5, 6, 7, 8 buttons on your keyboard to respond. </p><p> If you definitely did not see the ship, pick the the big red thumbs down by pressing <b>5</b>.</p><p> If you don’t think you saw it but aren’t sure, then pick the small red thumbs down by pressing <b>6</b>.</p><p> If you think you might have seen it, then pick the small green thumbs up by pressing <b>7</b>.</p><p> If you definitely did see this ship before, then pick the big thumb green thumbs up by pressing <b>8</b>.</p><p> If you recall correctly, then you’ll get a gold coin!</p><p><b>[Press the space bar to begin the next phase of the experiment]</b></p><p><img src='run_exp/static/images/example_recog_trial.png' height='500'></p></div>"
+var recognition_1 = "<div class='center'><p> Sometimes you’ll be shown a ship, and you will be asked if you saw this ship on a past island.</p><p> Here is an example of what you will see.</p><p><b>[Press the space bar to continue]</b></p><p><img src='run_exp/static/images/tutorial/example_recog_trial.png' height='500'></p></div>"
+
+var recognition_2 = "<div class='center'><p> You will press the 5, 6, 7, 8 buttons on your keyboard to respond.</p><p>If you are very sure saw the ship, press <b>5</b> on your keyboard.</p><p> If you think you  saw it before but are not sure, then press <b>6</b>.</p><p> If you think you have not seen it before but are not sure, then press <b>7</b>.</p><p> If you are sure you did not see the ship before, then press <b>8</b>.</p><p><b>[Press the space bar to continue]</b></p><p><img src='run_exp/static/images/tutorial/example_recog_trial.png' height='500'></p></div>"
+
+var recognition_3 = "<div class='center'><p> If you remember correctly, then you’ll get a gold coin like this: </p><p><img src='run_exp/static/images/tutorial/reward_small.png' height='200'></p><p>If you do not remember correctly, then you'll see a red x like this: </p><p><img src='run_exp/static/images/tutorial/reward_no.png' height='200'></p><p>Importantly, when you are shown a ship, take the time to remind yourself which island you saw it on. This will help you in the next part of the study.</p><p><b>[Press the space bar to continue]</b></p></div>"
+
+var begin_final = "<div class='center'><p>Let's go over the important points again. Your job is to: </p><p>1. Pick the pirate who is best at robbing ships and will bring you back gold coins. </p><p>2. Correctly remember whether or not you saw a ship before. If you did see the ship before, remind yourself on which island you saw the ship. </p><p><b>[Press the space bar to begin the next part of the study]</b></p></div>"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 var instruc1 = {
   type: 'html-keyboard-response',
   stimulus:welcome,
@@ -68,17 +82,23 @@ var instruc1 = {
 
 var instruc2 = {
   type: 'html-keyboard-response',
-  stimulus:goal_of_game_1,
+  stimulus:different_places,
   choices: ['space'],
 }
 
 var instruc3 = {
   type: 'html-keyboard-response',
-  stimulus:goal_of_game_2,
+  stimulus:goal_of_game_1,
   choices: ['space'],
 }
 
 var instruc4 = {
+  type: 'html-keyboard-response',
+  stimulus:goal_of_game_2,
+  choices: ['space'],
+}
+
+var instruc5 = {
   type: 'html-keyboard-response',
   stimulus:probabilistic,
   choices: ['1'],
@@ -87,25 +107,25 @@ var instruc4 = {
 var blue_alone = {
   type: 'html-keyboard-response',
   prompt:"Press the '1' button on the keyboard to pick blue beard.",
-  stimulus:"<br><br><br><br><p><img src='run_exp/static/images/blue.png' height='500'></p>",
+  stimulus:"<div class='center'><img src='run_exp/static/images/tutorial/blue.png' height='500'></p></div>",
   choices: ['1'],
 }
 
 var blue_win = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p><img src='run_exp/static/images/blue_win.png' height='500'></p>",
+  stimulus:"<div class='center'><p><img src='run_exp/static/images/tutorial/blue_win.png' height='500'></p></div>",
   choices: jsPsych.NO_KEYS,
   trial_duration:1500,
 }
 
 var blue_no_win = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p><img src='run_exp/static/images/blue_no_win.png' height='500'></p>",
+  stimulus:"<div class='center'><p><img src='run_exp/static/images/tutorial/blue_no_win.png' height='500'></p></div>",
   choices: jsPsych.NO_KEYS,
   trial_duration:1500,
 }
 
-var instruc5 = {
+var instruc6 = {
   type: 'html-keyboard-response',
   stimulus:blue_beard_outcome,
   choices: ['space'],
@@ -149,12 +169,6 @@ var choice_loss_black = {
 
 var instruc8 = {
   type: 'html-keyboard-response',
-  stimulus:different_places,
-  choices: ['space'],
-}
-
-var instruc7 = {
-  type: 'html-keyboard-response',
   stimulus:pick_pirate_agin,
   choices: ['1','2','3'],
   on_finish: function(data) {
@@ -167,14 +181,15 @@ var instruc7 = {
     } else {
       jsPsych.addNodeToEndOfTimeline({timeline: [choice_loss_black],}, jsPsych.resumeExperiment);
     }
-    jsPsych.addNodeToEndOfTimeline({timeline: [instruc8,instruc9,instruc10,instruc11,instruc12,instruc13,
-      prac_choice_trial,prac_choice_trial,prac_choice_trial,prac_choice_trial,
-      prac_choice_trial,quiz_beginning,first_q],}, jsPsych.resumeExperiment);
+    jsPsych.addNodeToEndOfTimeline({timeline: [instruc9,instruc10,instruc11,instruc12,instruc13,
+      welcome_prac,prac_choice_trial,],}, jsPsych.resumeExperiment);
   }
 }
 
 
-var instruc6 = {
+// ,prac_choice_trial,prac_choice_trial,prac_choice_trial,prac_choice_trial,quiz_beginning,first_q
+
+var instruc7 = {
   type: 'html-keyboard-response',
   stimulus:pick_pirate,
   choices: ['1','2','3'],
@@ -182,42 +197,97 @@ var instruc6 = {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
     let key_pressed = response_key_dict[last_trial_data.key_press];
     if (key_pressed == '1') {
-      jsPsych.addNodeToEndOfTimeline({timeline: [choice_won_red,instruc7],}, jsPsych.resumeExperiment);
+      jsPsych.addNodeToEndOfTimeline({timeline: [choice_won_red,instruc8],}, jsPsych.resumeExperiment);
     } else if (key_pressed == '2') {
-      jsPsych.addNodeToEndOfTimeline({timeline: [choice_won_white,instruc7],}, jsPsych.resumeExperiment);
+      jsPsych.addNodeToEndOfTimeline({timeline: [choice_won_white,instruc8],}, jsPsych.resumeExperiment);
     } else {
-      jsPsych.addNodeToEndOfTimeline({timeline: [choice_won_black,instruc7],}, jsPsych.resumeExperiment);
+      jsPsych.addNodeToEndOfTimeline({timeline: [choice_won_black,instruc8],}, jsPsych.resumeExperiment);
     }
   }
 }
 
 var instruc9 = {
   type: 'html-keyboard-response',
-  stimulus:changepoint,
+  stimulus:time_out,
   choices: ['space'],
 }
 
 var instruc10 = {
   type: 'html-keyboard-response',
-  stimulus:drift,
+  stimulus:probe,
   choices: ['space'],
 }
 
 var instruc11 = {
   type: 'html-keyboard-response',
-  stimulus:probe,
+  stimulus:changepoint,
   choices: ['space'],
 }
 
 var instruc12 = {
   type: 'html-keyboard-response',
-  stimulus:time_out,
+  stimulus:drift,
   choices: ['space'],
 }
 
 var instruc13 = {
   type: 'html-keyboard-response',
   stimulus:summary,
+  choices: ['space'],
+}
+
+var prac_best_pirate = {
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p><img src='run_exp/static/images/tutorial/prac_best_pirate.png'  height='500'></p></div>",
+  choices: ['1','2','3'],
+  on_finish: function(data) {
+    let last_trial_data = jsPsych.data.get().last(1).values()[0];
+    let key_pressed =response_key_dict[last_trial_data.key_press];
+    console.log(key_pressed)
+    if (key_pressed == '1') {
+        jsPsych.addNodeToEndOfTimeline({timeline: [corr_best_pirate,prac_source_mem],}, jsPsych.resumeExperiment);
+    } else {
+        jsPsych.addNodeToEndOfTimeline({timeline: [incorr_best_pirate,prac_source_mem],}, jsPsych.resumeExperiment);
+    }
+  }
+}
+
+var corr_best_pirate = {
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That's correct! Red beard was the best.</p><p><b>[Press the space bar to continue]</b></p></div>",
+  choices: ['space'],
+}
+
+var incorr_best_pirate = {
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That's incorrect! Red beard was the best.</p><p><b>[Press the space bar to continue]</b></p></div>",
+  choices: ['space'],
+}
+
+var prac_source_mem = {
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p><img src='run_exp/static/images/tutorial/prac_source.png'  height='500'></p></div>",
+  choices: ['1','2'],
+  on_finish: function(data) {
+    let last_trial_data = jsPsych.data.get().last(1).values()[0];
+    let key_pressed =response_key_dict[last_trial_data.key_press];
+    if (key_pressed == '2') {
+        jsPsych.addNodeToEndOfTimeline({timeline: [corr_source_mem,quiz_beginning, first_q],}, jsPsych.resumeExperiment);
+    } else {
+        jsPsych.addNodeToEndOfTimeline({timeline: [incorr_source_mem,quiz_beginning,first_q],}, jsPsych.resumeExperiment);
+    }
+  }
+}
+
+var corr_source_mem = {
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That's correct! You saw this ship on the cavern island.</p><p><b>[Press the space bar to continue]</b></p></div>",
+  choices: ['space'],
+}
+
+var incorr_source_mem = {
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That's incorrect! You saw this ship on the cavern island</p><p><b>[Press the space bar to continue]</b></p></div>",
   choices: ['space'],
 }
 
@@ -230,49 +300,49 @@ var quiz_beginning = {
 
 var correct = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>That's correct!</p> <p><b>[press the space bar to continue with the quiz]</b></p>",
+  stimulus:"<div class='center'><p>That's correct!</p> <p><b>[press the space bar to continue with the quiz]</b></p></div>",
   choices: ['space'],
 }
 
 var q1_err = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>That’s incorrect! You win bonus money by collecting as many gold coins as possible!</p><p><b>[press the space bar to continue with the quiz]</b></p>",
+  stimulus:"<<div class='center'><p>That’s incorrect! You win bonus money by collecting as many gold coins as possible!</p><p><b>[press the space bar to continue with the quiz]</b></p></div>",
   choices: ['space'],
 }
 
 var q2_err = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>That’s incorrect! You press the <b>‘1’</b> button to choose the red bearded pirate!</p><p><b>[press the space bar to continue with the quiz]</b></p>",
+  stimulus:"<div class='center'><p>That’s incorrect! You press the <b>‘1’</b> button to choose the red bearded pirate!</p><p><b>[press the space bar to continue with the quiz]</b></p></div>",
   choices: ['space'],
 }
 
 var q3_err = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>That’s incorrect! Pirates will be successful in different places.!</p><p><b>[press the space bar to continue with the quiz]</b></p>",
+  stimulus:"<div class='center'><p>That’s incorrect! How good a pirate is at robbing ships can change from island to island!</p><p><b>[press the space bar to continue with the quiz]</b></p></div>",
   choices: ['space'],
 }
 
 var q4_err = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>That’s incorrect! You should remember the place where a pirate robbed a ship. You can try associating the ship’s item with the place to better remember.</p><p><b>[press the space bar to continue with the quiz]</b></p>",
+  stimulus:"<div class='center'><p>That’s incorrect! You should remember the island where a pirate robbed a ship. You can try associating the object on the ship with the island to better remember.</p><p><b>[press the space bar to continue with the quiz]</b></p></div>",
   choices: ['space'],
 }
 
 var q_all_err = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! If you fail the quiz too many times, you won’t be able to do the experiment. </p> <p><br>[press the space bar to repeat the quiz]</br></p>",
+  stimulus:"<div class='center'><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! If you fail the quiz too many times, you won’t be able to do the experiment. </p> <p><br>[press the space bar to repeat the quiz]</br></p></div>",
   choices: ['space'],
 }
 
 var too_many_error = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>You've failed the quiz too many times. The experiment is over. </p> <p><br>[press the space bar to end the experiment]</br></p>",
+  stimulus:"<div class='center'><p>You've failed the quiz too many times. The experiment is over. </p> <p><br>[press the space bar to end the experiment]</br></p></div>",
   choices: ['space'],
 }
 
 var q_all_corr = {
   type: 'html-keyboard-response',
-  stimulus:"<br><br><br><br><p>Good job! You’re now ready to move on to the real game!</p> <p><br>[press the space bar to begin!]</br></p>",
+  stimulus:"<div class='center'><p>Good job! You’re now ready to move on to the real game!</p> <p><br>[press the space bar to begin!]</br></p></div>",
   choices: ['space'],
 }
 

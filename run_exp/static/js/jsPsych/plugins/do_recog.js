@@ -98,10 +98,10 @@ jsPsych.plugins["do_recog"] = (function () {
     trial.miscell[3].hide();
     key_pressed = response_key_dict[response.key]
 
-    if ((trial.is_valid == 0) & ((key_pressed == 5) | (key_pressed == 6))) {
+    if ((trial.is_valid == 0) & ((key_pressed == 7) | (key_pressed == 8))) {
       // reward them for correct answer
       trial.rewards[2].show();
-    } else if ((trial.is_valid == 1) & ((key_pressed == 7) | (key_pressed == 8))) {
+    } else if ((trial.is_valid == 1) & ((key_pressed == 5) | (key_pressed == 6))) {
       // reward them for correct answer
       trial.rewards[2].show();
     } else {
@@ -164,6 +164,9 @@ if (trial.choices != jsPsych.NO_KEYS) {
 if (trial.trial_duration !== null) {
   jsPsych.pluginAPI.setTimeout(function () {
     if (response.key == null) {
+      // kill the keyboard
+      jsPsych.pluginAPI.cancelAllKeyboardResponses()
+
       // hide everything currently on screen
       trial.image_to_show.hide();
       trial.miscell[3].hide();
