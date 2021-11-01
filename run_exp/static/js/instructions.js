@@ -423,7 +423,7 @@ var fourth_q = {
 
 var all_done = {
   type: 'html-keyboard-response',
-  stimulus:"<div class='center'>You are all done with the first part of the experiment! Thank you for participating. Tomorrow, you will recieve an invite to participate in the next phase of the experiment which you must complete by the end of the day. <p><b>[Press the space bar to end the experiment]</b></p></div>",
+  stimulus:"<div class='center'>You are all done with the first part of the experiment! Thank you for participating. Tomorrow, you will recieve an invitation to participate in the next phase of the experiment which you must complete by the end of the day. <p><b>[Press the space bar to end the experiment]</b></p></div>",
   choices: ['space'],
   on_finish: function(data) {
     console.log(invalidProbeTrials)
