@@ -28,6 +28,12 @@ jsPsych.plugins["do_welcome"] = (function () {
         default: [],
         description: 'All the pirates that could be displayed on the screen.'
       },
+      text: {
+        type: jsPsych.plugins.parameterType.OBJECT,
+        pretty_name: 'Array ',
+        default: [],
+        description: 'All the pirates that could be displayed on the screen.'
+      },
     }
   }
 
@@ -39,6 +45,7 @@ jsPsych.plugins["do_welcome"] = (function () {
     key: null
   };
   trial.stimuli[4].show();
+  trial.text.show();
   trial.stimuli[5].show();
   trial.stimuli[8].show();
 
@@ -67,6 +74,7 @@ jsPsych.plugins["do_welcome"] = (function () {
 
   jsPsych.pluginAPI.setTimeout(function () {
     trial.stimuli[4].hide();
+    trial.text.hide();
     trial.stimuli[5].hide();
     trial.stimuli[8].hide();
 
