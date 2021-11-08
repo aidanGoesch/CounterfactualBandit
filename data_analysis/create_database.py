@@ -31,6 +31,7 @@ for f in files:
         db[subject_id] = sub_dict
     except:
         continue
+print(db.keys())
 
 
 with open('day_1_exp_struc.js', 'w', encoding='utf-8') as f:
