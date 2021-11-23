@@ -19,15 +19,19 @@ def make_sub_dict(data):
         sub_dict[var] = format_list(data,var,data_type)
     return sub_dict
 
-files = glob("../data/*csv")
+files = glob("../data/*2021-11-02_*csv")
 db = dict()
 
 for f in files:
     print(f)
     df = pd.read_csv(f)
     subject_id = df.subject_id.dropna().reset_index().subject_id[0]
-    sub_dict = make_sub_dict(df)
-    db[subject_id] = sub_dict
+    try:
+        sub_dict = make_sub_dict(df)
+        db[subject_id] = sub_dict
+    except:
+        continue
+print(db.keys())
 
 
 with open('day_1_exp_struc.js', 'w', encoding='utf-8') as f:
