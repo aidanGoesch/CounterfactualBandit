@@ -145,12 +145,23 @@
   /* height: 10%; */
 }
 
-.center {
+/* .center {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  text-align: center;
   vertical-align: middle;
   padding-top: 50px;
+
+} */
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px
+
 }
 
 .recog input[type=radio] {

@@ -17,9 +17,11 @@ var pavlovia_finish = {
 var canvas = $('#canvasdiv');
 
 // get subj id from url
-//var subject_id = "57b3a754cbe60100013773f2";
-//var subject_id = jsPsych.data.getURLVariable('workerId');
-var subject_id = jsPsych.data.getURLVariable('id');
+var participant_id = jsPsych.data.getURLVariable('participant_ID');
+var subject_id = jsPsych.data.getURLVariable('subject_ID');
+var age = jsPsych.data.getURLVariable('age');
+var gender = jsPsych.data.getURLVariable('gender');
+
 
 function makeObject(img_path,id) {
   // create the image
@@ -62,6 +64,7 @@ function randomize(array) {
     .map(({ value }) => value)
     return array;
 }
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var deck = makeObject('run_exp/static/images/miscellaneous/deck.png','deck') // stays constant thru out exp
@@ -459,9 +462,13 @@ timeline.push({
 
 timeline.push(pavlovia_init);
 timeline.push(instruc1);
+timeline.push(move_forward);
 timeline.push(instruc2);
+timeline.push(move_forward);
 timeline.push(instruc3);
+timeline.push(move_forward);
 timeline.push(instruc4);
+timeline.push(move_forward);
 timeline.push(instruc5);
 timeline.push(blue_win);
 timeline.push(blue_alone);
@@ -483,18 +490,22 @@ timeline.push(blue_win);
 timeline.push(blue_alone);
 timeline.push(blue_win);
 timeline.push(instruc6);
+timeline.push(move_forward);
 timeline.push(instruc7);
+
 
 
 jsPsych.init({
   timeline: timeline,
   display_element: 'jspsych-target',
 	preload_images: all_images,
+	preload_audio: all_audio,
+	use_webaudio: false,
 	max_load_time: 600000,
   on_finish: function() {
 
-    document.body.innerHTML = '<p> <center>Thank you for participating in the first part of the study! Please wait seconds while your data saves. After 10 seconds, you will be redirected to Prolific. </center> </p>';
-      setTimeout(function () {var end_link = "https://app.prolific.co/submissions/complete?cc=4BF4B7EF"; window.location = end_link;}, 10000)
+    document.body.innerHTML = '<p> <center>Thank you for participating in the first part of the study! Please wait seconds while your data saves. After 10 seconds, you will be redirected to Spark. </center> </p>';
+      setTimeout(function () {var end_link = "https://spark.hartleylab.org/completed/".concat(subject_id); window.location = end_link;}, 10000)
 
 }
 })
