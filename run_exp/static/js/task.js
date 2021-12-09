@@ -254,6 +254,16 @@ var welcome = {
 	}
 }
 
+var take_break = {
+	type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>Time to take a quick break! You have 2 minutes to rest, but you can move on sooner if you'd like.</p><p> Press the <b>space bar</b> to continue.</p></div>",
+	trial_duration:120000,
+  choices: ['space'],
+	on_finish: function(data) {
+		data.trial_type="break"
+	}
+}
+
 var bye = {
   type: 'do_bye',
   stimuli: miscellArray,
@@ -393,7 +403,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < first_block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye,take_break],}, jsPsych.resumeExperiment);
 
 
 	//travel
@@ -404,7 +414,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye,take_break],}, jsPsych.resumeExperiment);
 
 	//travel
 	//welcome
@@ -414,7 +424,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye,take_break],}, jsPsych.resumeExperiment);
 
 	// travel
 	// welcome
@@ -424,7 +434,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye,take_break],}, jsPsych.resumeExperiment);
 
 
 	// travel
@@ -435,7 +445,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye,take_break],}, jsPsych.resumeExperiment);
 
 	// travel
 	// welcome
@@ -461,6 +471,7 @@ timeline.push({
 
 
 timeline.push(pavlovia_init);
+timeline.push(take_break);
 timeline.push(instruc1);
 timeline.push(move_forward);
 timeline.push(instruc2);
