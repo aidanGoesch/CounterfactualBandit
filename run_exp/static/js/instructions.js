@@ -122,7 +122,7 @@ var instruc5 = {
 
 var blue_alone = {
   type: 'html-keyboard-response',
-  prompt:"Press the '1' key on the keyboard to pick blue beard.",
+  prompt:"<div class='center'><p>Press the '1' key on the keyboard to pick blue beard.</p></div>"",
   stimulus:"<div class='center'><img src='run_exp/static/images/tutorial/blue.png' height='500'></p></div>",
   choices: ['1'],
 }
