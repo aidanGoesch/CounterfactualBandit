@@ -112,7 +112,8 @@ jsPsych.plugins["do_trial"] = (function () {
 
       // set timer for showing outcome of choice (1.5)
       jsPsych.pluginAPI.setTimeout(function(){trial.miscell[0].hide(); trial.miscell[1].hide();trial.pirates[key_pressed].hide();
-        trial.rewards[reward].hide();trial.miscell[10].hide();trial.miscell[4].hide();trial.miscell[5].hide();end_trial();}, 4500);
+        trial.rewards[reward].hide();trial.miscell[10].hide();end_trial();}, 4500);
+        //trial.rewards[reward].hide();trial.miscell[10].hide();trial.miscell[4].hide();trial.miscell[5].hide();end_trial();}, 4500);
 
     }
 
