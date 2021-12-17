@@ -2,7 +2,7 @@ console.log('hi')
 
 var space_bar = "<p><b>[Press the space bar to continue]</b></p></div>";
 
-var welcome_txt = "<div class='center'><p>Welcome! This is the first part of the experiment. It will last ~30 minutes. In this experiment, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games during this experiment. Here is an overview of these games:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>Part 2 (1 day later)</p><p>3. Pick a pirate game and memory game</p><p>4. Where did I see this ship? game</p><p>5. Which pirate was the best? game</p><br><p>Part 3 (1 week later)</p><p>6. Alien space mining game</p><p>7. Memory game</p></div>";
+var welcome_txt = "<div class='center'><p>Welcome! This is the first part of the experiment. It will last ~30 minutes. In this experiment, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games during this experiment. Here is an overview of these games:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>Part 2 (1 day later)</p><p>3. Pick a pirate game and memory game</p><p>4. Where did I see this ship? game</p><p>5. Which pirate was the best? game</p><br><p>Part 3 (1 week later)</p><p>6. Memory game</p></div>";
 
 var different_places = "<div class='center'><p>Today, you’ll visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='run_exp/static/images/contexts/all_contexts.png' height='500'></p></div>";
 
@@ -38,7 +38,7 @@ var changepoint = "<div class='center'><p>How successful a pirate is at robbing 
 
 var drift = "<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='run_exp/static/images/tutorial/contingency.png' height='500'></p></div>";
 
-var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have two important things to do: </p><b><p> 1. Pick the pirate who is the best at robbing ships on the current island. This way you'll collect more gold coins!</p></b><b><p> 2. Remember on which island a ship was robbed.</p> </b><p>The amount of bonus money you can win depends on both.</p><p><br><p>Let’s try a practice game. The game will start by showing you the pirates. First, pick a pirate using the <b> 1, 2, 3 </b> keys on your keyboard. When you are shown a ship, try to remember which island you’re on by making up a story.</p><p>This is just a practice game, so you’re not playing for money. </p><p> Good luck!</p></div>";
+var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have two important things to do: </p><b><p> 1. Pick the pirate who is the best at robbing ships on the current island. This way you'll collect more gold coins!</p></b><b><p> 2. Remember on which island a ship was robbed.</p> </b><p>The amount of bonus money you can win depends on both.</p><p><br><p>Let’s try a practice game. The game will start by showing you the pirates. First, pick a pirate using the <b> 1, 2, 3 </b> keys on your keyboard. When you are shown a ship, try to remember which island you’re on by making up a story.</p><p>This is just a practice game, so you’re not playing for money. </p><p> Good luck! This game will be very difficult but try your best!</p></div>";
 
 var quiz_intro = "<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>";
 
@@ -425,12 +425,12 @@ var q_all_err = {
 var q_all_corr = {
   type: 'audio-keyboard-response',
   stimulus:'run_exp/static/audio/clip_27_quiz_all_correct.m4a',
-  prompt:"<div class='center'><p>Good job! You’re now ready to move on to the real game!</p></div>",
+  prompt:"<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>",
   choices: jsPsych.NO_KEYS,
   trial_ends_after_audio: true,
   on_finish: function(data) {
     data.trial_type = "q_all_corr";
-    data.prompt ="<div class='center'><p>Good job! You’re now ready to move on to the real game!</p></div>"}
+    data.prompt ="<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>"}
 }
 
 var first_q = {
