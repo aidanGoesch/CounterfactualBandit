@@ -471,7 +471,6 @@ timeline.push({
 
 
 timeline.push(pavlovia_init);
-timeline.push(take_break);
 timeline.push(instruc1);
 timeline.push(move_forward);
 timeline.push(instruc2);
