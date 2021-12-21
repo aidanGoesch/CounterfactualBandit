@@ -65,6 +65,13 @@ jsPsych.plugins["do_trial"] = (function () {
         default: [],
         description: 'All the miscelleanous things that could be displayed on the screen.'
       },
+      after_blank: {
+        type: jsPsych.plugins.parameterType.BOOL,
+        pretty_name: 'Indicates whether entire board should be wiped.',
+        default: false,
+        description: 'Remove everything from the screen.'
+
+      }
     }
   }
 
@@ -100,8 +107,13 @@ jsPsych.plugins["do_trial"] = (function () {
       jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, 1000);
 
       // set timer for showing outcome of choice (1.5)
-      jsPsych.pluginAPI.setTimeout(function(){trial.pirates[key_pressed].hide();
-        trial.rewards[reward].hide();trial.miscell[4].hide();end_trial();}, 2500);
+      if (trial.after_blank) {
+        jsPsych.pluginAPI.setTimeout(function(){trial.pirates[key_pressed].hide();
+          trial.rewards[reward].hide();trial.miscell[4].hide();end_trial();}, 2500);
+      } else {
+        jsPsych.pluginAPI.setTimeout(function(){trial.pirates[key_pressed].hide();
+          trial.rewards[reward].hide();end_trial();}, 2500);
+      }
 
     } else {
       jsPsych.pluginAPI.setTimeout(function(){
@@ -111,9 +123,14 @@ jsPsych.plugins["do_trial"] = (function () {
       jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, 3000);
 
       // set timer for showing outcome of choice (1.5)
-      jsPsych.pluginAPI.setTimeout(function(){trial.miscell[0].hide(); trial.miscell[1].hide();trial.pirates[key_pressed].hide();
-        trial.rewards[reward].hide();trial.miscell[10].hide();end_trial();}, 4500);
-        //trial.rewards[reward].hide();trial.miscell[10].hide();trial.miscell[4].hide();trial.miscell[5].hide();end_trial();}, 4500);
+      if (trial.after_blank) {
+        jsPsych.pluginAPI.setTimeout(function(){trial.miscell[0].hide(); trial.miscell[1].hide();trial.pirates[key_pressed].hide();
+          trial.rewards[reward].hide();trial.miscell[10].hide();trial.miscell[4].hide();trial.miscell[5].hide();end_trial();}, 4500);
+
+      } else {
+        jsPsych.pluginAPI.setTimeout(function(){trial.miscell[0].hide(); trial.miscell[1].hide();trial.pirates[key_pressed].hide();
+          trial.rewards[reward].hide();trial.miscell[10].hide();end_trial();}, 4500);
+      }
 
     }
 

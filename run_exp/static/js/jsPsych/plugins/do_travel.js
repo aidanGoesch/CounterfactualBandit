@@ -61,6 +61,25 @@ jsPsych.plugins["do_travel"] = (function () {
   jsPsych.finishTrial(trial_data);
 };
 
+function sound(src) {
+  this.sound = document.createElement("audio");
+  this.sound.src = src;
+  this.sound.setAttribute("preload", "auto");
+  this.sound.setAttribute("controls", "none");
+  this.sound.style.display = "none";
+  document.body.appendChild(this.sound);
+  this.play = function(){
+    this.sound.play();
+  }
+  this.stop = function(){
+    this.sound.pause();
+  }
+}
+var src = "run_exp/static/audio/sailing.mp3#t=2.0,"
+var tt_sec = 9; //need to convert to seconds
+var audio = new sound(src.concat(tt_sec.toString()))
+audio.play()
+
   trial.stimuli[0].show();
 
   jsPsych.pluginAPI.setTimeout(function () {

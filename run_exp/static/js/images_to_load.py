@@ -1,4 +1,4 @@
 from glob import glob
 
-z=glob("../audio/*m4a")
+z=glob("../images/*/*png")+glob("../images/*/*jpg")
 print(z)

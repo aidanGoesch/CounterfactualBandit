@@ -85,6 +85,7 @@ for (let i = 0; i < 6; i++) {
 contextArray.push(makeObject('run_exp/static/images/contexts/context_blank.png','blank'))
 contextArray.push(makeObject('run_exp/static/images/contexts/context_desert.png','desert'))
 contextArray.push(makeObject('run_exp/static/images/contexts/context_cavern.png','cavern'))
+
 contextArray.forEach(context => context.hide())
 
 
@@ -192,6 +193,17 @@ welcomeArray.push(makeObject('run_exp/static/images/travel/welcome_cavern.png','
 
 welcomeArray.forEach(item => item.hide())
 
+let islandTrackerArray = [
+makeObject('run_exp/static/images/contexts/island_1.png','island_1'),
+makeObject('run_exp/static/images/contexts/island_2.png','island_2'),
+makeObject('run_exp/static/images/contexts/island_3.png','island_3'),
+makeObject('run_exp/static/images/contexts/island_4.png','island_4'),
+makeObject('run_exp/static/images/contexts/island_5.png','island_5'),
+makeObject('run_exp/static/images/contexts/island_6.png','island_6')];
+
+islandTrackerArray.forEach(item => item.hide())
+
+
 
 var probabilities = { 1: payout[0].map(x=>x*0.01),
   2: payout[1].map(x=>x*0.01),
@@ -222,7 +234,7 @@ var response_key_dict = {
 var welcome_prac = {
   type: 'do_welcome',
   stimuli: miscellArray,
-  trial_duration:1500,
+  trial_duration:4000,
 	on_start: function (welcome) {
 		if (current_prac_trial == 0) {
 			miscellArray[5] = contextArray[7];
@@ -245,12 +257,13 @@ var intertrial = {
 var welcome = {
   type: 'do_welcome',
   stimuli: miscellArray,
-  trial_duration:1500,
+  trial_duration:4000,
 	on_start: function (welcome) {
 		current_context += 1; // next this in welcome
 		miscellArray[5] = contextArray[current_context];
 		welcome.stimuli = miscellArray;
 		welcome.text = welcomeArray[current_context];
+		welcome.island_num = islandTrackerArray[current_context];
 	}
 }
 
@@ -274,7 +287,7 @@ var travel = {
   type: 'do_travel',
   stimuli: shipArray,
   choices:jsPsych.NO_KEYS,
-  frame_time: 1000
+  frame_time: 1500
 }
 
 var pick_best = {
@@ -328,6 +341,51 @@ var prac_choice_trial = {
 		if (current_prac_trial == 5) {
 			jsPsych.addNodeToEndOfTimeline({timeline: [
 				bye,travel,welcome_prac,prac_choice_trial],}, jsPsych.resumeExperiment);
+		} else if (current_prac_trial == 9) {
+			jsPsych.addNodeToEndOfTimeline({timeline: [intertrial,prac_choice_trial_2],}, jsPsych.resumeExperiment);
+		} else if (current_prac_trial > 9) {
+			jsPsych.addNodeToEndOfTimeline({timeline: [prac_best_pirate],}, jsPsych.resumeExperiment);
+		} else {
+			jsPsych.addNodeToEndOfTimeline({timeline: [intertrial,prac_choice_trial],}, jsPsych.resumeExperiment);
+		}
+  }
+}
+
+var prac_choice_trial_2 = {
+  type: 'do_trial',
+  choices: ['1','2','3'],
+  prompt:'<p>which pirate do you want to rob the next ship?</p>',
+  trial_duration: 3000,
+  pirates: pirateArray,
+  rewards: rewardArray,
+  miscell: null,
+  probes: prac_probe_images,
+	after_blank: true,
+  on_start: function(choice_trial) {
+    miscellArray[0] = prac_probe_images[current_prac_trial];
+
+		let potential_outcomes = [];
+    for (let i = 1; i < 4; i++) {
+      var outcome = Sampling.Bernoulli(prac_prob[i][current_prac_trial]).draw()
+      potential_outcomes.push(outcome)
+    }
+
+    choice_trial.choice_outcomes = potential_outcomes;
+    choice_trial.miscell = miscellArray;
+    choice_trial.data = {choice_outcomes : potential_outcomes};
+  },
+  on_finish: function (data) {
+    let last_trial_data = jsPsych.data.get().last(1).values()[0];
+    let key_pressed =response_key_dict[data.response];
+
+		if (key_pressed != null ) {
+			current_prac_trial += 1;
+		}
+		if (current_prac_trial == 5) {
+			jsPsych.addNodeToEndOfTimeline({timeline: [
+				bye,travel,welcome_prac,prac_choice_trial],}, jsPsych.resumeExperiment);
+		} else if (current_prac_trial == 9) {
+			jsPsych.addNodeToEndOfTimeline({timeline: [intertrial,prac_choice_trial_2],}, jsPsych.resumeExperiment);
 		} else if (current_prac_trial > 9) {
 			jsPsych.addNodeToEndOfTimeline({timeline: [prac_best_pirate],}, jsPsych.resumeExperiment);
 		} else {
@@ -468,7 +526,6 @@ timeline.push({
 	type: 'fullscreen',
 	fullscreen_mode: true
 });
-
 
 timeline.push(pavlovia_init);
 timeline.push(instruc1);
