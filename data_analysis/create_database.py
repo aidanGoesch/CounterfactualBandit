@@ -18,7 +18,7 @@ def make_sub_dict(data):
             data_type = int
         sub_dict[var] = format_list(data,var,data_type)
     return sub_dict
-files = glob("../data/*2021-12-22_*csv")
+files = glob("../data/*2021-12-26_*csv")
 #files = glob("../data/*2021-11-02_*csv")
 db = dict()
 
