@@ -2,13 +2,13 @@ console.log('hi')
 
 var space_bar = "<p><b>[Press the space bar to continue]</b></p></div>";
 
-var welcome_txt = "<div class='center'><p>Welcome! This is the first part of the experiment. It will last ~30 minutes. In this experiment, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games during this experiment. Here is an overview of these games:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>Part 2 (1 day later)</p><p>3. Pick a pirate game and memory game</p><p>4. Where did I see this ship? game</p><p>5. Which pirate was the best? game</p><br><p>Part 3 (1 week later)</p><p>6. Memory game</p></div>";
+var welcome_txt = "<div class='center'><p>Welcome! This is the first part of the study. It will last ~30 minutes. In part 1 and part 2 of the study, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games throughout the study. Here is an overview of them:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>Part 2 (1 day later)</p><p>3. Pick a pirate game and memory game</p><p>4. Where did you see this ship? </p><p>5. Which pirate was the best? </p><br><p>Part 3 (1 week later)</p><p>6. Object memory game</p></div>";
 
 var different_places = "<div class='center'><p>Today, you’ll visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='run_exp/static/images/contexts/all_contexts.png' height='500'></p></div>";
 
-var goal_of_game_1 = "<div class='center'><p> The pirates on your ship will rob other ships as they leave the island</p> These ships have just sold their things to people on the island, so they will be filled with lots and lots of gold.</p><p><img src='run_exp/static/images/tutorial/ship_center.png' height='400'></p></div>";
+var goal_of_game_1 = "<div class='center'><p> The pirates on your ship will rob other ships as they leave the island.</p> These ships have just sold their things to people on the island, so they will be filled with lots and lots of gold.</p><p><img src='run_exp/static/images/tutorial/ship_center.png' height='400'></p></div>";
 
-var goal_of_game_2 = "<div class='center'><p>As the head captain, you do not have to rob any ships yourself.</p><p>Another pirate will be doing the robbing for you. </p><p>First, you will  choose a pirate to rob the next ship.</p><p><img src='run_exp/static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll  get a stack of gold coins like this:</p><p><img src='run_exp/static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='run_exp/static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div>";
+var goal_of_game_2 = "<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='run_exp/static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='run_exp/static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='run_exp/static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div>";
 
 var probabilistic = "<div class='center'><p>Even the most skilled pirate can not rob EVERY ship.</p><p> Some ships will have very strong protections against pirate attacks.</p><p> Blue beard, here, is very, very good at robbing ships, but he won't be successful every time he tries to rob one.</p><p> You can press the <b>‘1’</b> key on the keyboard to choose him.</p><p> Try choosing him 10 times to see how often he succeeds at robbing a ship. </p><p><img src='run_exp/static/images/tutorial/blue.png' height='500'></p></div>";
 
@@ -22,7 +22,7 @@ var white_won = "<div class='center'><p>Yay! This pirate succeeded in robbing th
 
 var black_won = "<div class='center'><p>Yay! This pirate succeeded in robbing the ship!</p><p><img src='run_exp/static/images/tutorial/black_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
-var pick_pirate_agin = "<div class='center'><p>Now try choosing another</p><p><img src='run_exp/static/images/tutorial/all_pirates.png' height='500'></p></div>";
+var pick_pirate_agin = "<div class='center'><p>Now try choosing another.</p><p><img src='run_exp/static/images/tutorial/all_pirates.png' height='500'></p></div>";
 
 var red_loss = "<div class='center'><p>Oh no! This pirate did not succeed in robbing the ship.</p><p><img src='run_exp/static/images/tutorial/red_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>";
 
@@ -32,7 +32,7 @@ var black_loss = "<div class='center'><p>Oh no! This pirate did not succeed in r
 
 var time_out = "<div class='center'><p>If you don’t make your choice fast enough, you’ll have to wait a few seconds before you can make another one. </p><p><img src='run_exp/static/images/miscellaneous/hurry_up.png' height='500'></p></div>";
 
-var probe = "<div class='center'><p>Once you've choose a pirate, you’ll be shown the ship they are robbing.</p><p>You will never rob the same ship twice. After all, ships that have already been robbed won’t have gold on them. </p><p>Ships can be told apart from one another by the image on them. See, this one has a travel mug on it. </p><p> You’ll have to remember which island you saw each ship on.You will win more bonus money if you remember correctly! To help you remember, you can imagine a story. For example, here, you could imagine a mug full of water in the desert. Or, as another example, if on the forest island, your pirate robbed a ship with an apple on it, you could imagine an apple falling from a tree in the forest. </p><p><img src='run_exp/static/images/tutorial/example_probe.png' height='500'></p></div>";
+var probe = "<div class='center'><p>Once you've choose a pirate, you’ll be shown the ship they are robbing.</p><p>You will never rob the same ship twice. After all, ships that have already been robbed won’t have gold on them. </p><p>Ships can be told apart from one another by the image on them. See, this one has a travel mug on it. </p><p> You’ll have to remember which island you saw each ship on. You will win more bonus money if you remember correctly! To help you remember, you can imagine a story. For example, here, you could imagine a mug full of water in the desert. Or, as another example, if on the forest island, your pirate robbed a ship with an apple on it, you could imagine an apple falling from a tree in the forest. </p><p><img src='run_exp/static/images/tutorial/example_probe.png' height='500'></p></div>";
 
 var changepoint = "<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you’re on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they’re more likely to be successful than a pirate who has never visited the island before.</p></div>";
 
@@ -42,13 +42,13 @@ var summary = "<div class='center'><p>Let's go over the instructions quickly aga
 
 var quiz_intro = "<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>";
 
-var q1 = "<div class='center'><p>You win bonus money by making choices as fast as possible.</p><p>Press 1 for true and press  2 for false.</p></div>"
+var q1 = "<div class='center'><p>You win bonus money by collecting gold coins.</p><p>Press 1 for true and press  2 for false.</p></div>"
 
-var q2 = "<div class='center'><p>You press the <b>‘3’</b> key on the keyboard to choose the red bearded pirate. </p><p>Press 1 for true and press  2 for false.</p></div>"
+var q2 = "<div class='center'><p>The pirate who is the best at robbing ships when you first arrive on the island will definitely still be the best when you leave the island. </p><p>Press 1 for true and press  2 for false.</p></div>"
 
 var q3 = "<div class='center'><p>The pirate who is the best at robbing ships on the first island will be the best on every other island.</p><p>Press 1 for true and press  2 for false.</p></div>";
 
-var q4 = "<div class='center'><p>You should remember the island where a pirate robbed a ship.</p><p>Press 1 for true and press  2 for false.</p></div>";
+var q4 = "<div class='center'><p>You should remember the island where a pirate robbed a ship. This is the other way you will win bonus money.</p><p>Press 1 for true and press  2 for false.</p></div>";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var instruc1 = {
@@ -369,45 +369,45 @@ var correct = {
 var q1_err = {
   type: 'audio-keyboard-response',
   stimulus:'run_exp/static/audio/clip_19_wrong_q1.m4a',
-  prompt:"<div class='center'><p>That’s incorrect! You win bonus money by collecting as many gold coins as possible!</p></div>",
+  prompt:"<div class='center'><p>That’s incorrect. You win bonus money by collecting gold coins.</p></div>",
   choices: jsPsych.NO_KEYS,
   trial_ends_after_audio: true,
   on_finish: function(data) {
     data.trial_type = "q1_err";
-    data.prompt = "<div class='center'><p>That’s incorrect! You win bonus money by collecting as many gold coins as possible!</p></div>"}
+    data.prompt = "<div class='center'><p>That’s incorrect. You win bonus money by collecting gold coins.</p></div>"}
 }
 
 var q2_err = {
   type: 'audio-keyboard-response',
   stimulus:'run_exp/static/audio/clip_21_wrong_q2.m4a',
-  prompt:"<div class='center'><p>That’s incorrect! You press the <b>‘1’</b> key to choose the red bearded pirate!</p></div>",
+  prompt:"<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p></div>",
   choices: jsPsych.NO_KEYS,
   trial_ends_after_audio: true,
   on_finish: function(data) {
     data.trial_type = "q2_err";
-    data.prompt = "<div class='center'><p>That’s incorrect! You win bonus money by collecting as many gold coins as possible!</p></div>"}
+    data.prompt = "<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p></div>"}
   }
 
 var q3_err = {
   type: 'audio-keyboard-response',
   stimulus:'run_exp/static/audio/clip_23_wrong_q3.m4a',
-  prompt:"<div class='center'><p>That’s incorrect! How good a pirate is at robbing ships can change from island to island!</p></div>",
+  prompt:"<div class='center'><p>That’s incorrect. How good a pirate is at robbing ships will change from island to island!</p></div>",
   choices: jsPsych.NO_KEYS,
   trial_ends_after_audio: true,
   on_finish: function(data) {
     data.trial_type = "q3_err";
-    data.prompt = "<div class='center'><p>That’s incorrect! How good a pirate is at robbing ships can change from island to island!</p></div>"}
+    data.prompt = "<div class='center'><p>That’s incorrect. How good a pirate is at robbing ships will change from island to island!</p></div>"}
 }
 
 var q4_err = {
   type: 'audio-keyboard-response',
   stimulus:'run_exp/static/audio/clip_25_wrong_q4.m4a',
-  prompt:"<div class='center'><p>That’s incorrect! You should remember the island where a pirate robbed a ship. To help you remember, you can make up a story associating the object on the ship with the island</p></div>",
+  prompt:"<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. This is the other way you will win bonus money. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>",
   choices: jsPsych.NO_KEYS,
   trial_ends_after_audio: true,
   on_finish: function(data) {
     data.trial_type = "q4_err";
-    data.prompt = "<div class='center'><p>That’s incorrect! You should remember the island where a pirate robbed a ship. To help you remember, you can make up a story associating the object on the ship with the island</p></div>"}
+    data.prompt = "<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. This is the other way you will win bonus money. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>"}
 }
 
 var q_all_err = {
@@ -442,7 +442,7 @@ var first_q = {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
     let key_pressed = response_key_dict[last_trial_data.key_press];
     console.log('try q1')
-    if (key_pressed == '1') {
+    if (key_pressed == '2') {
       n_errors += 1
       jsPsych.addNodeToEndOfTimeline({timeline: [q1_err,move_forward,second_q],}, jsPsych.resumeExperiment);
     } else {
@@ -516,7 +516,7 @@ var fourth_q = {
 var all_done = {
   type: 'audio-keyboard-response',
   stimulus: 'run_exp/static/audio/clip_28_all_done_day_1.m4a',
-  prompt:"<div class='center'>You are all done with the first part of the experiment! Thank you for participating. Tomorrow, you will receive an invitation to participate in the next part of the experiment which you must complete by the end of the day. See you then!</p> <p><b>[Press the space bar to end the experiment]</b></p></div>",
+  prompt:"<div class='center'>You are all done with the first part of the study! Thank you for participating. Tomorrow, you will receive an invitation to participate in the next part of the study which you must complete by the end of the day. See you then!</p> <p><b>[Press the space bar to end the study]</b></p></div>",
   choices: ['space'],
   on_finish: function(data) {
     console.log(invalidProbeTrials)
