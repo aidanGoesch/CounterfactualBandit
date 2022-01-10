@@ -6,7 +6,7 @@ var welcome_txt = "<div class='center'><p>Welcome! This is the first part of the
 
 var different_places = "<div class='center'><p>Today, you’ll visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='run_exp/static/images/contexts/all_contexts.png' height='500'></p></div>";
 
-var goal_of_game_1 = "<div class='center'><p> The pirates on your ship will rob other ships as they leave the island.</p> These ships have just sold their things to people on the island, so they will be filled with lots and lots of gold.</p><p><img src='run_exp/static/images/tutorial/ship_center.png' height='400'></p></div>";
+var goal_of_game_1 = "<div class='center'><p> The pirates on your ship will rob other ships as they leave the island.</p> These ships have just sold their goods to the islanders, so they will be filled with lots and lots of gold.</p><p><img src='run_exp/static/images/tutorial/ship_center.png' height='400'></p></div>";
 
 var goal_of_game_2 = "<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='run_exp/static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='run_exp/static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='run_exp/static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div>";
 
@@ -32,7 +32,7 @@ var black_loss = "<div class='center'><p>Oh no! This pirate did not succeed in r
 
 var time_out = "<div class='center'><p>If you don’t make your choice fast enough, you’ll have to wait a few seconds before you can make another one. </p><p><img src='run_exp/static/images/miscellaneous/hurry_up.png' height='500'></p></div>";
 
-var probe = "<div class='center'><p>Once you've choose a pirate, you’ll be shown the ship they are robbing.</p><p>You will never rob the same ship twice. After all, ships that have already been robbed won’t have gold on them. </p><p>Ships can be told apart from one another by the image on them. See, this one has a travel mug on it. </p><p> You’ll have to remember which island you saw each ship on. You will win more bonus money if you remember correctly! To help you remember, you can imagine a story. For example, here, you could imagine a mug full of water in the desert. Or, as another example, if on the forest island, your pirate robbed a ship with an apple on it, you could imagine an apple falling from a tree in the forest. </p><p><img src='run_exp/static/images/tutorial/example_probe.png' height='500'></p></div>";
+var probe = "<div class='center'><p>Once you've chosen a pirate, you’ll be shown the ship they are robbing. You will never rob the same ship twice. After all, ships that have already been robbed won’t have gold on them. Ships can be told apart from one another by the image on them. These are the goods that they sell. See, this ship has a travel mug on it. </p><p> You’ll have to remember which island you saw each ship on. You will win more gold coins and hence more bonus money if you remember correctly! To help you remember, you can imagine a story. For example, here, you could imagine a mug full of water in the desert. Or, as another example, if on the forest island, your pirate robbed a ship with an apple on it, you could imagine an apple falling from a tree in the forest. </p><p><img src='run_exp/static/images/tutorial/example_probe.png' height='500'></p></div>";
 
 var changepoint = "<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you’re on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they’re more likely to be successful than a pirate who has never visited the island before.</p></div>";
 
@@ -516,7 +516,7 @@ var fourth_q = {
 var all_done = {
   type: 'audio-keyboard-response',
   stimulus: 'run_exp/static/audio/clip_28_all_done_day_1.m4a',
-  prompt:"<div class='center'>You are all done with the first part of the study! Thank you for participating. Tomorrow, you will receive an invitation to participate in the next part of the study which you must complete by the end of the day. See you then!</p> <p><b>[Press the space bar to end the study]</b></p></div>",
+  prompt:"<div class='center'>You are all done with the first part of the study! Thank you for participating. Tomorrow, you will receive an invitation to participate in the next part of the study which you must complete by the end of the day. See you then!</p> <p><b>[Press the space bar to exit]</b></p></div>",
   choices: ['space'],
   on_finish: function(data) {
     console.log(invalidProbeTrials)
