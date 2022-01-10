@@ -32,13 +32,13 @@ var black_loss = "<div class='center'><p>Oh no! This pirate did not succeed in r
 
 var time_out = "<div class='center'><p>If you don’t make your choice fast enough, you’ll have to wait a few seconds before you can make another one. </p><p><img src='run_exp/static/images/miscellaneous/hurry_up.png' height='500'></p></div>";
 
-var probe = "<div class='center'><p>Once you've chosen a pirate, you’ll be shown the ship they are robbing. You will never rob the same ship twice. After all, ships that have already been robbed won’t have gold on them. Ships can be told apart from one another by the image on them. These are the goods that they sell. See, this ship has a travel mug on it. </p><p> You’ll have to remember which island you saw each ship on. You will win more gold coins and hence more bonus money if you remember correctly! To help you remember, you can imagine a story. For example, here, you could imagine a mug full of water in the desert. Or, as another example, if on the forest island, your pirate robbed a ship with an apple on it, you could imagine an apple falling from a tree in the forest. </p><p><img src='run_exp/static/images/tutorial/example_probe.png' height='500'></p></div>";
+var probe = "<div class='center'><p>Once you've chosen a pirate, you’ll be shown the ship they are robbing. You will never rob the same ship twice. Ships can be told apart from one another by the image on them. These are the goods that they sell. See, this ship has a travel mug on it. </p><p> You’ll have to remember which island you saw each ship on. You will win more gold coins and hence more bonus money if you remember correctly! To help you remember, you can imagine a story. For example, here, you could imagine a mug full of water in the desert. Or, as another example, if on the forest island, your pirate robbed a ship with an apple on it, you could imagine an apple falling from a tree in the forest. </p><p><img src='run_exp/static/images/tutorial/example_probe.png' height='500'></p></div>";
 
 var changepoint = "<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you’re on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they’re more likely to be successful than a pirate who has never visited the island before.</p></div>";
 
 var drift = "<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='run_exp/static/images/tutorial/contingency.png' height='500'></p></div>";
 
-var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have two important things to do: </p><b><p> 1. Pick the pirate who is the best at robbing ships on the current island. This way you'll collect more gold coins!</p></b><b><p> 2. Remember on which island a ship was robbed.</p> </b><p>The amount of bonus money you can win depends on both.</p><p><br><p>Let’s try a practice game. The game will start by showing you the pirates. First, pick a pirate using the <b> 1, 2, 3 </b> keys on your keyboard. When you are shown a ship, try to remember which island you’re on by making up a story.</p><p>This is just a practice game, so you’re not playing for money. </p><p> Good luck! This game will be very difficult but try your best!</p></div>";
+var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have two important things to do: </p><b><p> 1. Pick the pirate who is the best at robbing ships on the current island. </p></b><b><p> 2. Remember on which island a ship was robbed.</p> </b><p>The amount of bonus money you can win depends on both.</p><p><br><p>Let’s try a practice game. The game will start by showing you the pirates. First, pick a pirate using the <b> 1, 2, 3 </b> keys on your keyboard. When you are shown a ship, try to remember which island you’re on by making up a story.</p><p>This is just a practice game, so you’re not playing for money. </p><p> Good luck! This game will be very difficult but try your best!</p></div>";
 
 var quiz_intro = "<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>";
 
@@ -48,7 +48,7 @@ var q2 = "<div class='center'><p>The pirate who is the best at robbing ships whe
 
 var q3 = "<div class='center'><p>The pirate who is the best at robbing ships on the first island will be the best on every other island.</p><p>Press 1 for true and press  2 for false.</p></div>";
 
-var q4 = "<div class='center'><p>You should remember the island where a pirate robbed a ship. This is the other way you will win bonus money.</p><p>Press 1 for true and press  2 for false.</p></div>";
+var q4 = "<div class='center'><p>You should remember the island where a pirate robbed a ship.</p><p>Press 1 for true and press  2 for false.</p></div>";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var instruc1 = {
@@ -402,12 +402,12 @@ var q3_err = {
 var q4_err = {
   type: 'audio-keyboard-response',
   stimulus:'run_exp/static/audio/clip_25_wrong_q4.m4a',
-  prompt:"<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. This is the other way you will win bonus money. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>",
+  prompt:"<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>",
   choices: jsPsych.NO_KEYS,
   trial_ends_after_audio: true,
   on_finish: function(data) {
     data.trial_type = "q4_err";
-    data.prompt = "<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. This is the other way you will win bonus money. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>"}
+    data.prompt = "<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>"}
 }
 
 var q_all_err = {
