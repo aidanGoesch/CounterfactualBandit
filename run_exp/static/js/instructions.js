@@ -2,7 +2,7 @@ console.log('hi')
 
 var space_bar = "<p><b>[Press the space bar to continue]</b></p></div>";
 
-var welcome_txt = "<div class='center'><p>Welcome! This is the first part of the study. It will last ~30 minutes. In part 1 and part 2 of the study, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games throughout these two parts. Here is an overview of them:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>Part 2 (tomorrow)</p><p>3. Pick a pirate game and memory game</p><p>4. Where did you see this ship? </p><p>5. Which pirate was the best? </p></div>";
+var welcome_txt = "<div class='center'><p>Welcome! This is the first part of the study. It will last ~30 minutes. In part 1 and part 2 of the study, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games throughout these two parts. Here is an overview of them:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>Part 2 (tomorrow)</p><p>3. Pick a pirate game and memory game</p><p>4. Where did you see this ship? </p></div>";
 
 var different_places = "<div class='center'><p>Today, you’ll visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='run_exp/static/images/contexts/all_contexts.png' height='500'></p></div>";
 
