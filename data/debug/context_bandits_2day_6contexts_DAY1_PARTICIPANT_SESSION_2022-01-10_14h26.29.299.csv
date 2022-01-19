@@ -1,0 +1,4 @@
+"success","trial_type","trial_index","time_elapsed","internal_node_id","rt","stimulus","key_press","subject_id","participant_id","age","gender","prompt"
+"true","fullscreen","0","1987","0.0-0.0","","","","","","","",""
+"","pavlovia","1","1990","0.0-1.0","","","","","","","",""
+"","instruc1","2","54606","0.0-2.0","null","run_exp/static/audio/clip_1_welcome.m4a","null","","","","","<div class='center'><p>Welcome! This is the first part of the study. It will last ~30 minutes. In part 1 and part 2 of the study, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games throughout these two parts. Here is an overview of them:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>Part 2 (tomorrow)</p><p>3. Pick a pirate game and memory game</p><p>4. Where did you see this ship? </p><p>5. Which pirate was the best? </p></div>"
