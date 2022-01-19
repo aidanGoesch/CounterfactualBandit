@@ -99,7 +99,7 @@ var invalidProbeTrials  = getRandom(mem_probe_trials,num_invalid_probes)
 var availableForMemProbe = [];
 for (let bIdx = 1; bIdx < num_blocks; bIdx++) {
   for (let elem = block_len*bIdx; elem < ((block_len*bIdx)+sample_window); elem++) {
-    availableForMemProbe.push(elem)
+    availableForMemProbe.push(elem-10)
   }
 }
 
