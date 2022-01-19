@@ -18,7 +18,7 @@ def make_sub_dict(data):
             data_type = int
         sub_dict[var] = format_list(data,var,data_type)
     return sub_dict
-files = glob("../data/*2022-01-04_*csv")
+files = glob("../data/*2022-01-11_*csv")
 #files = glob("../data/*2021-11-02_*csv")
 db = dict()
 
@@ -26,6 +26,7 @@ for f in files:
     print(f)
     df = pd.read_csv(f)
     participant_id = int(df.participant_id.dropna().reset_index().participant_id[0])
+    print(participant_id)
     try:
         sub_dict = make_sub_dict(df)
         db[participant_id] = sub_dict
