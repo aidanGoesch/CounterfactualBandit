@@ -2,12 +2,8 @@ import pandas as pd
 from glob import glob
 
 def format_list(data,variable,data_type):
-    print('format')
-    print(data[variable].iloc[-1])
     arr = data[variable].iloc[-1].split(",")
     arr = list(map(data_type,arr))
-    #print(arr)
-    print('format 2')
     return arr
 
 def make_sub_dict(data):
@@ -16,7 +12,6 @@ def make_sub_dict(data):
            "pRew_Red","pRew_White","pRew_Black"]
 
     for var in all_vars:
-        print(var)
         if "pRew" in var:
             data_type = float
         else:
@@ -24,7 +19,7 @@ def make_sub_dict(data):
         sub_dict[var] = format_list(data,var,data_type)
     return sub_dict
 
-files = glob("../data/*2022-01-26_*csv")
+files = glob("../data/*2022-01-27_*csv")
 #files = glob("../data/*2021-11-02_*csv")
 db = dict()
 
