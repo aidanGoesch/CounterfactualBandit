@@ -77,42 +77,38 @@ var move_forward = {
 }
 
 var instruc2 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_2_different_places.m4a',
-  prompt: different_places,
+  type: 'html-keyboard-response',
+  stimulus: different_places,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc2";
     data.prompt = different_places;}
 }
 
 var instruc3 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_3_goal_of_game_1.m4a',
-  prompt: goal_of_game_1,
+  type: 'html-keyboard-response',
+  stimulus: goal_of_game_1,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc3";
     data.prompt = goal_of_game_1;}
 }
 
 var instruc4 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_4_goal_of_game_2.m4a',
-  prompt: goal_of_game_2,
+  type: 'html-keyboard-response',
+  stimulus: goal_of_game_2,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc4";
     data.prompt = goal_of_game_2;}
 }
 
 var instruc5 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_5_probabilistic.m4a',
-  prompt:probabilistic,
+  type: 'html-keyboard-response',
+  stimulus:probabilistic,
   choices: ['1'],
   on_finish: function(data) {
     data.trial_type = "instruc5";
@@ -141,11 +137,10 @@ var blue_no_win = {
 }
 
 var instruc6 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_6_blue_beard_outcome.m4a',
-  prompt:blue_beard_outcome,
+  type: 'html-keyboard-response',
+  stimulus:blue_beard_outcome,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc6";
     data.prompt = blue_beard_outcome;}
@@ -194,9 +189,8 @@ var choice_loss_black = {
 }
 
 var instruc8 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_9_pick_a_pirate_again.m4a',
-  prompt:pick_pirate_agin,
+  type: 'html-keyboard-response',
+  stimulus:pick_pirate_agin,
   choices: ['1','2','3'],
   on_finish: function(data) {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
@@ -215,9 +209,8 @@ var instruc8 = {
 
 
 var instruc7 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_7_pick_pirate.m4a',
-  prompt:pick_pirate,
+  type: 'html-keyboard-response',
+  stimulus:pick_pirate,
   choices: ['1','2','3'],
   on_finish: function(data) {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
@@ -233,56 +226,50 @@ var instruc7 = {
 }
 
 var instruc9 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_11_time_out.m4a',
-  prompt:time_out,
+  type: 'html-keyboard-response',
+  stimulus:time_out,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc9";
     data.prompt = time_out}
 }
 
 var instruc10 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_12_probe.m4a',
-  prompt:probe,
+  type: 'html-keyboard-response',
+  stimulus:probe,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc10";
     data.prompt = probe}
 }
 
 var instruc11 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_13_changepoint.m4a',
-  prompt:changepoint,
+  type: 'html-keyboard-response',
+  stimulus:changepoint,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc11";
     data.prompt = changepoint}
 }
 
 var instruc12 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_14_drift.m4a',
-  prompt:drift,
+  type: 'html-keyboard-response',
+  stimulus:drift,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc12";
     data.prompt = drift}
 }
 
 var instruc13 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_15_summary.m4a',
-  prompt:summary,
+  type: 'html-keyboard-response',
+  stimulus:summary,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc13";
     data.prompt = summary}
@@ -344,77 +331,70 @@ var incorr_source_mem = {
 }
 
 var quiz_beginning = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_16_quiz_intro.m4a',
-  prompt:quiz_intro,
+  type: 'html-keyboard-response',
+  stimulus:quiz_intro,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "quiz_beginning";
     data.prompt = quiz_intro}
   }
 
 var correct = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_18_correct.m4a',
-  prompt:"<div class='center'><p>That's correct!</p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That's correct!</p></div>",
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "correct";
     data.prompt = "<div class='center'><p>That's correct!</p></div>"}
 }
 
 var q1_err = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_19_wrong_q1.m4a',
-  prompt:"<div class='center'><p>That’s incorrect. You win bonus money by collecting gold coins.</p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That’s incorrect. You win bonus money by collecting gold coins.</p></div>",
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "q1_err";
     data.prompt = "<div class='center'><p>That’s incorrect. You win bonus money by collecting gold coins.</p></div>"}
 }
 
 var q2_err = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_21_wrong_q2.m4a',
-  prompt:"<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p></div>",
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "q2_err";
     data.prompt = "<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p></div>"}
   }
 
 var q3_err = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_23_wrong_q3.m4a',
-  prompt:"<div class='center'><p>That’s incorrect. How good a pirate is at robbing ships will change from island to island!</p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That’s incorrect. How good a pirate is at robbing ships will change from island to island!</p></div>",
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "q3_err";
     data.prompt = "<div class='center'><p>That’s incorrect. How good a pirate is at robbing ships will change from island to island!</p></div>"}
 }
 
 var q4_err = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_25_wrong_q4.m4a',
-  prompt:"<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>",
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "q4_err";
     data.prompt = "<div class='center'><p>That’s incorrect. You should remember the island where a pirate robbed a ship. To help you remember, you can make up a story associating the object on the ship with the island.</p></div>"}
 }
 
 var q_all_err = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_26_quiz_redo.m4a',
-  prompt:"<div class='center'><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! </p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! </p></div>",
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "q_all_err";
     data.prompt = "<div class='center'><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! </p></div>"}
@@ -422,20 +402,18 @@ var q_all_err = {
 
 
 var q_all_corr = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_27_quiz_all_correct.m4a',
-  prompt:"<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>",
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "q_all_corr";
     data.prompt ="<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>"}
 }
 
 var first_q = {
-  type: 'audio-keyboard-response',
-  stimulus: 'run_exp/static/audio/clip_17_q1.m4a',
-  prompt: q1,
+  type: 'html-keyboard-response',
+  stimulus: q1,
   choices: ['1','2'],
   on_finish: function(data) {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
@@ -451,9 +429,8 @@ var first_q = {
 }
 
 var second_q = {
-  type: 'audio-keyboard-response',
-  stimulus: 'run_exp/static/audio/clip_20_q2.m4a',
-  prompt: q2,
+  type: 'html-keyboard-response',
+  stimulus: q2,
   choices: ['1','2'],
   on_finish: function(data) {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
@@ -468,9 +445,8 @@ var second_q = {
 }
 
 var third_q = {
-  type: 'audio-keyboard-response',
-  stimulus: 'run_exp/static/audio/clip_22_q3.m4a',
-  prompt: q3,
+  type: 'html-keyboard-response',
+  stimulus: q3,
   choices: ['1','2'],
   on_finish: function(data) {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
@@ -485,9 +461,8 @@ var third_q = {
 }
 
 var fourth_q = {
-  type: 'audio-keyboard-response',
-  stimulus: 'run_exp/static/audio/clip_24_q4.m4a',
-  prompt: q4,
+  type: 'html-keyboard-response',
+  stimulus: q4,
   choices: ['1','2'],
   on_finish: function(data) {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
@@ -513,9 +488,8 @@ var fourth_q = {
 
 
 var all_done = {
-  type: 'audio-keyboard-response',
-  stimulus: 'run_exp/static/audio/clip_28_all_done_day_1.m4a',
-  prompt:"<div class='center'>You are all done with the first part of the study! Thank you for participating. Tomorrow, you will receive an invitation to participate in the next part of the study which you must complete by the end of the day. See you then!</p> <p><b>[Press the space bar to exit]</b></p></div>",
+  type: 'html-keyboard-response',
+  stimulus:"<div class='center'>You are all done with the first part of the study! Thank you for participating. Tomorrow, you will receive an invitation to participate in the next part of the study which you must complete by the end of the day. See you then!</p> <p><b>[Press the space bar to exit]</b></p></div>",
   choices: ['space'],
   on_finish: function(data) {
     console.log(invalidProbeTrials)
