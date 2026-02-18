@@ -52,11 +52,10 @@ var q4 = "<div class='center'><p>You should remember the island where a pirate r
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var instruc1 = {
-  type: 'audio-keyboard-response',
-  stimulus:'run_exp/static/audio/clip_1_welcome.m4a',
-  prompt: welcome_txt,
+  type: 'html-keyboard-response',
+  stimulus: welcome_txt,
   choices: jsPsych.NO_KEYS,
-  trial_ends_after_audio: true,
+  trial_duration: 2000,
   on_finish: function(data) {
     data.trial_type = "instruc1";
     data.subject_id = subject_id;

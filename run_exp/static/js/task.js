@@ -516,8 +516,8 @@ function  make_learn_phase() {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
 
-	jsPsych.addNodeToEndOfTimeline({timeline: [bye,all_done,pavlovia_finish],}, jsPsych.resumeExperiment);
-
+	// jsPsych.addNodeToEndOfTimeline({timeline: [bye,all_done,pavlovia_finish],}, jsPsych.resumeExperiment);
+  jsPsych.addNodeToEndOfTimeline({timeline: [bye,all_done],}, jsPsych.resumeExperiment);
 }
 
 
@@ -528,7 +528,7 @@ timeline.push({
 	fullscreen_mode: true
 });
 
-timeline.push(pavlovia_init);
+// timeline.push(pavlovia_init);
 timeline.push(instruc1);
 timeline.push(move_forward);
 timeline.push(instruc2);

@@ -116,8 +116,8 @@ jsPsych.plugins["do_trial"] = (function () {
       }
 
     } else {
-      jsPsych.pluginAPI.setTimeout(function(){
-        trial.miscell[10].show();trial.miscell[0].show();trial.miscell[1].show();}, 1000);
+      // jsPsych.pluginAPI.setTimeout(function(){
+      //   trial.miscell[10].show();trial.miscell[0].show();trial.miscell[1].show();}, 1000);
 
       // set timer for showing probe (2 sec)
       jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, 3000);
