@@ -86,15 +86,15 @@ var instruc2 = {
     data.prompt = different_places;}
 }
 
-var instruc3 = {
-  type: 'html-keyboard-response',
-  stimulus: goal_of_game_1,
-  choices: jsPsych.NO_KEYS,
-  trial_duration: 2000,
-  on_finish: function(data) {
-    data.trial_type = "instruc3";
-    data.prompt = goal_of_game_1;}
-}
+// var instruc3 = {
+//   type: 'html-keyboard-response',
+//   stimulus: goal_of_game_1,
+//   choices: jsPsych.NO_KEYS,
+//   trial_duration: 2000,
+//   on_finish: function(data) {
+//     data.trial_type = "instruc3";
+//     data.prompt = goal_of_game_1;}
+// }
 
 var instruc4 = {
   type: 'html-keyboard-response',
@@ -202,7 +202,7 @@ var instruc8 = {
     } else {
       jsPsych.addNodeToEndOfTimeline({timeline: [choice_loss_black],}, jsPsych.resumeExperiment);
     }
-    jsPsych.addNodeToEndOfTimeline({timeline: [instruc9,move_forward,instruc10,move_forward,instruc11,move_forward,instruc12,move_forward,instruc13,move_forward,
+    jsPsych.addNodeToEndOfTimeline({timeline: [instruc9,move_forward,instruc11,move_forward,instruc12,move_forward,instruc13,move_forward,
       welcome_prac,prac_choice_trial,],}, jsPsych.resumeExperiment);
   }
 }
@@ -235,15 +235,15 @@ var instruc9 = {
     data.prompt = time_out}
 }
 
-var instruc10 = {
-  type: 'html-keyboard-response',
-  stimulus:probe,
-  choices: jsPsych.NO_KEYS,
-  trial_duration: 2000,
-  on_finish: function(data) {
-    data.trial_type = "instruc10";
-    data.prompt = probe}
-}
+// var instruc10 = {
+//   type: 'html-keyboard-response',
+//   stimulus:probe,
+//   choices: jsPsych.NO_KEYS,
+//   trial_duration: 2000,
+//   on_finish: function(data) {
+//     data.trial_type = "instruc10";
+//     data.prompt = probe}
+// }
 
 var instruc11 = {
   type: 'html-keyboard-response',
