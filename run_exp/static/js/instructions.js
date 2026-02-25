@@ -277,16 +277,15 @@ var instruc13 = {
 
 var prac_best_pirate = {
   type: 'html-keyboard-response',
-  stimulus:"<div class='center'><p><img src='run_exp/static/images/tutorial/prac_best_pirate.png'  height='500'></p></div>",
+  stimulus:"<div class='center'><p><img src='run_exp/static/images/tutorial/prac_best_pirate.png' height='500'></p></div>",
   choices: ['1','2','3'],
   on_finish: function(data) {
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
-    let key_pressed =response_key_dict[last_trial_data.key_press];
-    console.log(key_pressed)
+    let key_pressed = response_key_dict[last_trial_data.key_press];
     if (key_pressed == '1') {
-        jsPsych.addNodeToEndOfTimeline({timeline: [corr_best_pirate,prac_source_mem],}, jsPsych.resumeExperiment);
+        jsPsych.addNodeToEndOfTimeline({timeline: [corr_best_pirate, quiz_beginning, first_q]}, jsPsych.resumeExperiment);
     } else {
-        jsPsych.addNodeToEndOfTimeline({timeline: [incorr_best_pirate,prac_source_mem],}, jsPsych.resumeExperiment);
+        jsPsych.addNodeToEndOfTimeline({timeline: [incorr_best_pirate, quiz_beginning, first_q]}, jsPsych.resumeExperiment);
     }
   }
 }
@@ -300,33 +299,6 @@ var corr_best_pirate = {
 var incorr_best_pirate = {
   type: 'html-keyboard-response',
   stimulus:"<div class='center'><p>That's incorrect! Red beard was the best.</p><p><b>[Press the space bar to continue]</b></p></div>",
-  choices: ['space'],
-}
-
-var prac_source_mem = {
-  type: 'html-keyboard-response',
-  stimulus:"<div class='center'><p><img src='run_exp/static/images/tutorial/prac_source.png'  height='500'></p></div>",
-  choices: ['1','2'],
-  on_finish: function(data) {
-    let last_trial_data = jsPsych.data.get().last(1).values()[0];
-    let key_pressed =response_key_dict[last_trial_data.key_press];
-    if (key_pressed == '2') {
-        jsPsych.addNodeToEndOfTimeline({timeline: [corr_source_mem,quiz_beginning, first_q],}, jsPsych.resumeExperiment);
-    } else {
-        jsPsych.addNodeToEndOfTimeline({timeline: [incorr_source_mem,quiz_beginning,first_q],}, jsPsych.resumeExperiment);
-    }
-  }
-}
-
-var corr_source_mem = {
-  type: 'html-keyboard-response',
-  stimulus:"<div class='center'><p>That's correct! You saw this ship on the cavern island.</p><p><b>[Press the space bar to continue]</b></p></div>",
-  choices: ['space'],
-}
-
-var incorr_source_mem = {
-  type: 'html-keyboard-response',
-  stimulus:"<div class='center'><p>That's incorrect! You saw this ship on the cavern island</p><p><b>[Press the space bar to continue]</b></p></div>",
   choices: ['space'],
 }
 
