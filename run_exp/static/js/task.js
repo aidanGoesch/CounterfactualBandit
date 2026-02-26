@@ -148,6 +148,17 @@ for (let i = 0; i < 25; i++) {
   invalid_probe_images.push(invalid_probe_images_true[invalid_probe_images_ind[i]])
 }
 
+let bestArray = [makeObject('run_exp/static/images/pick_best/best_question.png','best_question'),
+makeObject('run_exp/static/images/pick_best/second_best_question.png','second_best_question'),
+makeObject('run_exp/static/images/pick_best/red_best.png','red_best'),
+makeObject('run_exp/static/images/pick_best/white_best.png','white_best'),
+makeObject('run_exp/static/images/pick_best/black_best.png','black_best'),
+makeObject('run_exp/static/images/pick_best/red_second_best.png','red_second_best'),
+makeObject('run_exp/static/images/pick_best/white_second_best.png','white_second_best'),
+makeObject('run_exp/static/images/pick_best/black_second_best.png','black_second_best')]
+
+bestArray.forEach(item => item.hide())
+
 // hide the array of images
 console.log(valid_probe_images)
 valid_probe_images.forEach(image => image.hide())
@@ -444,9 +455,111 @@ var choice_trial = {
     data.pR_white = probabilities[2].shift();
     data.pR_black = probabilities[3].shift();
     data.outcome = choice_outcomes[key_pressed-1];
-
+	data.phase = 'learn';
   }
 }
+
+var test_phase_welcome = {
+  type: 'html-keyboard-response',
+  stimulus: '<div class="center"><p>We are now going to sail past the islands again.</p><p>Press <b>space</b> to continue.</p></div>',
+  choices: ['space']
+};
+
+// A single "gate" trial that, when reached, schedules the test phase TODO: change instructions here
+var start_test_phase = {
+  type: 'html-keyboard-response',
+  stimulus: '<div class="center"><p>The learning phase is now complete.</p><p>Press <b>space</b> to continue to the test phase.</p></div>',
+  choices: ['space'],
+  on_finish: function() {
+    make_test_phase();
+  }
+};
+
+var test_choice_trial = {
+  type: 'do_trial',
+  choices: ['1','2','3'],
+  prompt: '<p>which pirate do you want to rob the next ship?</p>',
+  trial_duration: 3000,
+  pirates: pirateArray,
+  rewards: rewardArray,
+  miscell: null,
+  probes: valid_probe_images,
+  on_start: function(trial) {
+    miscellArray[0] = valid_probe_images[current_trial];
+    miscellArray[5] = contextArray[6]; // blank context for test phase
+
+    let potential_outcomes = [];
+    for (let i = 1; i < 4; i++) {
+      var outcome = Sampling.Bernoulli(0.33).draw();
+      potential_outcomes.push(outcome);
+    }
+
+    trial.choice_outcomes = potential_outcomes;
+    trial.miscell = miscellArray;
+    trial.data = { choice_outcomes: potential_outcomes };
+  },
+  on_finish: function(data) {
+    if (data.response == null) {
+      availableForMemProbe = availableForMemProbe.filter((ar) => ar != current_trial);
+    }
+
+    let last_trial_data = jsPsych.data.get().last(1).values()[0];
+    let choice_outcomes = last_trial_data.choice_outcomes;
+    let key_pressed = response_key_dict[data.response];
+
+    data.context_n = current_test_context;
+    data.context_img_id = contextArray[current_test_context].id;
+    data.trial_n = current_trial;
+    data.probe_img_id = valid_probe_images[current_trial].id;
+    data.phase = 'judgement';
+
+    current_trial += 1;
+    data.outcome = choice_outcomes[key_pressed - 1];
+  }
+};
+
+// for picking the best pirate after the judgement phase
+var pick_best_trial = {
+	type: 'do_pick_best_pirate',
+	choices: ['1','2','3'],
+	pirates: pirateArray,
+	context: contextArray[0],
+	best_array: bestArray,
+	miscell: miscellArray,
+	on_start: function(pick_best_trial) {
+		pick_best_trial.context = contextArray[pick_ind];
+	},
+	on_finish: function(data) {
+		data.context_n = pick_ind;
+		data.context_im = contextArray[pick_ind].id;
+	}
+};
+
+var pick_secondBest_trial = {
+	type: 'do_pick_secondBest_pirate',
+	choices: ['1','2','3'],
+	pirates: pirateArray,
+	context: contextArray[0],
+	best_array: bestArray,
+	miscell: miscellArray,
+	on_start: function(pick_secondBest_trial) {
+		pick_secondBest_trial.context = contextArray[pick_ind];
+	},
+	on_finish: function(data) {
+		data.context_n = pick_ind;
+		data.context_im = contextArray[pick_ind].id;
+		pick_ind += 1; // only after second best do we move on to the next context
+	}
+}
+
+var start_rank_phase = {
+  type: 'html-keyboard-response',
+  stimulus: "<div style='position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; display: flex; align-items: center; justify-content: center;'><div><h2>We've made it to Pirate HQ!</h2><p>Press <b>space</b> to proceed.</p></div></div>",
+  choices: ['space'],
+  on_finish: function() {
+    make_rank_pirate();
+  }
+};
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -469,6 +582,58 @@ var attention_check = {
   }
 };
 
+
+// basically same thing but for judgement phase 
+var judgement_attention_failures = 0;
+var pick_ind = 0;
+
+function make_judgement_attention_check(island_index) {
+  var keypress_slide = {
+    type: 'html-keyboard-response',
+    stimulus: "<div class='center'><p>Press <b>Z</b> to use the telescope to see what island is coming next!</p></div>",
+    choices: ['z'],
+    trial_duration: 5000,
+    on_finish: function(data) {
+      data.trial_type = 'judgement_attention_check';
+      data.island_num = island_index;
+      data.passed = (data.key_press === 90);
+      if (!data.passed) {
+        judgement_attention_failures += 1;
+      }
+      if (judgement_attention_failures >= 3) {
+        jsPsych.endExperiment('You have been excluded from the study. Thank you for your time.');
+      }
+    }
+  };
+
+  var image_slide = {
+    type: 'do_welcome',
+    stimuli: miscellArray,
+    trial_duration: 5000,
+    on_start: function(trial) {
+      miscellArray[5] = contextArray[island_index];
+      trial.stimuli = miscellArray;
+      trial.text = welcomeArray[island_index];
+      trial.island_num = islandTrackerArray[island_index];
+    }
+  };
+
+  return [keypress_slide, image_slide];
+}
+
+function make_increment_context() {
+  return {
+    type: 'html-keyboard-response',
+    stimulus: '',
+    choices: jsPsych.NO_KEYS,
+    trial_duration: 0,
+    on_finish: function() {
+      current_test_context += 1;
+    }
+  };
+}
+
+// Learn phase
 
 function  make_learn_phase() {
 	console.log('learn phase')
@@ -535,8 +700,62 @@ function  make_learn_phase() {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
 
-	// jsPsych.addNodeToEndOfTimeline({timeline: [bye,all_done,pavlovia_finish],}, jsPsych.resumeExperiment);
-  jsPsych.addNodeToEndOfTimeline({timeline: [attention_check,bye,all_done],}, jsPsych.resumeExperiment);
+  jsPsych.addNodeToEndOfTimeline({timeline: [bye,start_test_phase],}, jsPsych.resumeExperiment);
+}
+
+
+function make_rank_pirate() {
+  for (let i = 0; i < 6; i++) {
+    jsPsych.addNodeToEndOfTimeline(
+      { timeline: [pick_best_trial, pick_secondBest_trial] },
+      jsPsych.resumeExperiment
+    );
+  }
+  make_end();
+}
+
+function make_end() {
+    // jsPsych.addNodeToEndOfTimeline({timeline: [all_done,pavlovia_finish],}, jsPsych.resumeExperiment);
+    jsPsych.addNodeToEndOfTimeline({timeline: [all_done],}, jsPsych.resumeExperiment);
+
+}
+
+var num_contexts = 6;
+var judgement_trial_block_size = 10;
+var current_test_context = 0;
+
+function make_test_phase() {
+  jsPsych.addNodeToEndOfTimeline(
+    { timeline: [test_phase_welcome] },
+    jsPsych.resumeExperiment
+  );
+
+  for (let i = 0; i < num_contexts; i++) {
+    jsPsych.addNodeToEndOfTimeline(
+      { timeline: make_judgement_attention_check(i) },
+      jsPsych.resumeExperiment
+    );
+
+    for (let j = 0; j < judgement_trial_block_size; j++) {
+      jsPsych.addNodeToEndOfTimeline(
+        { timeline: [test_choice_trial, intertrial] },
+        jsPsych.resumeExperiment
+      );
+    }
+
+    if (i < num_contexts - 1) {
+      jsPsych.addNodeToEndOfTimeline(
+        { timeline: [make_increment_context()] },
+        jsPsych.resumeExperiment
+      );
+    }
+  }
+
+  // launch rank phase after all islands complete
+  jsPsych.addNodeToEndOfTimeline(
+    { timeline: [start_rank_phase] },
+    jsPsych.resumeExperiment
+  );
 }
 
 
@@ -579,6 +798,20 @@ timeline.push(blue_win);
 timeline.push(instruc6);
 timeline.push(move_forward);
 timeline.push(instruc7);
+
+
+// for testing purposes, can just launch the test phase right away - comment out instruc 7 tho
+// var launch_test = {
+//   type: 'html-keyboard-response',
+//   stimulus: '',
+//   choices: jsPsych.NO_KEYS,
+//   trial_duration: 0,
+//   on_finish: function() {
+//     make_learn_phase();
+//   }
+// };
+
+// timeline.push(launch_test);
 
 
 
