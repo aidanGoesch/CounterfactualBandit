@@ -1,6 +1,6 @@
 console.log('hi')
 
-var space_bar = "<p><b>[Press the space bar to continue]</b></p></div>";
+var space_bar = "<p><b>[Press the space bar to continue]</b></p>";
 
 var welcome_txt = "<div class='center'><p>Welcome! This study will last ~30 minutes. In part 1 and part 2 of the study, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games throughout these two parts. Here is an overview of them:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>";
 
@@ -68,11 +68,13 @@ var instruc1 = {
 
 var move_forward = {
   type: 'html-keyboard-response',
-  stimulus:welcome_txt,
+  stimulus: welcome_txt,
   choices: ['space'],
   on_start: function(move_forward) {
     var last_trial = jsPsych.data.get().last(1).values()[0];
-    move_forward.stimulus = last_trial.prompt.slice(0,-6).concat(space_bar);
+    // Strip closing </div>, append spacebar text, re-close
+    var base = last_trial.prompt.replace(/<\/div>\s*$/, '');
+    move_forward.stimulus = base + space_bar + '</div>';
   },
 }
 
@@ -461,7 +463,7 @@ var fourth_q = {
 
 var all_done = {
   type: 'html-keyboard-response',
-  stimulus:"<div class='center'>You are all done with the first part of the study! Thank you for participating. Tomorrow, you will receive an invitation to participate in the next part of the study which you must complete by the end of the day. See you then!</p> <p><b>[Press the space bar to exit]</b></p></div>",
+  stimulus:"<div class='center'>You are all done with this study! Thank you for participating.</p> <p><b>[Press the space bar to exit]</b></p></div>",
   choices: ['space'],
   on_finish: function(data) {
     console.log(invalidProbeTrials)

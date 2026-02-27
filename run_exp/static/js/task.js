@@ -109,29 +109,6 @@ makeObject('run_exp/static/images/rewards/money_bag.png','money_bag')] // money 
 rewardArray.forEach(reward => reward.hide())
 
 
-// make array of probe images
-let valid_probe_images_true = [];
-let invalid_probe_images_true = [];
-let prac_probe_images = [];
-
-for (let i = 1; i < 10; i++) {
-  valid_probe_images_true.push(makeObject('run_exp/static/images/probes/probes-0'+i+'.png','probe-0'+i))
-}
-
-for (let i = 10; i < 231; i++) {
-  valid_probe_images_true.push(makeObject('run_exp/static/images/probes/probes-'+i+'.png','probe-'+i))
-}
-
-
-for (let i = 231; i < 256; i++) {
-  invalid_probe_images_true.push(makeObject('run_exp/static/images/probes/probes-'+i+'.png','probe-'+i))
-}
-
-for (let i = 256; i < 266; i++) {
-  prac_probe_images.push(makeObject('run_exp/static/images/probes/probes-'+i+'.png','probe-'+i))
-}
-
-
 // randomize the array of images
 let valid_probe_images_ind = randomize([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229]); // decision_ttrial --> proobe
 let invalid_probe_images_ind = randomize([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15,16,17,18,19,20,21,22,23,24]);
@@ -139,14 +116,6 @@ let invalid_probe_images_ind = randomize([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
 let valid_probe_images = [];
 let invalid_probe_images = [];
 
-
-for (let i = 0; i < 230; i++) {
-  valid_probe_images.push(valid_probe_images_true[valid_probe_images_ind[i]])
-}
-
-for (let i = 0; i < 25; i++) {
-  invalid_probe_images.push(invalid_probe_images_true[invalid_probe_images_ind[i]])
-}
 
 let bestArray = [makeObject('run_exp/static/images/pick_best/best_question.png','best_question'),
 makeObject('run_exp/static/images/pick_best/second_best_question.png','second_best_question'),
@@ -163,7 +132,6 @@ bestArray.forEach(item => item.hide())
 console.log(valid_probe_images)
 valid_probe_images.forEach(image => image.hide())
 invalid_probe_images.forEach(image => image.hide())
-prac_probe_images.forEach(image => image.hide())
 
 
 // intialize array for saving context image # on each learn phase (contexts 1-6)
@@ -329,10 +297,7 @@ var prac_choice_trial = {
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
-  probes: prac_probe_images,
   on_start: function(choice_trial) {
-    miscellArray[0] = prac_probe_images[current_prac_trial];
-
 		let potential_outcomes = [];
     for (let i = 1; i < 4; i++) {
       var outcome = Sampling.Bernoulli(prac_prob[i][current_prac_trial]).draw()
@@ -371,12 +336,9 @@ var prac_choice_trial_2 = {
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
-  probes: prac_probe_images,
 	after_blank: true,
   on_start: function(choice_trial) {
-    miscellArray[0] = prac_probe_images[current_prac_trial];
-
-		let potential_outcomes = [];
+	let potential_outcomes = [];
     for (let i = 1; i < 4; i++) {
       var outcome = Sampling.Bernoulli(prac_prob[i][current_prac_trial]).draw()
       potential_outcomes.push(outcome)
@@ -771,8 +733,6 @@ timeline.push(instruc1);
 timeline.push(move_forward);
 timeline.push(instruc2);
 timeline.push(move_forward);
-// timeline.push(instruc3);
-// timeline.push(move_forward);
 timeline.push(instruc4);
 timeline.push(move_forward);
 timeline.push(instruc5);
@@ -807,13 +767,11 @@ timeline.push(instruc7);
 //   choices: jsPsych.NO_KEYS,
 //   trial_duration: 0,
 //   on_finish: function() {
-//     make_learn_phase();
+//     make_test_phase();
 //   }
 // };
 
 // timeline.push(launch_test);
-
-
 
 jsPsych.init({
   timeline: timeline,
@@ -867,8 +825,10 @@ jsPsych.init({
 		jsPsych.data.get().addToLast({fullscreenenter_events: fullscreenenter_events.csv()});
 		jsPsych.data.get().addToLast({fullscreenexit_events: fullscreenexit_events.csv()});
 
-    document.body.innerHTML = '<p> <center>Thank you for participating in the first part of the study! Please wait while your data saves. After 10 seconds, you will be redirected to Spark. </center> </p>';
-      setTimeout(function () {var end_link = "https://spark.hartleylab.org/completed/".concat(subject_id); window.location = end_link;}, 10000)
+    document.body.innerHTML = '<p><center>Thank you for participating in this study! Please wait while your data saves. You will see a smiley face when it is safe to close this tab.</center></p>';
+	setTimeout(function () {
+		document.body.innerHTML = '<p><center style="font-size:80px">😊</center><p><center>Your data has been saved! You may now close this tab.</center></p>';
+	}, 10000);
 
 }
 })
