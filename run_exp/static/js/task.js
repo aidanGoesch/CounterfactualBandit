@@ -491,15 +491,13 @@ var attention_check_failures = 0;
 
 var attention_check = {
   type: 'html-keyboard-response',
-  stimulus: "<div class='center'><p>Before we set sail — press the <b>Z</b> key to continue!</p></div>",
+  stimulus: "<div style='position:relative; margin-top: 600px;'><p>Before we set sail — press the <b>Z</b> key to continue!</p></div>",
   choices: jsPsych.ALL_KEYS,
-  trial_duration: 5000, // give them 5 seconds, auto-fails if no response
+  trial_duration: 5000,
   on_finish: function(data) {
     data.trial_type = 'attention_check';
-    data.passed = (data.key_press === 90); // 90 = 'z'
-    if (!data.passed) {
-      attention_check_failures += 1;
-    }
+    data.passed = (data.key_press === 90);
+    if (!data.passed) attention_check_failures += 1;
     if (attention_check_failures >= 3) {
       jsPsych.endExperiment('You have been excluded from the study. Thank you for your time.');
     }
@@ -734,7 +732,7 @@ timeline.push(instruc7);
 //   }
 // };
 
-// timeline.push(launch_test);
+timeline.push(launch_test);
 
 jsPsych.init({
   timeline: timeline,
