@@ -17,7 +17,6 @@ var pavlovia_finish = {
 var canvas = $('#canvasdiv');
 
 // get subj id from url
-var urlvar = jsPsych.data.urlVariables()
 var participant_id = jsPsych.data.getURLVariable('participant_ID');
 var subject_id = jsPsych.data.getURLVariable('subject_ID');
 var age = jsPsych.data.getURLVariable('age');
@@ -38,11 +37,6 @@ function makeObject(img_path,id) {
 		.css("right","0") // always string
 		.css("margin-left","auto") // always string
 		.css("margin-right","auto") // always string
-  // add to canvas once loaded
-  //image.onload = function(){
-    //ctx.drawImage(image,canvas.width / 2 - (image.width*0.6) / 2,
-    //canvas.height - (image.height*0.6)/1.0,image.width*0.6, image.height*0.6);
-//  }
 
   window.image = image;
 
@@ -109,14 +103,6 @@ makeObject('run_exp/static/images/rewards/money_bag.png','money_bag')] // money 
 rewardArray.forEach(reward => reward.hide())
 
 
-// randomize the array of images
-let valid_probe_images_ind = randomize([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229]); // decision_ttrial --> proobe
-let invalid_probe_images_ind = randomize([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15,16,17,18,19,20,21,22,23,24]);
-
-let valid_probe_images = [];
-let invalid_probe_images = [];
-
-
 let bestArray = [makeObject('run_exp/static/images/pick_best/best_question.png','best_question'),
 makeObject('run_exp/static/images/pick_best/second_best_question.png','second_best_question'),
 makeObject('run_exp/static/images/pick_best/red_best.png','red_best'),
@@ -127,11 +113,6 @@ makeObject('run_exp/static/images/pick_best/white_second_best.png','white_second
 makeObject('run_exp/static/images/pick_best/black_second_best.png','black_second_best')]
 
 bestArray.forEach(item => item.hide())
-
-// hide the array of images
-console.log(valid_probe_images)
-valid_probe_images.forEach(image => image.hide())
-invalid_probe_images.forEach(image => image.hide())
 
 
 // intialize array for saving context image # on each learn phase (contexts 1-6)
@@ -183,7 +164,10 @@ makeObject('run_exp/static/images/contexts/island_6.png','island_6')];
 
 islandTrackerArray.forEach(item => item.hide())
 
-
+// new vars
+var num_contexts = 6;
+var judgement_trial_block_size = 10;
+var current_test_context = 0;
 
 var probabilities = { 1: payout[0].map(x=>x*0.01),
   2: payout[1].map(x=>x*0.01),
@@ -376,10 +360,7 @@ var choice_trial = {
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
-  probes: valid_probe_images,
   on_start: function(choice_trial) {
-    miscellArray[0] = valid_probe_images[current_trial];
-
     let potential_outcomes = [];
     for (let i = 1; i < 4; i++) {
       var outcome = Sampling.Bernoulli(probabilities[i][0]).draw()
@@ -391,11 +372,6 @@ var choice_trial = {
     choice_trial.data = {choice_outcomes : potential_outcomes};
   },
   on_finish: function (data) {
-    // if no response was made need to remove this trial from available for probeing
-    if (data.response == null) {
-      availableForMemProbe = availableForMemProbe.filter((ar)=> ar != current_trial)
-    }
-
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
     let choice_outcomes = last_trial_data.choice_outcomes;
     let key_pressed =response_key_dict[data.response];
@@ -404,13 +380,6 @@ var choice_trial = {
     contexts[current_trial] = current_context;
     data.context_img_id = contextArray[current_context].id;
     data.trial_n = current_trial;
-		if (contextArray[current_context].id == 'blank') {
-			data.probe_img_id = 'null';
-		} else {
-			data.probe_img_id = valid_probe_images[current_trial].id;
-
-
-		}
     current_trial += 1;
 
     data.pR_red = probabilities[1].shift();
@@ -445,9 +414,7 @@ var test_choice_trial = {
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
-  probes: valid_probe_images,
   on_start: function(trial) {
-    miscellArray[0] = valid_probe_images[current_trial];
     miscellArray[5] = contextArray[6]; // blank context for test phase
 
     let potential_outcomes = [];
@@ -461,10 +428,6 @@ var test_choice_trial = {
     trial.data = { choice_outcomes: potential_outcomes };
   },
   on_finish: function(data) {
-    if (data.response == null) {
-      availableForMemProbe = availableForMemProbe.filter((ar) => ar != current_trial);
-    }
-
     let last_trial_data = jsPsych.data.get().last(1).values()[0];
     let choice_outcomes = last_trial_data.choice_outcomes;
     let key_pressed = response_key_dict[data.response];
@@ -472,7 +435,6 @@ var test_choice_trial = {
     data.context_n = current_test_context;
     data.context_img_id = contextArray[current_test_context].id;
     data.trial_n = current_trial;
-    data.probe_img_id = valid_probe_images[current_trial].id;
     data.phase = 'judgement';
 
     current_trial += 1;
@@ -523,8 +485,8 @@ var start_rank_phase = {
   }
 };
 
-
-////////////////////////////////////////////////////////////////////////////////
+// ---------------------------------------------------------------------------------------------------------------- //
+// Helper functions
 var attention_check_failures = 0;
 
 var attention_check = {
@@ -595,8 +557,7 @@ function make_increment_context() {
   };
 }
 
-// Learn phase
-
+// Learn phase function
 function  make_learn_phase() {
 	console.log('learn phase')
 	timeline.push(choice_trial)
@@ -666,26 +627,7 @@ function  make_learn_phase() {
 }
 
 
-function make_rank_pirate() {
-  for (let i = 0; i < 6; i++) {
-    jsPsych.addNodeToEndOfTimeline(
-      { timeline: [pick_best_trial, pick_secondBest_trial] },
-      jsPsych.resumeExperiment
-    );
-  }
-  make_end();
-}
-
-function make_end() {
-    // jsPsych.addNodeToEndOfTimeline({timeline: [all_done,pavlovia_finish],}, jsPsych.resumeExperiment);
-    jsPsych.addNodeToEndOfTimeline({timeline: [all_done],}, jsPsych.resumeExperiment);
-
-}
-
-var num_contexts = 6;
-var judgement_trial_block_size = 10;
-var current_test_context = 0;
-
+// Test phase function
 function make_test_phase() {
   jsPsych.addNodeToEndOfTimeline(
     { timeline: [test_phase_welcome] },
@@ -721,6 +663,27 @@ function make_test_phase() {
 }
 
 
+// Rank phase function
+function make_rank_pirate() {
+  for (let i = 0; i < 6; i++) {
+    jsPsych.addNodeToEndOfTimeline(
+      { timeline: [pick_best_trial, pick_secondBest_trial] },
+      jsPsych.resumeExperiment
+    );
+  }
+  make_end();
+}
+
+
+function make_end() {
+    // jsPsych.addNodeToEndOfTimeline({timeline: [all_done,pavlovia_finish],}, jsPsych.resumeExperiment);
+    jsPsych.addNodeToEndOfTimeline({timeline: [all_done],}, jsPsych.resumeExperiment);
+
+}
+
+
+// ---------------------------------------------------------------------------------------------------------------- //
+// Build timeline
 var timeline = []
 
 timeline.push({
@@ -767,7 +730,7 @@ timeline.push(instruc7);
 //   choices: jsPsych.NO_KEYS,
 //   trial_duration: 0,
 //   on_finish: function() {
-//     make_test_phase();
+//     make_learn_phase();
 //   }
 // };
 
