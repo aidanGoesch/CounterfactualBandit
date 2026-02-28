@@ -2,9 +2,9 @@ console.log('hi')
 
 var space_bar = "<p><b>[Press the space bar to continue]</b></p>";
 
-var welcome_txt = "<div class='center'><p>Welcome! This study will last ~30 minutes. In part 1 and part 2 of the study, you are the head captain of a pirate ship traveling around the world to different islands. You will play a few different games throughout these two parts. Here is an overview of them:</p><br><p>Part 1 (today)</p><p>1. Instructions, practice game, and quiz</p><p>2. Pick a pirate game on 6 different islands</p><br><p>";
+var welcome_txt = "<div class='center'><p>Welcome! This study will last ~30 minutes. After the instructions there will be a practice game and quiz to make sure you understand the task. Today you will be the head captain of a pirate ship traveling around the world to different islands. Here is an overview of what you will be doing:</p><br><p> 1. Try to find the most successful pirate on 6 different islands</p><p> 2. Recall which pirates did the best on each island</p><br><p>";
 
-var different_places = "<div class='center'><p>Today, you'll visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='run_exp/static/images/contexts/all_contexts.png' height='500'></p></div>";
+var different_places = "<div class='center'><p>You are going to visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='run_exp/static/images/contexts/all_contexts.png' height='500'></p></div>";
 
 var goal_of_game_1 = "<div class='center'><p> The pirates on your ship will rob other ships as they leave the island.</p> These ships have just sold their goods to the islanders, so they will be filled with lots and lots of gold.</p><p><img src='run_exp/static/images/tutorial/ship_center.png' height='400'></p></div>";
 
@@ -38,7 +38,7 @@ var changepoint = "<div class='center'><p>How successful a pirate is at robbing 
 
 var drift = "<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='run_exp/static/images/tutorial/contingency.png' height='500'></p></div>";
 
-var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><b><p> Pick the pirate who is the best at robbing ships on the current island. </p></b><b><p> The amount of bonus money you can win depends on both.</p><p><br><p>Let's try a practice game. The game will start by showing you the pirates. First, pick a pirate using the <b> 1, 2, 3 </b> keys on your keyboard.</p><p>This is just a practice game, so you're not playing for money. </p><p> Good luck! This game will be very difficult but try your best!</p></div>";
+var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><b><p> Pick the pirate who is the best at robbing ships on the current island. </p></b><b><p> The amount of bonus money you win depends on it.</p><p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b> 1, 2, 3 </b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money. </p><p> Good luck! This game will be very difficult but try your best!</p></div>";
 
 var quiz_intro = "<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>";
 

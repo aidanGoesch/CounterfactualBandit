@@ -732,7 +732,7 @@ timeline.push(instruc7);
 //   }
 // };
 
-timeline.push(launch_test);
+// timeline.push(launch_test);
 
 jsPsych.init({
   timeline: timeline,
