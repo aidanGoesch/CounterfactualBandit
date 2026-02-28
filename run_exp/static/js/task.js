@@ -392,14 +392,14 @@ var choice_trial = {
 
 var test_phase_welcome = {
   type: 'html-keyboard-response',
-  stimulus: '<div class="center"><p>We are now going to sail past the islands again.</p><p>Press <b>space</b> to continue.</p></div>',
+  stimulus: '<div class="center"><p>We have to sail past the islands again to get back to pirate HQ.</p><p>Press <b>space</b> to continue.</p></div>',
   choices: ['space']
 };
 
 // A single "gate" trial that, when reached, schedules the test phase TODO: change instructions here
 var start_test_phase = {
   type: 'html-keyboard-response',
-  stimulus: '<div class="center"><p>The learning phase is now complete.</p><p>Press <b>space</b> to continue to the test phase.</p></div>',
+  stimulus: '<div class="center"><p>Nice job plundering!</p><p>Press <b>space</b> to head back to pirate HQ.</p></div>',
   choices: ['space'],
   on_finish: function() {
     make_test_phase();
@@ -728,7 +728,7 @@ timeline.push(instruc7);
 //   choices: jsPsych.NO_KEYS,
 //   trial_duration: 0,
 //   on_finish: function() {
-//     make_learn_phase();
+//     make_test_phase();
 //   }
 // };
 

@@ -468,13 +468,9 @@ var all_done = {
   on_finish: function(data) {
     console.log(invalidProbeTrials)
     data.contextArray_ind = contextArray_ind;
-    data.validImageProbes = valid_probe_images_ind;
-    data.invalidImageProbes = invalid_probe_images_ind;
     data.pRew_Red = pRew_Red;
     data.pRew_White = pRew_White;
     data.pRew_Black = pRew_Black;
-    data.availableForMemProbe = availableForMemProbe;
-    data.choice_blocks = choice_blocks;
   }
 }
 
