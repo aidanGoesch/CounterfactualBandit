@@ -129,20 +129,27 @@ if (data_save_method == 'csv_client') {
   var all_trials = jsPsych.data.get().values();
 
   // Filter out trials where ignore is true
-  var filtered_trials = all_trials.filter(trial => trial.ignore !== true);
-
+  // var filtered_trials = all_trials
+  //
   // Convert manually to CSV
-  function arrayToCSV(data) {
-    if (data.length === 0) return '';
-    const keys = Object.keys(data[0]);
-    const csvRows = [
-      keys.join(','), // header row
-      ...data.map(row => keys.map(k => JSON.stringify(row[k] ?? '')).join(',')) // rows
-    ];
-    return csvRows.join('\n');
-  }
+  // function arrayToCSV(data) {
+  //   if (data.length === 0) return '';
 
-  var clean_csv = arrayToCSV(filtered_trials);
+  //   // Get all unique keys across all rows
+  //   const keys = [...new Set(data.flatMap(row => Object.keys(row)))];
+
+  //   const csvRows = [
+  //     keys.join(','), // header row
+  //     ...data.map(row =>
+  //       keys.map(k => JSON.stringify(row[k] ?? '')).join(',')
+  //     )
+  //   ];
+
+  //   return csvRows.join('\n');
+  // }
+  // var clean_csv = arrayToCSV(filtered_trials);
+
+  clean_csv = jsPsych.data.get().csv()
   $.ajax({
     type: 'POST',
     url: "../save_data_file",
