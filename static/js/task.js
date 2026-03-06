@@ -705,7 +705,7 @@ timeline.push({
 	type: 'fullscreen',
 	fullscreen_mode: true
 });
-
+timeline.push(get_id);
 if (!DEBUG) {
   timeline.push(instruc1);
   timeline.push(move_forward);
