@@ -701,6 +701,7 @@ timeline.push({
 });
 
 // timeline.push(pavlovia_init);
+timeline.push(get_id);
 timeline.push(instruc1);
 timeline.push(move_forward);
 timeline.push(instruc2);
