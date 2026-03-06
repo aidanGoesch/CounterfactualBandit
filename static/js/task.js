@@ -1,26 +1,31 @@
 'use strict';
-
+var debug_mode = 0;
+var data_save_method = 'csv_server_py';
 ////////// PAVLOVIA ////////////
-var pavlovia_init = {
-	type: "pavlovia",
-	command: "init"
-};
+// var pavlovia_init = {
+// 	type: "pavlovia",
+// 	command: "init"
+// };
 
-var pavlovia_finish = {
-	type: "pavlovia",
-	command: "finish"
-	};
+// var pavlovia_finish = {
+// 	type: "pavlovia",
+// 	command: "finish"
+// 	};
 ///////////////////////////////
 
 
 // Initialize canvas
 var canvas = $('#canvasdiv');
 
-// get subj id from url
-var participant_id = jsPsych.data.getURLVariable('participant_ID');
-var subject_id = jsPsych.data.getURLVariable('subject_ID');
-var age = jsPsych.data.getURLVariable('age');
-var gender = jsPsych.data.getURLVariable('gender');
+// // get subj id from url
+// var participant_id = jsPsych.data.getURLVariable('participant_ID');
+// var subject_id = jsPsych.data.getURLVariable('subject_ID');
+// var age = jsPsych.data.getURLVariable('age');
+// var gender = jsPsych.data.getURLVariable('gender');
+var subject_id = jsPsych.randomization.randomID(8);
+
+var psiturk = new PsiTurk(uniqueId, adServerLoc, mode);
+var condition = psiturk.taskdata.get('condition') + 1; // they do zero-indexing
 
 
 function makeObject(img_path,id) {
@@ -239,6 +244,7 @@ var welcome = {
 		welcome.stimuli = miscellArray;
 		welcome.text = welcomeArray[current_context];
 		welcome.island_num = islandTrackerArray[current_context];
+    save_data()
 	}
 }
 
@@ -807,41 +813,3 @@ jsPsych.init({
 })
 
 
- var save_data = function(final) {
-  // exclude unwanted keys/columns
-  var exclude_keys = ['internal_node_id', 'trial_index','rt','stimulus','time_elapsed','responses'];
-  var clean_data = jsPsych.data.get()
-    .ignore(exclude_keys)
-    .filter(trial => trial.ignore !== true)
-    .ignore(['ignore']);
-  var callback = function() {
-    // Only save data without completing the HIT during the task
-    psiturk.saveData({
-      success: function(){
-        console.log("Data saved during the task.");
-      },
-      error: prompt_resubmit
-    });
-    
-    // If final is true, we complete the HIT after task finishes
-    if (final) {
-      psiturk.completeHIT();  // Complete the HIT when task is done
-    }
-  };
-
-  // Call the callback to save the data during the task
-  callback();
-/* Save participant data file */
-
-// Set participant data file name
-if (debug_mode) {
-  var data_file_name = "dev_test.csv";
-
-} else {
-  if (save_final_deter=='final'){
-    var data_file_name =  'final_S_' + useridtouse + '.csv';
-  }else{
-    randomidentifier = generateRandomIdentifier();
-    var data_file_name =  'S_' + useridtouse +'_'+randomidentifier+ '.csv';
-  }
-}}
