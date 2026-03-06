@@ -44,11 +44,6 @@ var mean_ct = 5;
 var max_ct = 8;
 var min_ct = 2;
 
-// attention check variables
-var attention_check_failures = 0;
-var judgement_attention_failures = 0;
-var pick_ind = 0;
-
 var log_rand = Array.apply(null, {length: num_probes}).map(x=>Math.random()).map(Math.log);
 var log_rand_div_mean_ct = log_rand.map(function(x) {return x/(1/mean_ct)});
 var choice_blocks = log_rand_div_mean_ct.map(Math.ceil).map(function(x){return (x*-1) + min_ct});
