@@ -973,3 +973,5 @@ Traceback (most recent call last):
   File "/Users/psiturk/Library/Python/3.7/lib/python/site-packages/psiturk/experiment.py", line 77, in <module>
     from custom import custom_code
 ModuleNotFoundError: No module named 'custom'
+[2026-03-06 14:39:48 -0800] [46553] [CRITICAL] WORKER TIMEOUT (pid:46564)
+[2026-03-06 14:44:25 -0800] [46674] [CRITICAL] WORKER TIMEOUT (pid:46684)
