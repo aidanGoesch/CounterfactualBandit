@@ -126,7 +126,7 @@ if (data_save_method == 'csv_client') {
   saveData(data_file_name, clean_data.csv())
   // Save participant data file on a server side directory via Python (only works with psiTurk)
 }  else if(data_save_method == 'csv_server_py') {
-  var all_trials = jsPsych.data.get().ignore(exclude_keys).values();
+  var all_trials = jsPsych.data.get().values();
 
   // Filter out trials where ignore is true
   var filtered_trials = all_trials.filter(trial => trial.ignore !== true);
