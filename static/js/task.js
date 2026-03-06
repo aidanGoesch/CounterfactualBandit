@@ -758,50 +758,8 @@ jsPsych.init({
 	preload_audio: all_audio,
 	use_webaudio: false,
 	max_load_time: 600000,
-	on_trial_start: function(data) {
-		var interaction_data = jsPsych.data.getInteractionData();
-		var blur_events = interaction_data.filter({event: 'blur'});
-		var focus_events = interaction_data.filter({event: 'focus'});
-		var fullscreenenter_events = interaction_data.filter({event: 'fullscreenenter'});
-		var fullscreenexit_events = interaction_data.filter({event: 'fullscreenexit'});
-		jsPsych.data.get().addToLast({interactions: interaction_data.csv()});
-		jsPsych.data.get().addToLast({blur_events: blur_events.csv()});
-		jsPsych.data.get().addToLast({focus_events: focus_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenenter_events: fullscreenenter_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenexit_events: fullscreenexit_events.csv()});},
-	on_interaction_data_update: function (data) {
-		var interaction_data = jsPsych.data.getInteractionData();
-		var blur_events = interaction_data.filter({event: 'blur'});
-		var focus_events = interaction_data.filter({event: 'focus'});
-		var fullscreenenter_events = interaction_data.filter({event: 'fullscreenenter'});
-		var fullscreenexit_events = interaction_data.filter({event: 'fullscreenexit'});
-		jsPsych.data.get().addToLast({interactions: interaction_data.csv()});
-		jsPsych.data.get().addToLast({blur_events: blur_events.csv()});
-		jsPsych.data.get().addToLast({focus_events: focus_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenenter_events: fullscreenenter_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenexit_events: fullscreenexit_events.csv()});},
-	on_close: function (data) {
-		var interaction_data = jsPsych.data.getInteractionData();
-		var blur_events = interaction_data.filter({event: 'blur'});
-		var focus_events = interaction_data.filter({event: 'focus'});
-		var fullscreenenter_events = interaction_data.filter({event: 'fullscreenenter'});
-		var fullscreenexit_events = interaction_data.filter({event: 'fullscreenexit'});
-		jsPsych.data.get().addToLast({interactions: interaction_data.csv()});
-		jsPsych.data.get().addToLast({blur_events: blur_events.csv()});
-		jsPsych.data.get().addToLast({focus_events: focus_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenenter_events: fullscreenenter_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenexit_events: fullscreenexit_events.csv()});},
   on_finish: function() {
-		var interaction_data = jsPsych.data.getInteractionData();
-		var blur_events = interaction_data.filter({event: 'blur'});
-		var focus_events = interaction_data.filter({event: 'focus'});
-		var fullscreenenter_events = interaction_data.filter({event: 'fullscreenenter'});
-		var fullscreenexit_events = interaction_data.filter({event: 'fullscreenexit'});
-		jsPsych.data.get().addToLast({interactions: interaction_data.csv()});
-		jsPsych.data.get().addToLast({blur_events: blur_events.csv()});
-		jsPsych.data.get().addToLast({focus_events: focus_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenenter_events: fullscreenenter_events.csv()});
-		jsPsych.data.get().addToLast({fullscreenexit_events: fullscreenexit_events.csv()});
+    save_final_deter = 'final';
     psiturk.recordUnstructuredData("subject_id", subject_id);
     save_data(true)
     document.body.innerHTML = '<p><center>Thank you for participating in this study! Please wait while your data saves. You will see a smiley face when it is safe to close this tab.</center></p>';
