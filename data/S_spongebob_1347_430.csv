@@ -1,0 +1,8 @@
+success,trial_type,interactions,blur_events,focus_events,fullscreenenter_events,fullscreenexit_events
+true,fullscreen,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n,\r\n,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n
+,survey-html-form,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n,\r\n,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n
+,html-keyboard-response,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n,\r\n,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n
+,audio-keyboard-response,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n,\r\n,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n
+,html-keyboard-response,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n,\r\n,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n
+,audio-keyboard-response,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n,\r\n,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n
+,instruc9,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n\blur\,\7\,\12386\\r\n,\event\,\trial\,\time\\r\n\blur\,\7\,\12386\\r\n,\r\n,\event\,\trial\,\time\\r\n\fullscreenenter\,\0\,\936\\r\n,\r\n
