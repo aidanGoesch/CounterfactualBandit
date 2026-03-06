@@ -62,14 +62,14 @@ function randomize(array) {
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-var deck = makeObject('static/images/miscellaneous/deck.png','deck') // stays constant thru out exp
+var deck = makeObject('../static/images/miscellaneous/deck.png','deck') // stays constant thru out exp
 
-let contextArray_true = [makeObject('static/images/contexts/context_coast.png','coast'),
-makeObject('static/images/contexts/context_countryside.png','countryside'),
-makeObject('static/images/contexts/context_mountain.png','mountain'),
-makeObject('static/images/contexts/context_forest.png','forest'),
-makeObject('static/images/contexts/context_highway.png','highway'),
-makeObject('static/images/contexts/context_city.png','city')]
+let contextArray_true = [makeObject('../static/images/contexts/context_coast.png','coast'),
+makeObject('../static/images/contexts/context_countryside.png','countryside'),
+makeObject('../static/images/contexts/context_mountain.png','mountain'),
+makeObject('../static/images/contexts/context_forest.png','forest'),
+makeObject('../static/images/contexts/context_highway.png','highway'),
+makeObject('../static/images/contexts/context_city.png','city')]
 let contextArray_ind = [0,1,2,3,4,5]
 contextArray_ind = randomize(contextArray_ind);
 let contextArray = []
@@ -77,40 +77,40 @@ for (let i = 0; i < 6; i++) {
   contextArray.push(contextArray_true[contextArray_ind[i]])
 }
 
-contextArray.push(makeObject('static/images/contexts/context_blank.png','blank'))
-contextArray.push(makeObject('static/images/contexts/context_desert.png','desert'))
-contextArray.push(makeObject('static/images/contexts/context_cavern.png','cavern'))
+contextArray.push(makeObject('../static/images/contexts/context_blank.png','blank'))
+contextArray.push(makeObject('../static/images/contexts/context_desert.png','desert'))
+contextArray.push(makeObject('../static/images/contexts/context_cavern.png','cavern'))
 
 contextArray.forEach(context => context.hide())
 
 
-var cargo_ship = makeObject('static/images/miscellaneous/cargo_ship.png','cargo_ship');
+var cargo_ship = makeObject('../static/images/miscellaneous/cargo_ship.png','cargo_ship');
 
-let shipArray = [makeObject('static/images/travel/ship_up.png','ship_up'), // ship up
-makeObject('static/images/travel/ship_down.png','ship_down')] // ship down] // map for welcome
+let shipArray = [makeObject('../static/images/travel/ship_up.png','ship_up'), // ship up
+makeObject('../static/images/travel/ship_down.png','ship_down')] // ship down] // map for welcome
 shipArray.forEach(item => item.hide())
 
-let pirateArray = [makeObject('static/images/pirates/pirates_all.png','all'), // all pirates
-makeObject('static/images/pirates/red_beard.png','red'), // red beard
-makeObject('static/images/pirates/white_beard.png','white'), // white beard
-makeObject('static/images/pirates/black_beard.png','black')] // black beard
+let pirateArray = [makeObject('../static/images/pirates/pirates_all.png','all'), // all pirates
+makeObject('../static/images/pirates/red_beard.png','red'), // red beard
+makeObject('../static/images/pirates/white_beard.png','white'), // white beard
+makeObject('../static/images/pirates/black_beard.png','black')] // black beard
 pirateArray.forEach(pirate => pirate.hide())
 
-let rewardArray = [makeObject('static/images/rewards/reward_no.png','noReward'), // nothing
-makeObject('static/images/rewards/reward.png','reward'),
-makeObject('static/images/rewards/reward_small.png','small_reward'),
-makeObject('static/images/rewards/money_bag.png','money_bag')] // money bag
+let rewardArray = [makeObject('../static/images/rewards/reward_no.png','noReward'), // nothing
+makeObject('../static/images/rewards/reward.png','reward'),
+makeObject('../static/images/rewards/reward_small.png','small_reward'),
+makeObject('../static/images/rewards/money_bag.png','money_bag')] // money bag
 rewardArray.forEach(reward => reward.hide())
 
 
-let bestArray = [makeObject('static/images/pick_best/best_question.png','best_question'),
-makeObject('static/images/pick_best/second_best_question.png','second_best_question'),
-makeObject('static/images/pick_best/red_best.png','red_best'),
-makeObject('static/images/pick_best/white_best.png','white_best'),
-makeObject('static/images/pick_best/black_best.png','black_best'),
-makeObject('static/images/pick_best/red_second_best.png','red_second_best'),
-makeObject('static/images/pick_best/white_second_best.png','white_second_best'),
-makeObject('static/images/pick_best/black_second_best.png','black_second_best')]
+let bestArray = [makeObject('../static/images/pick_best/best_question.png','best_question'),
+makeObject('../static/images/pick_best/second_best_question.png','second_best_question'),
+makeObject('../static/images/pick_best/red_best.png','red_best'),
+makeObject('../static/images/pick_best/white_best.png','white_best'),
+makeObject('../static/images/pick_best/black_best.png','black_best'),
+makeObject('../static/images/pick_best/red_second_best.png','red_second_best'),
+makeObject('../static/images/pick_best/white_second_best.png','white_second_best'),
+makeObject('../static/images/pick_best/black_second_best.png','black_second_best')]
 
 bestArray.forEach(item => item.hide())
 
@@ -125,42 +125,42 @@ var current_prac_trial = 0;
 var corr_old_new_judge = 0;
 
 
-let miscellArray = [makeObject('static/images/probes/gas.png','probe'), // probe
-makeObject('static/images/miscellaneous/remember.png','remember'), // remember
-makeObject('static/images/miscellaneous/hurry_up.png','hurryUp'), // hurry up
-makeObject('static/images/miscellaneous/probe_recog.png','confidence_rate'),//confidence ratings
+let miscellArray = [makeObject('../static/images/probes/gas.png','probe'), // probe
+makeObject('../static/images/miscellaneous/remember.png','remember'), // remember
+makeObject('../static/images/miscellaneous/hurry_up.png','hurryUp'), // hurry up
+makeObject('../static/images/miscellaneous/probe_recog.png','confidence_rate'),//confidence ratings
 deck,
 contextArray[7],
-makeObject('static/images/rewards/feedback_correct.png','correct'),
-makeObject('static/images/rewards/feedback_incorrect.png','incorrect'),
-makeObject('static/images/travel/ahoy.png','ahoy'),
-makeObject('static/images/travel/bye.png','bye'),cargo_ship,
-makeObject('static/images/miscellaneous/best_pirate.png','best_pirate')]
+makeObject('../static/images/rewards/feedback_correct.png','correct'),
+makeObject('../static/images/rewards/feedback_incorrect.png','incorrect'),
+makeObject('../static/images/travel/ahoy.png','ahoy'),
+makeObject('../static/images/travel/bye.png','bye'),cargo_ship,
+makeObject('../static/images/miscellaneous/best_pirate.png','best_pirate')]
 miscellArray.forEach(item => item.hide())
 
-let welcomeArray_true = [makeObject('static/images/travel/welcome_coast.png','welcome_coast'),
-makeObject('static/images/travel/welcome_meadow.png','welcome_meadow'),
-makeObject('static/images/travel/welcome_mountain.png','welcome_mountain'),
-makeObject('static/images/travel/welcome_forest.png','welcome_forest'),
-makeObject('static/images/travel/welcome_road.png','welcome_road'),
-makeObject('static/images/travel/welcome_city.png','welcome_city')]
+let welcomeArray_true = [makeObject('../static/images/travel/welcome_coast.png','welcome_coast'),
+makeObject('../static/images/travel/welcome_meadow.png','welcome_meadow'),
+makeObject('../static/images/travel/welcome_mountain.png','welcome_mountain'),
+makeObject('../static/images/travel/welcome_forest.png','welcome_forest'),
+makeObject('../static/images/travel/welcome_road.png','welcome_road'),
+makeObject('../static/images/travel/welcome_city.png','welcome_city')]
 let welcomeArray = []
 for (let i = 0; i < 6; i++) {
   welcomeArray.push(welcomeArray_true[contextArray_ind[i]])
 }
-welcomeArray.push(makeObject('static/images/travel/welcome_final.png','welcome_final'))
-welcomeArray.push(makeObject('static/images/travel/welcome_desert.png','welcome_desert'))
-welcomeArray.push(makeObject('static/images/travel/welcome_cavern.png','welcome_cavern'))
+welcomeArray.push(makeObject('../static/images/travel/welcome_final.png','welcome_final'))
+welcomeArray.push(makeObject('../static/images/travel/welcome_desert.png','welcome_desert'))
+welcomeArray.push(makeObject('../static/images/travel/welcome_cavern.png','welcome_cavern'))
 
 welcomeArray.forEach(item => item.hide())
 
 let islandTrackerArray = [
-makeObject('static/images/contexts/island_1.png','island_1'),
-makeObject('static/images/contexts/island_2.png','island_2'),
-makeObject('static/images/contexts/island_3.png','island_3'),
-makeObject('static/images/contexts/island_4.png','island_4'),
-makeObject('static/images/contexts/island_5.png','island_5'),
-makeObject('static/images/contexts/island_6.png','island_6')];
+makeObject('../static/images/contexts/island_1.png','island_1'),
+makeObject('../static/images/contexts/island_2.png','island_2'),
+makeObject('../static/images/contexts/island_3.png','island_3'),
+makeObject('../static/images/contexts/island_4.png','island_4'),
+makeObject('../static/images/contexts/island_5.png','island_5'),
+makeObject('../static/images/contexts/island_6.png','island_6')];
 
 islandTrackerArray.forEach(item => item.hide())
 
