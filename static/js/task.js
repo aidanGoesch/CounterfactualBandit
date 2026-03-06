@@ -504,7 +504,6 @@ var start_rank_phase = {
 
 // ---------------------------------------------------------------------------------------------------------------- //
 // Helper functions
-var attention_check_failures = 0;
 
 var attention_check = {
   type: 'html-keyboard-response',
@@ -521,10 +520,6 @@ var attention_check = {
   }
 };
 
-
-// basically same thing but for judgement phase 
-var judgement_attention_failures = 0;
-var pick_ind = 0;
 
 function make_judgement_attention_check(island_index) {
   var keypress_slide = {
