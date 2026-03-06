@@ -82,11 +82,8 @@ var resubmit = function() {
 
   var save_data = function(final) {
   // exclude unwanted keys/columns
-  var exclude_keys = ['internal_node_id', 'trial_index','rt','stimulus','time_elapsed','responses'];
+  // var exclude_keys = ['internal_node_id', 'trial_index','rt','stimulus','time_elapsed','responses'];
   var clean_data = jsPsych.data.get()
-    .ignore(exclude_keys)
-    .filter(trial => trial.ignore !== true)
-    .ignore(['ignore']);
   var callback = function() {
     // Only save data without completing the HIT during the task
     psiturk.saveData({
