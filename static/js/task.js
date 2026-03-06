@@ -218,6 +218,17 @@ var intertrial = {
 	trial_duration: 1000
 }
 
+var get_id = {
+  type: 'survey-html-form',
+  html: "<label for='worker_id'>Enter your Prolific Worker ID. Please make sure this is correct! </label><br><input type='text' id='worker_id' name='worker_id' required><br><br>",
+  on_finish: function (data) {
+    window.useridtouse=data.responses
+    window.useridtouse = useridtouse.split('"')[3];
+    subject_id=useridtouse
+    data.subject_id = useridtouse
+  }
+}
+
 var welcome = {
   type: 'do_welcome',
   stimuli: miscellArray,
@@ -785,7 +796,8 @@ jsPsych.init({
 		jsPsych.data.get().addToLast({focus_events: focus_events.csv()});
 		jsPsych.data.get().addToLast({fullscreenenter_events: fullscreenenter_events.csv()});
 		jsPsych.data.get().addToLast({fullscreenexit_events: fullscreenexit_events.csv()});
-
+    psiturk.recordUnstructuredData("subject_id", subject_id);
+    save_data(true)
     document.body.innerHTML = '<p><center>Thank you for participating in this study! Please wait while your data saves. You will see a smiley face when it is safe to close this tab.</center></p>';
 	setTimeout(function () {
 		document.body.innerHTML = '<p><center style="font-size:80px">😊</center><p><center>Your data has been saved! You may now close this tab.</center></p>';
@@ -793,3 +805,43 @@ jsPsych.init({
 
 }
 })
+
+
+ var save_data = function(final) {
+  // exclude unwanted keys/columns
+  var exclude_keys = ['internal_node_id', 'trial_index','rt','stimulus','time_elapsed','responses'];
+  var clean_data = jsPsych.data.get()
+    .ignore(exclude_keys)
+    .filter(trial => trial.ignore !== true)
+    .ignore(['ignore']);
+  var callback = function() {
+    // Only save data without completing the HIT during the task
+    psiturk.saveData({
+      success: function(){
+        console.log("Data saved during the task.");
+      },
+      error: prompt_resubmit
+    });
+    
+    // If final is true, we complete the HIT after task finishes
+    if (final) {
+      psiturk.completeHIT();  // Complete the HIT when task is done
+    }
+  };
+
+  // Call the callback to save the data during the task
+  callback();
+/* Save participant data file */
+
+// Set participant data file name
+if (debug_mode) {
+  var data_file_name = "dev_test.csv";
+
+} else {
+  if (save_final_deter=='final'){
+    var data_file_name =  'final_S_' + useridtouse + '.csv';
+  }else{
+    randomidentifier = generateRandomIdentifier();
+    var data_file_name =  'S_' + useridtouse +'_'+randomidentifier+ '.csv';
+  }
+}}
