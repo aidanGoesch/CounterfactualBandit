@@ -102,17 +102,25 @@ jsPsych.plugins["do_trial"] = (function () {
     // get predetermined reward based on choice
     reward = trial.choice_outcomes[key_pressed-1]; // this is a list and js uses zero-indexing that's why need to subtract
 
+
+    var reward_delay = DEBUG ? 500 : 3000;
+    var outcome_delay = DEBUG ? 1500 : 4500;
+    var reward_delay_blank = DEBUG ? 300 : 1000;
+    var outcome_delay_blank = DEBUG ? 800 : 2500;
+
     if (trial.miscell[5].id == 'blank') { // final context
+  
+
       // set timer for showing choice
-      jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, 1000);
+      jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, reward_delay);
 
       // set timer for showing outcome of choice (1.5)
       if (trial.after_blank) {
         jsPsych.pluginAPI.setTimeout(function(){trial.pirates[key_pressed].hide();
-          trial.rewards[reward].hide();trial.miscell[4].hide();end_trial();}, 2500);
+          trial.rewards[reward].hide();trial.miscell[4].hide();end_trial();}, outcome_delay);
       } else {
         jsPsych.pluginAPI.setTimeout(function(){trial.pirates[key_pressed].hide();
-          trial.rewards[reward].hide();end_trial();}, 2500);
+          trial.rewards[reward].hide();end_trial();}, outcome_delay);
       }
 
     } else {
@@ -120,16 +128,16 @@ jsPsych.plugins["do_trial"] = (function () {
       //   trial.miscell[10].show();trial.miscell[0].show();trial.miscell[1].show();}, 1000);
 
       // set timer for showing probe (2 sec)
-      jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, 3000);
+      jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, reward_delay_blank);
 
       // set timer for showing outcome of choice (1.5)
       if (trial.after_blank) {
         jsPsych.pluginAPI.setTimeout(function(){trial.miscell[0].hide(); trial.miscell[1].hide();trial.pirates[key_pressed].hide();
-          trial.rewards[reward].hide();trial.miscell[10].hide();trial.miscell[4].hide();trial.miscell[5].hide();end_trial();}, 4500);
+          trial.rewards[reward].hide();trial.miscell[10].hide();trial.miscell[4].hide();trial.miscell[5].hide();end_trial();}, outcome_delay_blank);
 
       } else {
         jsPsych.pluginAPI.setTimeout(function(){trial.miscell[0].hide(); trial.miscell[1].hide();trial.pirates[key_pressed].hide();
-          trial.rewards[reward].hide();trial.miscell[10].hide();end_trial();}, 4500);
+          trial.rewards[reward].hide();trial.miscell[10].hide();end_trial();}, outcome_delay_blank);
       }
 
     }

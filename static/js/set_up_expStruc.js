@@ -17,13 +17,15 @@ function getRandom(arr, n) {
     }
     return result;
 }
+// debug flag
+var DEBUG = true;
 
 var context_offset = 10;
 var sample_window = 10; // first sample_window trials of each context are available for later memory probes
 var num_blocks = 6;
 var num_contexts = 6;
-var first_block_len = 30; // added 10.25.21
-var block_len = 40;
+var first_block_len = DEBUG ? 3 : 30;
+var block_len = DEBUG ? 3 : 40;
 var ctx_bump = 2;
 
 var num_bandits = 3;
@@ -62,17 +64,6 @@ for (let i = 0; i < num_contexts; i++) {
     var trial_to_add = deterministic_trials[i] + j;
     deterministic_trials.push(trial_to_add)
   }
-}
-
-while ((choice_blocks.reduce(sum_mer) != (block_len * num_blocks)) | (choice_blocks.some(isBelowThreshold)) | (choice_blocks.some(isAboveThreshold))) {
-  // 1. randomly select index
-  var ind = parseInt(Math.ceil(Math.random()*num_probes),10) - 1;
-  // 2. make equal to num_trials/2
-  choice_blocks[ind] = choice_blocks[ind] - Math.sign(choice_blocks.reduce(sum_mer) - (block_len * num_blocks));
-  // 3. ensure no element goes below threshold
-  choice_blocks = choice_blocks.map(function(x) {if (x < min_ct) {return min_ct} else {return x}});
-  // 4. ensure no element goes above threshold
-  choice_blocks = choice_blocks.map(function(x) {if (x > max_ct) {return max_ct} else {return x}});
 }
 
 choice_blocks = choice_blocks.map(function (x) {return x-1})

@@ -288,7 +288,7 @@ var prac_choice_trial = {
   type: 'do_trial',
   choices: ['1','2','3'],
   prompt:'<p>which pirate do you want to rob the next ship?</p>',
-  trial_duration: 3000,
+  trial_duration: DEBUG ? 1000 : 3000,  // shorten choice trials during debugging
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
@@ -327,7 +327,7 @@ var prac_choice_trial_2 = {
   type: 'do_trial',
   choices: ['1','2','3'],
   prompt:'<p>which pirate do you want to rob the next ship?</p>',
-  trial_duration: 3000,
+  trial_duration: DEBUG ? 1000 : 3000,  // shorten choice trials during debugging
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
@@ -367,7 +367,7 @@ var choice_trial = {
   type: 'do_trial',
   choices: ['1','2','3'],
   prompt:'<p>which pirate do you want to rob the next ship?</p>',
-  trial_duration: 3000,
+  trial_duration: DEBUG ? 1000 : 3000,  // shorten choice trials during debugging
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
@@ -421,7 +421,7 @@ var test_choice_trial = {
   type: 'do_trial',
   choices: ['1','2','3'],
   prompt: '<p>which pirate do you want to rob the next ship?</p>',
-  trial_duration: 3000,
+  trial_duration: DEBUG ? 1000 : 3000,  // shorten choice trials during debugging
   pirates: pirateArray,
   rewards: rewardArray,
   miscell: null,
@@ -700,38 +700,37 @@ timeline.push({
 	fullscreen_mode: true
 });
 
-// timeline.push(pavlovia_init);
-timeline.push(get_id);
-timeline.push(instruc1);
-timeline.push(move_forward);
-timeline.push(instruc2);
-timeline.push(move_forward);
-timeline.push(instruc4);
-timeline.push(move_forward);
-timeline.push(instruc5);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_no_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_no_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(blue_alone);
-timeline.push(blue_win);
-timeline.push(instruc6);
-timeline.push(move_forward);
+if (!DEBUG) {
+  timeline.push(instruc1);
+  timeline.push(move_forward);
+  timeline.push(instruc2);
+  timeline.push(move_forward);
+  timeline.push(instruc4);
+  timeline.push(move_forward);
+  timeline.push(instruc5);
+  timeline.push(blue_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_no_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_no_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_win);
+  timeline.push(blue_alone);
+  timeline.push(blue_win);
+  timeline.push(instruc6);
+  timeline.push(move_forward);
+}
 timeline.push(instruc7);
-
 
 // for testing purposes, can just launch the test phase right away - comment out instruc 7 tho
 // var launch_test = {
