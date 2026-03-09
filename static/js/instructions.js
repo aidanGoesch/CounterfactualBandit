@@ -59,7 +59,6 @@ var instruc1 = {
   on_finish: function(data) {
     data.trial_type = "instruc1";
     data.subject_id = subject_id;
-    data.participant_id = participant_id;
     data.age = age;
     data.gender = gender;
     data.prompt = welcome_txt;
