@@ -59,6 +59,7 @@ var instruc1 = {
   on_finish: function(data) {
     data.trial_type = "instruc1";
     data.subject_id = subject_id;
+    data.prompt = welcome_txt;
   }
 };
 
