@@ -38,7 +38,7 @@ var changepoint = "<div class='center'><p>How successful a pirate is at robbing 
 
 var drift = "<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='../static/images/tutorial/contingency.png' height='500'></p></div>";
 
-var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><b><p> Pick the pirate who is the best at robbing ships on the current island. </p></b><b><p> The amount of bonus money you win depends on it.</p><p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b> 1, 2, 3 </b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money. </p><p> Good luck! This game will be very difficult but try your best!</p></div>";
+var summary = "<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><p><b>Pick the pirate who is the best at robbing ships on the current island.</b></p><p>The amount of bonus money you win depends on it.</p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b>1, 2, 3</b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money.</p><p>Good luck! This game will be very difficult but try your best!</p></div>";
 
 var quiz_intro = "<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>";
 
@@ -146,44 +146,38 @@ var instruc6 = {
 }
 
 var choice_won_red = {
-  type: 'audio-keyboard-response',
-  stimulus:'../static/audio/clip_8_chosen_pirate_win.m4a',
-  prompt:red_won,
+  type: 'html-keyboard-response',
+  stimulus:red_won,
   choices: ['space']
 }
 
 var choice_won_white = {
-  type: 'audio-keyboard-response',
-  stimulus:'../static/audio/clip_8_chosen_pirate_win.m4a',
-  prompt:white_won,
+  type: 'html-keyboard-response',
+  stimulus:white_won,
   choices: ['space'],
 }
 
 var choice_won_black = {
-  type: 'audio-keyboard-response',
-  stimulus:'../static/audio/clip_8_chosen_pirate_win.m4a',
-  prompt:black_won,
+  type: 'html-keyboard-response',
+  stimulus:black_won,
   choices: ['space'],
 }
 
 var choice_loss_red = {
-  type: 'audio-keyboard-response',
-  stimulus:'../static/audio/clip_10_chosen_pirate_loss.m4a',
-  prompt:red_loss,
+  type: 'html-keyboard-response',
+  stimulus:red_loss,
   choices: ['space'],
 }
 
 var choice_loss_white = {
-  type: 'audio-keyboard-response',
-  stimulus:'../static/audio/clip_10_chosen_pirate_loss.m4a',
-  prompt:white_loss,
+  type: 'html-keyboard-response',
+  stimulus:white_loss,
   choices: ['space'],
 }
 
 var choice_loss_black = {
-  type: 'audio-keyboard-response',
-  stimulus:'../static/audio/clip_10_chosen_pirate_loss.m4a',
-  prompt:black_loss,
+  type: 'html-keyboard-response',
+  stimulus:black_loss,
   choices: ['space'],
 }
 
