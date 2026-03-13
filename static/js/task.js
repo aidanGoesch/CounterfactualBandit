@@ -171,7 +171,7 @@ islandTrackerArray.forEach(item => item.hide())
 
 // new vars
 var num_contexts = 6;
-var judgement_trial_block_size = 10;
+var judgement_trial_block_size = 5;
 var current_test_context = 0;
 
 var probabilities = { 1: payout[0].map(x=>x*0.01),
@@ -399,7 +399,7 @@ var choice_trial = {
 
 var test_phase_welcome = {
   type: 'html-keyboard-response',
-  stimulus: '<div class="center"><p>We have to sail past the islands again to get back to pirate HQ.</p><p>Press <b>space</b> to continue.</p></div>',
+  stimulus: '<div class="center"><p>We have to sail past the islands again to get back to pirate HQ. We\'ve just got wind that there is a huge storm approaching, so while we are going to stop at each island, we won\'t have time to see if our plunders are successful or not.</p><p>Press <b>space</b> to continue.</p></div>',
   choices: ['space']
 };
 
@@ -415,6 +415,7 @@ var start_test_phase = {
 
 var test_choice_trial = {
   type: 'do_trial',
+  show_reward: false,
   choices: ['1','2','3'],
   prompt: '<p>which pirate do you want to rob the next ship?</p>',
   trial_duration: DEBUG ? 1000 : 3000,  // shorten choice trials during debugging
@@ -735,7 +736,7 @@ timeline.push(instruc7);
 //   choices: jsPsych.NO_KEYS,
 //   trial_duration: 0,
 //   on_finish: function() {
-//     make_test_phase();
+//     make_judgement_phase();
 //   }
 // };
 

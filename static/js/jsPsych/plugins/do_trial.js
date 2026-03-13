@@ -70,7 +70,12 @@ jsPsych.plugins["do_trial"] = (function () {
         pretty_name: 'Indicates whether entire board should be wiped.',
         default: false,
         description: 'Remove everything from the screen.'
-
+      },
+      show_reward: {
+        type: jsPsych.plugins.parameterType.BOOL,
+        pretty_name: 'Show reward',
+        default: false,
+        description: 'Whether to show the reward after the choice.'
       }
     }
   }
@@ -112,7 +117,7 @@ jsPsych.plugins["do_trial"] = (function () {
   
 
       // set timer for showing choice
-      jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, reward_delay);
+      jsPsych.pluginAPI.setTimeout(function(){if(trial.show_reward){trial.rewards[reward].show();}}, reward_delay);
 
       // set timer for showing outcome of choice (1.5)
       if (trial.after_blank) {
@@ -128,7 +133,7 @@ jsPsych.plugins["do_trial"] = (function () {
       //   trial.miscell[10].show();trial.miscell[0].show();trial.miscell[1].show();}, 1000);
 
       // set timer for showing probe (2 sec)
-      jsPsych.pluginAPI.setTimeout(function(){trial.rewards[reward].show();}, reward_delay_blank);
+      jsPsych.pluginAPI.setTimeout(function(){if(trial.show_reward){trial.rewards[reward].show();}}, reward_delay_blank);
 
       // set timer for showing outcome of choice (1.5)
       if (trial.after_blank) {
