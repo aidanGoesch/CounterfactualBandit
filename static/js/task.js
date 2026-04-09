@@ -575,7 +575,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < first_block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [attention_check,bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
 
 
 	//travel
@@ -586,7 +586,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [attention_check,bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
 
 	//travel
 	//welcome
@@ -596,7 +596,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [attention_check,bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
 
 	// travel
 	// welcome
@@ -606,7 +606,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [attention_check,bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
 
 
 	// travel
@@ -617,7 +617,7 @@ function  make_learn_phase() {
 	for (let i = 0; i < block_len; i++) {
 		jsPsych.addNodeToEndOfTimeline({timeline: [choice_trial,intertrial],}, jsPsych.resumeExperiment);
 	}
-	jsPsych.addNodeToEndOfTimeline({timeline: [attention_check,bye],}, jsPsych.resumeExperiment);
+	jsPsych.addNodeToEndOfTimeline({timeline: [bye],}, jsPsych.resumeExperiment);
 
 	// travel
 	// welcome
