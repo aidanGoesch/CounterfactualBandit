@@ -1,0 +1,13 @@
+trial_type,trial_index,rt,context_n,context_im,chosen_pirate,subject_id
+do_pick_best_pirate,708,4057.7000000001863,0.0,city,red,ryan
+do_pick_secondBest_pirate,709,5955.700000000186,0.0,city,white,ryan
+do_pick_best_pirate,710,4835.399999999441,1.0,coast,red,ryan
+do_pick_secondBest_pirate,711,630.0,1.0,coast,white,ryan
+do_pick_best_pirate,712,4796.800000000745,2.0,forest,black,ryan
+do_pick_secondBest_pirate,713,346.59999999962747,2.0,forest,white,ryan
+do_pick_best_pirate,714,1762.0,3.0,mountain,white,ryan
+do_pick_secondBest_pirate,715,372.30000000074506,3.0,mountain,black,ryan
+do_pick_best_pirate,716,11041.700000000186,4.0,highway,white,ryan
+do_pick_secondBest_pirate,717,713.8999999994412,4.0,highway,black,ryan
+do_pick_best_pirate,718,4718.0999999996275,5.0,countryside,black,ryan
+do_pick_secondBest_pirate,719,294.80000000074506,5.0,countryside,red,ryan

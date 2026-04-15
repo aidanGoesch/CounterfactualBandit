@@ -140,7 +140,8 @@
 
 #canvasdiv {
   /* width: 1000px; */
-  position:static;
+  position: relative;
+  z-index: 10;
   /* padding-left:%; */
   /* height: 10%; */
 }

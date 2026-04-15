@@ -1,0 +1,13 @@
+trial_type,trial_index,rt,context_n,context_im,chosen_pirate,subject_id
+do_pick_best_pirate,722,3928.600000000093,0.0,countryside,red,Gavin Walsh
+do_pick_secondBest_pirate,723,3846.600000000093,0.0,countryside,white,Gavin Walsh
+do_pick_best_pirate,724,2851.399999999907,1.0,highway,white,Gavin Walsh
+do_pick_secondBest_pirate,725,2179.899999999907,1.0,highway,red,Gavin Walsh
+do_pick_best_pirate,726,2662.5,2.0,city,red,Gavin Walsh
+do_pick_secondBest_pirate,727,1544.8000000002794,2.0,city,white,Gavin Walsh
+do_pick_best_pirate,728,1301.7999999998135,3.0,mountain,black,Gavin Walsh
+do_pick_secondBest_pirate,729,1069.9000000003723,3.0,mountain,red,Gavin Walsh
+do_pick_best_pirate,730,2792.0,4.0,coast,white,Gavin Walsh
+do_pick_secondBest_pirate,731,1016.7000000001864,4.0,coast,black,Gavin Walsh
+do_pick_best_pirate,732,1701.1000000000931,5.0,forest,white,Gavin Walsh
+do_pick_secondBest_pirate,733,613.8999999999069,5.0,forest,red,Gavin Walsh

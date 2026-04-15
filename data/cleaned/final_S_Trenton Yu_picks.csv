@@ -1,0 +1,13 @@
+trial_type,trial_index,rt,context_n,context_im,chosen_pirate,subject_id
+do_pick_best_pirate,708,4521.0999999996275,0.0,countryside,white,Trenton Yu
+do_pick_secondBest_pirate,709,3265.399999999907,0.0,countryside,red,Trenton Yu
+do_pick_best_pirate,710,5038.700000000186,1.0,forest,black,Trenton Yu
+do_pick_secondBest_pirate,711,1435.6000000000931,1.0,forest,red,Trenton Yu
+do_pick_best_pirate,712,1702.5,2.0,highway,white,Trenton Yu
+do_pick_secondBest_pirate,713,2655.2999999998137,2.0,highway,red,Trenton Yu
+do_pick_best_pirate,714,1415.1000000000931,3.0,coast,black,Trenton Yu
+do_pick_secondBest_pirate,715,725.8000000002794,3.0,coast,red,Trenton Yu
+do_pick_best_pirate,716,1131.0,4.0,mountain,white,Trenton Yu
+do_pick_secondBest_pirate,717,631.1999999997206,4.0,mountain,red,Trenton Yu
+do_pick_best_pirate,718,4224.100000000093,5.0,city,white,Trenton Yu
+do_pick_secondBest_pirate,719,784.7000000001863,5.0,city,red,Trenton Yu
