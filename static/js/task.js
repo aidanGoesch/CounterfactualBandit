@@ -508,9 +508,6 @@ var attention_check = {
     data.trial_type = 'attention_check';
     data.passed = (data.key_press === 90);
     if (!data.passed) attention_check_failures += 1;
-    if (attention_check_failures >= 3) {
-      jsPsych.endExperiment('You have been excluded from the study. Thank you for your time.');
-    }
   }
 };
 
@@ -531,9 +528,6 @@ function make_judgement_attention_check(island_index) {
       data.passed = (data.key_press === 90);
       if (!data.passed) {
         judgement_attention_failures += 1;
-      }
-      if (judgement_attention_failures >= 3) {
-        jsPsych.endExperiment('You have been excluded from the study. Thank you for your time.');
       }
     }
   };
