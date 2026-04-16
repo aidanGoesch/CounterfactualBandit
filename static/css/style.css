@@ -1,9 +1,4 @@
 
-#canvasdiv {
-  position: relative;
-  z-index: 10;
-}
-
 body {
     padding:0px;
     margin: 0px;
