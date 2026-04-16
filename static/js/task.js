@@ -363,6 +363,7 @@ var prac_choice_trial_2 = {
 
 var choice_trial = {
   type: 'do_trial',
+  show_reward: true,
   choices: ['1','2','3'],
   prompt:'<p>which pirate do you want to rob the next ship?</p>',
   trial_duration: DEBUG ? 1000 : 3000,  // shorten choice trials during debugging
@@ -417,7 +418,7 @@ var start_test_phase = {
 
 var test_choice_trial = {
   type: 'do_trial',
-  show_reward: false,
+  show_reward: true,
   choices: ['1','2','3'],
   prompt: '<p>which pirate do you want to rob the next ship?</p>',
   trial_duration: DEBUG ? 1000 : 3000,  // shorten choice trials during debugging
