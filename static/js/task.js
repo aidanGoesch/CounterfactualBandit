@@ -462,6 +462,7 @@ var pick_best_trial = {
 	best_array: bestArray,
 	miscell: miscellArray,
 	on_start: function(pick_best_trial) {
+		console.log('pick_best_trial on_start, pick_ind:', pick_ind);
 		pick_best_trial.context = contextArray[pick_ind];
 	},
 	on_finish: function(data) {
@@ -492,8 +493,12 @@ var start_rank_phase = {
   stimulus: "<div style='position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; display: flex; align-items: center; justify-content: center;'><div><h2>We've made it to Pirate HQ!</h2><p>Press <b>space</b> to proceed.</p></div></div>",
   choices: ['space'],
   on_finish: function() {
+    console.log('start_rank_phase on_finish fired');
+    console.log('deck visible:', miscellArray[4].image.is(':visible'));
+    console.log('blank context visible:', contextArray[6].image.is(':visible'));
     miscellArray[4].hide();
     contextArray[6].hide();
+    console.log('deck after hide:', miscellArray[4].image.is(':visible'));
     make_rank_pirate();
   }
 };
@@ -643,7 +648,7 @@ function make_test_phase() {
     jsPsych.resumeExperiment
   );
 
-  for (let i = 0; i < num_contexts; i++) {
+  for (let i = 0; i < 2; i++) {
     jsPsych.addNodeToEndOfTimeline(
       { timeline: make_judgement_attention_check(i) },
       jsPsych.resumeExperiment
@@ -673,6 +678,7 @@ function make_test_phase() {
 
 // Rank phase function
 function make_rank_pirate() {
+  console.log('make_rank_pirate called, pick_ind:', pick_ind);
   for (let i = 0; i < 6; i++) {
     jsPsych.addNodeToEndOfTimeline(
       { timeline: [pick_best_trial, pick_secondBest_trial] },
