@@ -724,20 +724,20 @@ if (!DEBUG) {
   timeline.push(instruc6);
   timeline.push(move_forward);
 }
-timeline.push(instruc7);
+// timeline.push(instruc7);
 
 // for testing purposes, can just launch the test phase right away - comment out instruc 7 tho
-// var launch_test = {
-//   type: 'html-keyboard-response',
-//   stimulus: '',
-//   choices: jsPsych.NO_KEYS,
-//   trial_duration: 0,
-//   on_finish: function() {
-//     make_judgement_phase();
-//   }
-// };
+var launch_test = {
+  type: 'html-keyboard-response',
+  stimulus: '',
+  choices: jsPsych.NO_KEYS,
+  trial_duration: 0,
+  on_finish: function() {
+    make_test_phase();
+  }
+};
 
-// timeline.push(launch_test);
+timeline.push(launch_test);
 
 jsPsych.init({
   timeline: timeline,

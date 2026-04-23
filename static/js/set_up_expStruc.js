@@ -18,7 +18,7 @@ function getRandom(arr, n) {
     return result;
 }
 // debug flag
-var DEBUG = false;
+var DEBUG = true;
 
 var context_offset = 10;
 var sample_window = 10; // first sample_window trials of each context are available for later memory probes
