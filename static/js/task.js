@@ -412,6 +412,7 @@ var start_test_phase = {
   stimulus: '<div class="center"><p>Nice job plundering!</p><p>Press <b>space</b> to head back to pirate HQ.</p></div>',
   choices: ['space'],
   on_finish: function() {
+    console.log('start_test_phase on_finish fired');
     make_test_phase();
   }
 };
@@ -492,6 +493,7 @@ var start_rank_phase = {
   type: 'html-keyboard-response',
   stimulus: "<div style='position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; display: flex; align-items: center; justify-content: center;'><div><h2>We've made it to Pirate HQ!</h2><p>Press <b>space</b> to proceed.</p></div></div>",
   choices: ['space'],
+  on_start: function() { console.log('start_rank_phase on_start'); },
   on_finish: function() {
     console.log('start_rank_phase on_finish fired');
     console.log('deck visible:', miscellArray[4].image.is(':visible'));
@@ -643,6 +645,7 @@ function  make_learn_phase() {
 
 // Test phase function
 function make_test_phase() {
+  console.log('make_test_phase called');
   jsPsych.addNodeToEndOfTimeline(
     { timeline: [test_phase_welcome] },
     jsPsych.resumeExperiment
