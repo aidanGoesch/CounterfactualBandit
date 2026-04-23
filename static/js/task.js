@@ -492,6 +492,8 @@ var start_rank_phase = {
   stimulus: "<div style='position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; display: flex; align-items: center; justify-content: center;'><div><h2>We've made it to Pirate HQ!</h2><p>Press <b>space</b> to proceed.</p></div></div>",
   choices: ['space'],
   on_finish: function() {
+    miscellArray[4].hide();
+    contextArray[6].hide();
     make_rank_pirate();
   }
 };
