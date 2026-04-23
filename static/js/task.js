@@ -524,7 +524,8 @@ function make_judgement_attention_check(island_index) {
     choices: ['z'],
     trial_duration: 5000,
     on_start: function() {
-      contextArray[6].hide(); // hide blank context so text is visible
+      contextArray[6].hide();
+      miscellArray[4].hide(); // hide deck so attention check text is visible
     },
     on_finish: function(data) {
       data.trial_type = 'judgement_attention_check';
