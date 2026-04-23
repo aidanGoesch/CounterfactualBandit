@@ -523,6 +523,9 @@ function make_judgement_attention_check(island_index) {
     stimulus: "<div class='center'><p>Press <b>Z</b> to use the telescope to see what island is coming next!</p></div>",
     choices: ['z'],
     trial_duration: 5000,
+    on_start: function() {
+      contextArray[6].hide(); // hide blank context so text is visible
+    },
     on_finish: function(data) {
       data.trial_type = 'judgement_attention_check';
       data.island_num = island_index;
@@ -638,10 +641,10 @@ function make_test_phase() {
   );
 
   for (let i = 0; i < num_contexts; i++) {
-    // jsPsych.addNodeToEndOfTimeline(
-    //   { timeline: make_judgement_attention_check(i) },
-    //   jsPsych.resumeExperiment
-    // );
+    jsPsych.addNodeToEndOfTimeline(
+      { timeline: make_judgement_attention_check(i) },
+      jsPsych.resumeExperiment
+    );
     for (let j = 0; j < judgement_trial_block_size; j++) {
       jsPsych.addNodeToEndOfTimeline(
         { timeline: [test_choice_trial, intertrial] },
