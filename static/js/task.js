@@ -638,11 +638,10 @@ function make_test_phase() {
   );
 
   for (let i = 0; i < num_contexts; i++) {
-    jsPsych.addNodeToEndOfTimeline(
-      { timeline: make_judgement_attention_check(i) },
-      jsPsych.resumeExperiment
-    );
-
+    // jsPsych.addNodeToEndOfTimeline(
+    //   { timeline: make_judgement_attention_check(i) },
+    //   jsPsych.resumeExperiment
+    // );
     for (let j = 0; j < judgement_trial_block_size; j++) {
       jsPsych.addNodeToEndOfTimeline(
         { timeline: [test_choice_trial, intertrial] },
