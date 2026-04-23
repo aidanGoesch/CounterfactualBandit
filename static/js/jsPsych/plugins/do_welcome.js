@@ -65,10 +65,11 @@ jsPsych.plugins["do_welcome"] = (function () {
       this.sound.pause();
     }
   }
-  var src = "run_exp/static/audio/pirates_life_for_me.mp3#t=0.0,"
-  var tt_sec = 3.5; //need to convert to seconds
+  var src = "../static/audio/pirates_life_for_me.mp3#t=0.0,"
+  var tt_sec = 3.5;
   var audio = new sound(src.concat(tt_sec.toString()))
-  audio.play()
+  var playPromise = audio.sound.play();
+  if (playPromise !== undefined) { playPromise.catch(function(e) { console.warn('Welcome audio failed:', e); }); }
 
   trial.stimuli[4].show();
   trial.text.show();

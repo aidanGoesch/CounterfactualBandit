@@ -75,10 +75,11 @@ function sound(src) {
     this.sound.pause();
   }
 }
-var src = "run_exp/static/audio/sailing.mp3#t=2.0,"
-var tt_sec = 9; //need to convert to seconds
+var src = "../static/audio/sailing.mp3#t=2.0,"
+var tt_sec = 9;
 var audio = new sound(src.concat(tt_sec.toString()))
-audio.play()
+var playPromise = audio.sound.play();
+if (playPromise !== undefined) { playPromise.catch(function(e) { console.warn('Travel audio failed:', e); }); }
 
   trial.stimuli[0].show();
 
