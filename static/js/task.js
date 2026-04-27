@@ -708,10 +708,11 @@ timeline.push({
 	fullscreen_mode: true
 });
 timeline.push(get_id);
-timeline.push(all_done);
+
 if (!DEBUG) {
   timeline.push(instruc1);
   timeline.push(move_forward);
+  timeline.push(all_done);
   timeline.push(instruc2);
   timeline.push(move_forward);
   timeline.push(instruc4);
