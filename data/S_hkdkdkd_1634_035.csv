@@ -1,0 +1,3 @@
+success,trial_type,trial_index,time_elapsed,internal_node_id,rt,responses,subject_id
+true,fullscreen,0,1969,0.0-0.0,,,
+,survey-html-form,1,7396,0.0-1.0,5424.5,{worker_id:hkdkdkd},hkdkdkd
