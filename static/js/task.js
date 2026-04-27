@@ -687,7 +687,7 @@ function make_rank_pirate() {
       jsPsych.resumeExperiment
     );
   }
-  save_data(true);
+  save_data();
   make_end();
 }
 
