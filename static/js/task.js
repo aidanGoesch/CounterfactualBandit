@@ -708,6 +708,7 @@ timeline.push({
 	fullscreen_mode: true
 });
 timeline.push(get_id);
+timeline.push(all_done);
 if (!DEBUG) {
   timeline.push(instruc1);
   timeline.push(move_forward);

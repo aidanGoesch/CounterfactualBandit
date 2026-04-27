@@ -456,6 +456,9 @@ var all_done = {
   type: 'html-keyboard-response',
   stimulus:"<div class='center'>You are all done with this study, thank you for participating! Please copy this completion code 'C11EB9MA' and press space to end the experiment.</p> <p><b>[Press the space bar to exit]</b></p></div>",
   choices: ['space'],
+  on_start: function(data){
+    save_data()
+  },
   on_finish: function(data) {
     console.log(invalidProbeTrials)
     data.contextArray_ind = contextArray_ind;
