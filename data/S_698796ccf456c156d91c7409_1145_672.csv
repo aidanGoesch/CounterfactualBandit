@@ -1,0 +1,147 @@
+success,trial_type,trial_index,time_elapsed,internal_node_id,rt,responses,subject_id,stimulus,key_press,prompt,response,choice_outcomes,context_n,context_img_id,trial_n,pR_red,pR_white,pR_black,outcome,phase
+true,fullscreen,0,2976,0.0-0.0,,,,,,,,,,,,,,,,
+,survey-html-form,1,7377,0.0-1.0,4400.200000047684,{worker_id:698796ccf456c156d91c7409},698796ccf456c156d91c7409,,,,,,,,,,,,,
+,instruc1,2,9382,0.0-2.0,null,,698796ccf456c156d91c7409,<div class='center'><p>Welcome! This study will last ~30 minutes. After the instructions there will be a practice game and quiz to make sure you understand the task. Today you will be the head captain of a pirate ship traveling around the world to different islands. Here is an overview of what you will be doing:</p><br><p> 1. Try to find the most successful pirate on 6 different islands</p><p> 2. Recall which pirates did the best on each island</p><br><p>,null,<div class='center'><p>Welcome! This study will last ~30 minutes. After the instructions there will be a practice game and quiz to make sure you understand the task. Today you will be the head captain of a pirate ship traveling around the world to different islands. Here is an overview of what you will be doing:</p><br><p> 1. Try to find the most successful pirate on 6 different islands</p><p> 2. Recall which pirates did the best on each island</p><br><p>,,,,,,,,,,
+,html-keyboard-response,3,20132,0.0-3.0,10749.199999809265,,,<div class='center'><p>Welcome! This study will last ~30 minutes. After the instructions there will be a practice game and quiz to make sure you understand the task. Today you will be the head captain of a pirate ship traveling around the world to different islands. Here is an overview of what you will be doing:</p><br><p> 1. Try to find the most successful pirate on 6 different islands</p><p> 2. Recall which pirates did the best on each island</p><br><p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc2,4,22134,0.0-4.0,null,,,<div class='center'><p>You are going to visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='../static/images/contexts/all_contexts.png' height='500'></p></div>,null,<div class='center'><p>You are going to visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='../static/images/contexts/all_contexts.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,5,23082,0.0-5.0,947.7999999523163,,,<div class='center'><p>You are going to visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='../static/images/contexts/all_contexts.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc4,6,25084,0.0-6.0,null,,,<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='../static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='../static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='../static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div>,null,<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='../static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='../static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='../static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div>,,,,,,,,,,
+,html-keyboard-response,7,35427,0.0-7.0,10342.599999904633,,,<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='../static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='../static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='../static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc5,8,48675,0.0-8.0,13247.400000095367,,,<div class='center'><p>Even the most skilled pirate can not rob EVERY ship.</p><p> Some ships will have very strong protections against pirate attacks.</p><p> Blue beard, here, is very, very good at robbing ships, but he won't be successful every time he tries to rob one.</p><p> You can press the <b>'1'</b> key on the keyboard to choose him.</p><p> Try choosing him 10 times to see how often he succeeds at robbing a ship. </p><p><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,<div class='center'><p>Even the most skilled pirate can not rob EVERY ship.</p><p> Some ships will have very strong protections against pirate attacks.</p><p> Blue beard, here, is very, very good at robbing ships, but he won't be successful every time he tries to rob one.</p><p> You can press the <b>'1'</b> key on the keyboard to choose him.</p><p> Try choosing him 10 times to see how often he succeeds at robbing a ship. </p><p><img src='../static/images/tutorial/blue.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,9,50175,0.0-9.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,10,50643,0.0-10.0,466.7000000476837,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,11,52144,0.0-11.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,12,52378,0.0-12.0,234,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,13,53879,0.0-13.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,14,53986,0.0-14.0,107,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,15,55488,0.0-15.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_no_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,16,55667,0.0-16.0,178.39999985694885,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,17,57168,0.0-17.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,18,57170,0.0-18.0,1.7999999523162842,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,19,58671,0.0-19.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,20,58764,0.0-20.0,91.79999995231628,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,21,60265,0.0-21.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,22,60403,0.0-22.0,137.20000004768372,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,23,61904,0.0-23.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_no_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,24,62115,0.0-24.0,210.20000004768372,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,25,63617,0.0-25.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,26,63835,0.0-26.0,217.59999990463257,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,27,65337,0.0-27.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,instruc6,28,67339,0.0-28.0,null,,,<div class='center'><p> See, he succeeded in robbing the ships most of the time but not every time. </p></div>,null,<div class='center'><p> See, he succeeded in robbing the ships most of the time but not every time. </p></div>,,,,,,,,,,
+,html-keyboard-response,29,67955,0.0-29.0,615.7000000476837,,,<div class='center'><p> See, he succeeded in robbing the ships most of the time but not every time. </p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,30,76851,0.0-30.0,8895.400000095367,,,<div class='center'><p>From these three pirates, you will get to choose which one you want to rob the next ship. <p>Press the <b>'1'</b> key on your keyboard to pick the pirate with the red beard.</p><p> Press <b>'2'</b> to pick the pirate with the white beard.</p><p> Press <b>'3'</b> to pick the pirate with the black beard.</p><p>Try picking a pirate now!</p><p><img src='../static/images/tutorial/all_pirates.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,31,80403,0.0-31.0-0.0,3551.2999999523163,,,<div class='center'><p>Yay! This pirate succeeded in robbing the ship!</p><p><img src='../static/images/tutorial/red_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,32,81395,0.0-31.0-1.0,991.5,,,<div class='center'><p>Now try choosing another.</p><p><img src='../static/images/tutorial/all_pirates.png' height='500'></p></div>,50,,,,,,,,,,,
+,html-keyboard-response,33,82667,0.0-32.0-0.0,1271.2000000476837,,,<div class='center'><p>Oh no! This pirate did not succeed in robbing the ship.</p><p><img src='../static/images/tutorial/white_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc9,34,84668,0.0-33.0-0.0,null,,,<div class='center'><p>If you don't make your choice fast enough, you'll have to wait a few seconds before you can make another one. </p><p><img src='../static/images/miscellaneous/hurry_up.png' height='500'></p></div>,null,<div class='center'><p>If you don't make your choice fast enough, you'll have to wait a few seconds before you can make another one. </p><p><img src='../static/images/miscellaneous/hurry_up.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,35,84907,0.0-33.0-1.0,238.40000009536743,,,<div class='center'><p>If you don't make your choice fast enough, you'll have to wait a few seconds before you can make another one. </p><p><img src='../static/images/miscellaneous/hurry_up.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc11,36,86909,0.0-33.0-2.0,null,,,<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you're on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they're more likely to be successful than a pirate who has never visited the island before.</p></div>,null,<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you're on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they're more likely to be successful than a pirate who has never visited the island before.</p></div>,,,,,,,,,,
+,html-keyboard-response,37,93314,0.0-33.0-3.0,6405.099999904633,,,<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you're on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they're more likely to be successful than a pirate who has never visited the island before.</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc12,38,95316,0.0-33.0-4.0,null,,,<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='../static/images/tutorial/contingency.png' height='500'></p></div>,null,<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='../static/images/tutorial/contingency.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,39,110122,0.0-33.0-5.0,14805.599999904633,,,<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='../static/images/tutorial/contingency.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc13,40,112123,0.0-33.0-6.0,null,,,<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><p><b>Pick the pirate who is the best at robbing ships on the current island.</b></p><p>The amount of bonus money you win depends on it.</p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b>1, 2, 3</b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money.</p><p>Good luck! This game will be very difficult but try your best!</p></div>,null,<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><p><b>Pick the pirate who is the best at robbing ships on the current island.</b></p><p>The amount of bonus money you win depends on it.</p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b>1, 2, 3</b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money.</p><p>Good luck! This game will be very difficult but try your best!</p></div>,,,,,,,,,,
+,html-keyboard-response,41,127651,0.0-33.0-7.0,15526.799999952316,,,<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><p><b>Pick the pirate who is the best at robbing ships on the current island.</b></p><p>The amount of bonus money you win depends on it.</p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b>1, 2, 3</b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money.</p><p>Good luck! This game will be very difficult but try your best!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,do_welcome,42,131655,0.0-33.0-8.0,null,,,,,,null,,,,,,,,,
+,do_trial,43,137674,0.0-33.0-9.0,null,,,,,,null,1,0,0,,,,,,,,
+,html-keyboard-response,44,138675,0.0-34.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,45,141568,0.0-34.0-1.0,390.19999980926514,,,,,,50,1,0,0,,,,,,,,
+,html-keyboard-response,46,142570,0.0-35.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,47,145304,0.0-35.0-1.0,231.70000004768372,,,,,,51,1,1,0,,,,,,,,
+,html-keyboard-response,48,146306,0.0-36.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,49,149041,0.0-36.0-1.0,231,,,,,,49,1,0,1,,,,,,,,
+,html-keyboard-response,50,150043,0.0-37.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,51,152759,0.0-37.0-1.0,214.40000009536743,,,,,,49,0,1,0,,,,,,,,
+,html-keyboard-response,52,153760,0.0-38.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,53,156488,0.0-38.0-1.0,225.10000014305115,,,,,,49,1,0,0,,,,,,,,
+,do_bye,54,157992,0.0-39.0-0.0,null,,,,,,null,,,,,,,,,
+,do_travel,55,166995,0.0-39.0-1.0,null,,,,,,null,,,,,,,,,
+,do_welcome,56,170998,0.0-39.0-2.0,null,,,,,,null,,,,,,,,,
+,do_trial,57,174127,0.0-39.0-3.0,627.0999999046326,,,,,,51,1,0,0,,,,,,,,
+,html-keyboard-response,58,175129,0.0-40.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,59,177832,0.0-40.0-1.0,200.59999990463257,,,,,,50,1,0,1,,,,,,,,
+,html-keyboard-response,60,178837,0.0-41.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,61,181559,0.0-41.0-1.0,220,,,,,,49,1,1,0,,,,,,,,
+,html-keyboard-response,62,182560,0.0-42.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,63,185288,0.0-42.0-1.0,225.29999995231628,,,,,,49,0,0,1,,,,,,,,
+,html-keyboard-response,64,186290,0.0-43.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,65,189081,0.0-43.0-1.0,287,,,,,,50,1,0,1,,,,,,,,
+,html-keyboard-response,66,191955,0.0-44.0-0.0,2874,,,<div class='center'><p><img src='../static/images/tutorial/prac_best_pirate.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,67,193419,0.0-45.0-0.0,1463.1000001430511,,,<div class='center'><p>That's correct! Red beard was the best.</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,quiz_beginning,68,195420,0.0-45.0-1.0,null,,,<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>,null,<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>,,,,,,,,,,
+,html-keyboard-response,69,199347,0.0-45.0-2.0,3926.5,,,<div class='center'><p>You win bonus money by collecting gold coins.</p><p>Press 1 for true and press  2 for false.</p></div>,49,,,,,,,,,,,
+,correct,70,201349,0.0-46.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,71,202411,0.0-46.0-1.0,1061.5,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,72,206555,0.0-46.0-2.0,4143.899999856949,,,<div class='center'><p>The pirate who is the best at robbing ships when you first arrive on the island will definitely still be the best when you leave the island. </p><p>Press 1 for true and press  2 for false.</p></div>,50,,,,,,,,,,,
+,correct,73,208557,0.0-47.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,74,209250,0.0-47.0-1.0,693.1000001430511,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,75,212491,0.0-47.0-2.0,3240.7000000476837,,,<div class='center'><p>The pirate who is the best at robbing ships on the first island will be the best on every other island.</p><p>Press 1 for true and press  2 for false.</p></div>,50,,,,,,,,,,,
+,correct,76,214493,0.0-48.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,77,215115,0.0-48.0-1.0,622.2000000476837,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,78,218267,0.0-48.0-2.0,3151.5,,,<div class='center'><p>You should remember the island where a pirate robbed a ship.</p><p>Press 1 for true and press  2 for false.</p></div>,49,,,,,,,,,,,
+,correct,79,220276,0.0-49.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,80,221116,0.0-49.0-1.0,839.2999999523163,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,q_all_corr,81,223117,0.0-50.0-0.0,null,,,<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>,null,<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>,,,,,,,,,,
+,html-keyboard-response,82,227243,0.0-50.0-1.0,4126,,,<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,do_welcome,83,231249,0.0-51.0-0.0,null,,,,,,null,,,,,,,,,
+,do_trial,84,234921,0.0-52.0-0.0,1160.0999999046326,,,,,,50,1,0,0,0,coast,0,0.6,0.3,0.1,0,learn
+,html-keyboard-response,85,235923,0.0-52.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,86,238660,0.0-53.0-0.0,229.5,,,,,,51,0,0,0,0,coast,1,0.4771459659881059,0.358179702045072,0.15323530796386023,0,learn
+,html-keyboard-response,87,239662,0.0-53.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,88,242385,0.0-54.0-0.0,219.79999995231628,,,,,,49,0,1,0,0,coast,2,0.4467586474045046,0.3409396237443879,0.08737609781766409,0,learn
+,html-keyboard-response,89,243387,0.0-54.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,90,246008,0.0-55.0-0.0,117.79999995231628,,,,,,49,0,0,0,0,coast,3,0.5063784263315013,0.3387200108854014,0.07275433538766127,0,learn
+,html-keyboard-response,91,247010,0.0-55.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,92,249705,0.0-56.0-0.0,191.40000009536743,,,,,,50,1,1,0,0,coast,4,0.5830719958777921,0.3722422435154441,0.21432296899393508,1,learn
+,html-keyboard-response,93,250706,0.0-56.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,94,253424,0.0-57.0-0.0,215.20000004768372,,,,,,51,1,0,0,0,coast,5,0.6451835448537391,0.31357038144688437,0.2863789015173907,0,learn
+,html-keyboard-response,95,254426,0.0-57.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,96,256992,0.0-58.0-0.0,63.5,,,,,,50,1,0,1,0,coast,6,0.669949417150726,0.37281292239826963,0.23960922386975614,0,learn
+,html-keyboard-response,97,257996,0.0-58.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,98,260704,0.0-59.0-0.0,205.79999995231628,,,,,,50,1,0,0,0,coast,7,0.7329438557681013,0.3213094274707914,0.19807857783242144,0,learn
+,html-keyboard-response,99,261706,0.0-59.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,100,264409,0.0-60.0-0.0,199.29999995231628,,,,,,50,0,1,0,0,coast,8,0.7443612838018925,0.30730639300782786,0.14038014457803932,1,learn
+,html-keyboard-response,101,265410,0.0-60.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,102,268192,0.0-61.0-0.0,279.2999999523163,,,,,,51,1,0,0,0,coast,9,0.815716762722627,0.19745032435244753,0.08159034544810483,0,learn
+,html-keyboard-response,103,269195,0.0-61.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,104,271937,0.0-62.0-0.0,238.70000004768372,,,,,,49,1,0,0,0,coast,10,0.7104980291211443,0.16903749543545604,0.10590095505343255,1,learn
+,html-keyboard-response,105,272939,0.0-62.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,106,275663,0.0-63.0-0.0,222.10000014305115,,,,,,50,0,1,0,0,coast,11,0.7738592295242217,0.3173257526976072,0.08046332742020923,1,learn
+,html-keyboard-response,107,276664,0.0-63.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,108,279359,0.0-64.0-0.0,193.20000004768372,,,,,,50,0,0,0,0,coast,12,0.5340879506075931,0.14602301915050675,0.1333267979446749,0,learn
+,html-keyboard-response,109,280361,0.0-64.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,110,283312,0.0-65.0-0.0,448.30000019073486,,,,,,50,0,0,0,0,coast,13,0.6350921690081521,0.17695426620490967,0.1453668185308828,0,learn
+,html-keyboard-response,111,284313,0.0-65.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,112,287039,0.0-66.0-0.0,223.79999995231628,,,,,,49,1,1,0,0,coast,14,0.6370364563556911,0.18018054995851807,0.06553393447114457,1,learn
+,html-keyboard-response,113,288041,0.0-66.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,114,290656,0.0-67.0-0.0,112.79999995231628,,,,,,49,0,1,0,0,coast,15,0.6925885920281035,0.24926872300272568,0.10797048494892102,0,learn
+,html-keyboard-response,115,291659,0.0-67.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,116,294376,0.0-68.0-0.0,214.89999985694885,,,,,,51,0,1,0,0,coast,16,0.6351118912642193,0.30560993444447265,0.11254424121172772,0,learn
+,html-keyboard-response,117,295377,0.0-68.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,118,298112,0.0-69.0-0.0,231.90000009536743,,,,,,50,0,0,1,0,coast,17,0.5222029737409827,0.3436882025208973,0.08637742976509269,0,learn
+,html-keyboard-response,119,299114,0.0-69.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,120,301832,0.0-70.0-0.0,215.29999995231628,,,,,,50,1,1,0,0,coast,18,0.5594810109677452,0.3786040165449335,0.08136118814382251,1,learn
+,html-keyboard-response,121,302833,0.0-70.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,122,305649,0.0-71.0-0.0,312.5,,,,,,50,1,0,0,0,coast,19,0.6810643429962336,0.22945375818181282,0.082498231223534,0,learn
+,html-keyboard-response,123,306650,0.0-71.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,124,309616,0.0-72.0-0.0,462.80000019073486,,,,,,50,0,0,0,0,coast,20,0.4979918303647197,0.20976760822002408,0.0568352385646107,0,learn
+,html-keyboard-response,125,310617,0.0-72.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,126,313336,0.0-73.0-0.0,216,,,,,,49,1,0,0,0,coast,21,0.5208107554325535,0.1903933604508688,0.11312517259213511,1,learn
+,html-keyboard-response,127,314339,0.0-73.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,128,317040,0.0-74.0-0.0,198.20000004768372,,,,,,49,1,0,0,0,coast,22,0.6098056432556274,0.21212639459233668,0.1191861348403832,1,learn
+,html-keyboard-response,129,318042,0.0-74.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,130,320799,0.0-75.0-0.0,255.20000004768372,,,,,,49,1,1,0,0,coast,23,0.6453829978037766,0.24791846685470237,0.12748093166623425,1,learn
+,html-keyboard-response,131,321801,0.0-75.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,132,324328,0.0-76.0-0.0,24.700000047683716,,,,,,49,1,1,0,0,coast,24,0.7046332348348079,0.286503332414573,0.08452234831404082,1,learn
+,html-keyboard-response,133,325331,0.0-76.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,134,327911,0.0-77.0-0.0,78.09999990463257,,,,,,49,1,0,0,0,coast,25,0.7140869315461723,0.1311455932978514,0.12119676283053042,1,learn
+,html-keyboard-response,135,328913,0.0-77.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,136,331648,0.0-78.0-0.0,231.5,,,,,,49,1,0,0,0,coast,26,0.5925029672724865,0.14585268334387555,0.08192605668899328,1,learn
+,html-keyboard-response,137,332649,0.0-78.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,138,335369,0.0-79.0-0.0,216,,,,,,49,0,0,0,0,coast,27,0.6453197681039676,0.24958330415131433,0.05445002335498461,0,learn
+,html-keyboard-response,139,336370,0.0-79.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,140,339432,0.0-80.0-0.0,559.0999999046326,,,,,,49,1,0,0,0,coast,28,0.6899058354183103,0.21183762716397211,0.16190637004643388,1,learn
+,html-keyboard-response,141,340434,0.0-80.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,142,343143,0.0-81.0-0.0,199.70000004768372,,,,,,49,0,0,1,0,coast,29,0.5580856590795961,0.22776203504829046,0.13366865002403003,0,learn
+,html-keyboard-response,143,344145,0.0-81.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_bye,144,345649,0.0-82.0-0.0,null,,,,,,null,,,,,,,,,
+,do_travel,145,354651,0.0-83.0-0.0,null,,,,,,null,,,,,,,,,

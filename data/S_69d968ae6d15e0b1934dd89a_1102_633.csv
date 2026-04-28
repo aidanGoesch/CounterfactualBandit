@@ -1,0 +1,408 @@
+success,trial_type,trial_index,time_elapsed,internal_node_id,rt,responses,subject_id,stimulus,key_press,prompt,response,choice_outcomes,context_n,context_img_id,trial_n,pR_red,pR_white,pR_black,outcome,phase
+true,fullscreen,0,2699,0.0-0.0,,,,,,,,,,,,,,,,
+,survey-html-form,1,8350,0.0-1.0,5649.30000000447,{worker_id:69d968ae6d15e0b1934dd89a},69d968ae6d15e0b1934dd89a,,,,,,,,,,,,,
+,instruc1,2,10352,0.0-2.0,null,,69d968ae6d15e0b1934dd89a,<div class='center'><p>Welcome! This study will last ~30 minutes. After the instructions there will be a practice game and quiz to make sure you understand the task. Today you will be the head captain of a pirate ship traveling around the world to different islands. Here is an overview of what you will be doing:</p><br><p> 1. Try to find the most successful pirate on 6 different islands</p><p> 2. Recall which pirates did the best on each island</p><br><p>,null,<div class='center'><p>Welcome! This study will last ~30 minutes. After the instructions there will be a practice game and quiz to make sure you understand the task. Today you will be the head captain of a pirate ship traveling around the world to different islands. Here is an overview of what you will be doing:</p><br><p> 1. Try to find the most successful pirate on 6 different islands</p><p> 2. Recall which pirates did the best on each island</p><br><p>,,,,,,,,,,
+,html-keyboard-response,3,21353,0.0-3.0,10999.69999999553,,,<div class='center'><p>Welcome! This study will last ~30 minutes. After the instructions there will be a practice game and quiz to make sure you understand the task. Today you will be the head captain of a pirate ship traveling around the world to different islands. Here is an overview of what you will be doing:</p><br><p> 1. Try to find the most successful pirate on 6 different islands</p><p> 2. Recall which pirates did the best on each island</p><br><p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc2,4,23355,0.0-4.0,null,,,<div class='center'><p>You are going to visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='../static/images/contexts/all_contexts.png' height='500'></p></div>,null,<div class='center'><p>You are going to visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='../static/images/contexts/all_contexts.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,5,26750,0.0-5.0,3394.39999999851,,,<div class='center'><p>You are going to visit these 6 islands on your journey. You'll be able to see these islands from your ship.</p><p><img src='../static/images/contexts/all_contexts.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc4,6,28753,0.0-6.0,null,,,<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='../static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='../static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='../static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div>,null,<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='../static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='../static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='../static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div>,,,,,,,,,,
+,html-keyboard-response,7,42060,0.0-7.0,13306.20000000298,,,<div class='center'><p>As the head captain, you do not have to rob any ships yourself. Another pirate will be doing the robbing for you. First, you will choose a pirate to rob the next ship.</p><p><img src='../static/images/tutorial/pirates_all_crop.png' height='200'></p><p>Then, you'll see if the pirate successfully robbed the ship of their gold. If they were successful, then you'll get a stack of gold coins like this:</p><p><img src='../static/images/tutorial/reward.png' height='150'></p><p> If they were <b>not</b> successful, then you'll get no gold coins, and you'll see a big red x like this: </p><p><img src='../static/images/tutorial/reward_no.png' height='150'></p><p> How much bonus money you make is based on how many gold coins you collect.</p><div><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc5,8,56851,0.0-8.0,14790.79999999702,,,<div class='center'><p>Even the most skilled pirate can not rob EVERY ship.</p><p> Some ships will have very strong protections against pirate attacks.</p><p> Blue beard, here, is very, very good at robbing ships, but he won't be successful every time he tries to rob one.</p><p> You can press the <b>'1'</b> key on the keyboard to choose him.</p><p> Try choosing him 10 times to see how often he succeeds at robbing a ship. </p><p><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,<div class='center'><p>Even the most skilled pirate can not rob EVERY ship.</p><p> Some ships will have very strong protections against pirate attacks.</p><p> Blue beard, here, is very, very good at robbing ships, but he won't be successful every time he tries to rob one.</p><p> You can press the <b>'1'</b> key on the keyboard to choose him.</p><p> Try choosing him 10 times to see how often he succeeds at robbing a ship. </p><p><img src='../static/images/tutorial/blue.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,9,58352,0.0-9.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,10,58394,0.0-10.0,41,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,11,59895,0.0-11.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,12,60474,0.0-12.0,577.5,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,13,61976,0.0-13.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,14,63083,0.0-14.0,1106.3000000044703,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,15,64586,0.0-15.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_no_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,16,65191,0.0-16.0,604.2000000029802,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,17,66693,0.0-17.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,18,67069,0.0-18.0,375.5,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,19,68571,0.0-19.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,20,68960,0.0-20.0,387.6000000014901,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,21,70462,0.0-21.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,22,70871,0.0-22.0,408.30000000447035,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,23,72373,0.0-23.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_no_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,24,72745,0.0-24.0,371,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,25,74246,0.0-25.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,html-keyboard-response,26,76895,0.0-26.0,2648.6999999955297,,,<div class='center'><img src='../static/images/tutorial/blue.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,27,78397,0.0-27.0,null,,,<div class='center'><p><img src='../static/images/tutorial/blue_win.png' height='500'></p></div>,null,,,,,,,,,,,
+,instruc6,28,80398,0.0-28.0,null,,,<div class='center'><p> See, he succeeded in robbing the ships most of the time but not every time. </p></div>,null,<div class='center'><p> See, he succeeded in robbing the ships most of the time but not every time. </p></div>,,,,,,,,,,
+,html-keyboard-response,29,81909,0.0-29.0,1510,,,<div class='center'><p> See, he succeeded in robbing the ships most of the time but not every time. </p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,30,91009,0.0-30.0,9099.20000000298,,,<div class='center'><p>From these three pirates, you will get to choose which one you want to rob the next ship. <p>Press the <b>'1'</b> key on your keyboard to pick the pirate with the red beard.</p><p> Press <b>'2'</b> to pick the pirate with the white beard.</p><p> Press <b>'3'</b> to pick the pirate with the black beard.</p><p>Try picking a pirate now!</p><p><img src='../static/images/tutorial/all_pirates.png' height='500'></p></div>,51,,,,,,,,,,,
+,html-keyboard-response,31,92746,0.0-31.0-0.0,1736.2999999970198,,,<div class='center'><p>Yay! This pirate succeeded in robbing the ship!</p><p><img src='../static/images/tutorial/black_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,32,95588,0.0-31.0-1.0,2841.3000000044703,,,<div class='center'><p>Now try choosing another.</p><p><img src='../static/images/tutorial/all_pirates.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,33,96580,0.0-32.0-0.0,991.1000000014901,,,<div class='center'><p>Oh no! This pirate did not succeed in robbing the ship.</p><p><img src='../static/images/tutorial/red_no_win.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc9,34,98581,0.0-33.0-0.0,null,,,<div class='center'><p>If you don't make your choice fast enough, you'll have to wait a few seconds before you can make another one. </p><p><img src='../static/images/miscellaneous/hurry_up.png' height='500'></p></div>,null,<div class='center'><p>If you don't make your choice fast enough, you'll have to wait a few seconds before you can make another one. </p><p><img src='../static/images/miscellaneous/hurry_up.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,35,100362,0.0-33.0-1.0,1779.3999999985099,,,<div class='center'><p>If you don't make your choice fast enough, you'll have to wait a few seconds before you can make another one. </p><p><img src='../static/images/miscellaneous/hurry_up.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc11,36,102364,0.0-33.0-2.0,null,,,<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you're on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they're more likely to be successful than a pirate who has never visited the island before.</p></div>,null,<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you're on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they're more likely to be successful than a pirate who has never visited the island before.</p></div>,,,,,,,,,,
+,html-keyboard-response,37,109931,0.0-33.0-3.0,7566.30000000447,,,<div class='center'><p>How successful a pirate is at robbing ships will depend on the island you're on.</p><p> A pirate may have visited this island many times before and gained a lot of practice robbing ships there.</p><p>So, they're more likely to be successful than a pirate who has never visited the island before.</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc12,38,111932,0.0-33.0-4.0,null,,,<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='../static/images/tutorial/contingency.png' height='500'></p></div>,null,<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='../static/images/tutorial/contingency.png' height='500'></p></div>,,,,,,,,,,
+,html-keyboard-response,39,124039,0.0-33.0-5.0,12106,,,<div class='center'><p>How successful a pirate is at robbing ships can also change over the time spent on the island. </p><p> Ships may hear from islanders about the pirates coming and will improve their protections against the attack. This may make it harder to rob them.</p><p> Ships may also become lazy and weaken the strength of their protections. This may make it easier to rob them.</p><br><p>Things are always changing on the high seas! So, try your best to pay attention!</p><p><img src='../static/images/tutorial/contingency.png' height='500'></p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,instruc13,40,126041,0.0-33.0-6.0,null,,,<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><p><b>Pick the pirate who is the best at robbing ships on the current island.</b></p><p>The amount of bonus money you win depends on it.</p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b>1, 2, 3</b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money.</p><p>Good luck! This game will be very difficult but try your best!</p></div>,null,<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><p><b>Pick the pirate who is the best at robbing ships on the current island.</b></p><p>The amount of bonus money you win depends on it.</p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b>1, 2, 3</b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money.</p><p>Good luck! This game will be very difficult but try your best!</p></div>,,,,,,,,,,
+,html-keyboard-response,41,131956,0.0-33.0-7.0,5914.20000000298,,,<div class='center'><p>Let's go over the instructions quickly again. You have one thing to do: </p><p><b>Pick the pirate who is the best at robbing ships on the current island.</b></p><p>The amount of bonus money you win depends on it.</p><br><p>Let's try a practice game. The game will start by showing you an island. Pick a pirate using the <b>1, 2, 3</b> keys on your keyboard to get it to try and rob one of the ships leaving the island.</p><p>This is just a practice game, so you're not playing for money.</p><p>Good luck! This game will be very difficult but try your best!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,do_welcome,42,135961,0.0-33.0-8.0,null,,,,,,null,,,,,,,,,
+,do_trial,43,140153,0.0-33.0-9.0,1688.1000000014901,,,,,,50,1,0,0,,,,,,,,
+,html-keyboard-response,44,141155,0.0-34.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,45,144448,0.0-34.0-1.0,788.8999999985099,,,,,,49,1,1,0,,,,,,,,
+,html-keyboard-response,46,145449,0.0-35.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,47,148435,0.0-35.0-1.0,481,,,,,,49,1,0,1,,,,,,,,
+,html-keyboard-response,48,149438,0.0-36.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,49,152400,0.0-36.0-1.0,457.59999999403954,,,,,,49,0,1,0,,,,,,,,
+,html-keyboard-response,50,153403,0.0-37.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,51,156254,0.0-37.0-1.0,346.5,,,,,,51,1,0,0,,,,,,,,
+,do_bye,52,157760,0.0-38.0-0.0,null,,,,,,null,,,,,,,,,
+,do_travel,53,166765,0.0-38.0-1.0,null,,,,,,null,,,,,,,,,
+,do_welcome,54,170770,0.0-38.0-2.0,null,,,,,,null,,,,,,,,,
+,do_trial,55,173780,0.0-38.0-3.0,506.3999999985099,,,,,,51,1,0,0,,,,,,,,
+,html-keyboard-response,56,174782,0.0-39.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,57,177627,0.0-39.0-1.0,339.80000000447035,,,,,,51,1,0,1,,,,,,,,
+,html-keyboard-response,58,178628,0.0-40.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,59,181631,0.0-40.0-1.0,498.40000000596046,,,,,,51,1,1,0,,,,,,,,
+,html-keyboard-response,60,182633,0.0-41.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,61,185556,0.0-41.0-1.0,419.20000000298023,,,,,,50,0,0,1,,,,,,,,
+,html-keyboard-response,62,186559,0.0-42.0-0.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,63,189376,0.0-42.0-1.0,312.79999999701977,,,,,,50,1,0,1,,,,,,,,
+,html-keyboard-response,64,192475,0.0-43.0-0.0,3097.6999999955297,,,<div class='center'><p><img src='../static/images/tutorial/prac_best_pirate.png' height='500'></p></div>,49,,,,,,,,,,,
+,html-keyboard-response,65,194574,0.0-44.0-0.0,2098.2000000029802,,,<div class='center'><p>That's correct! Red beard was the best.</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,quiz_beginning,66,196576,0.0-44.0-1.0,null,,,<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>,null,<div class='center'><p>Good job on the practice game! Now, you will be asked some true or false questions to make sure you really understand the rules of the game.</p><p> Press <b>'1'</b> on the keyboard for true and press <b>'2'</b> for false.</p></div>,,,,,,,,,,
+,html-keyboard-response,67,200789,0.0-44.0-2.0,4211.79999999702,,,<div class='center'><p>You win bonus money by collecting gold coins.</p><p>Press 1 for true and press  2 for false.</p></div>,49,,,,,,,,,,,
+,correct,68,202790,0.0-45.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,69,204041,0.0-45.0-1.0,1250.1000000014901,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,70,208839,0.0-45.0-2.0,4797.79999999702,,,<div class='center'><p>The pirate who is the best at robbing ships when you first arrive on the island will definitely still be the best when you leave the island. </p><p>Press 1 for true and press  2 for false.</p></div>,49,,,,,,,,,,,
+,q2_err,71,210841,0.0-46.0-0.0,null,,,<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p></div>,null,<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p></div>,,,,,,,,,,
+,html-keyboard-response,72,212557,0.0-46.0-1.0,1715.0999999940395,,,<div class='center'><p>That’s incorrect. Which pirate is the best may change during your time on the island.</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,73,217189,0.0-46.0-2.0,4631,,,<div class='center'><p>The pirate who is the best at robbing ships on the first island will be the best on every other island.</p><p>Press 1 for true and press  2 for false.</p></div>,50,,,,,,,,,,,
+,correct,74,219191,0.0-47.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,75,219577,0.0-47.0-1.0,385.69999999552965,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,76,225037,0.0-47.0-2.0,5459.69999999553,,,<div class='center'><p>You should remember the island where a pirate robbed a ship.</p><p>Press 1 for true and press  2 for false.</p></div>,49,,,,,,,,,,,
+,correct,77,227039,0.0-48.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,78,227579,0.0-48.0-1.0,539.5,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,q_all_err,79,229580,0.0-49.0-0.0,null,,,<div class='center'><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! </p></div>,null,<div class='center'><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! </p></div>,,,,,,,,,,
+,html-keyboard-response,80,231053,0.0-49.0-1.0,1472.8000000044703,,,<div class='center'><p>Oops, you missed some questions. Now that you’ve heard the correct answers. Try the quiz again! </p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,81,232074,0.0-49.0-2.0,1020.1000000014901,,,<div class='center'><p>You win bonus money by collecting gold coins.</p><p>Press 1 for true and press  2 for false.</p></div>,49,,,,,,,,,,,
+,correct,82,234076,0.0-50.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,83,234391,0.0-50.0-1.0,314.19999999552965,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,84,236816,0.0-50.0-2.0,2424.4000000059605,,,<div class='center'><p>The pirate who is the best at robbing ships when you first arrive on the island will definitely still be the best when you leave the island. </p><p>Press 1 for true and press  2 for false.</p></div>,50,,,,,,,,,,,
+,correct,85,238818,0.0-51.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,86,239302,0.0-51.0-1.0,483,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,87,241731,0.0-51.0-2.0,2428.60000000149,,,<div class='center'><p>The pirate who is the best at robbing ships on the first island will be the best on every other island.</p><p>Press 1 for true and press  2 for false.</p></div>,50,,,,,,,,,,,
+,correct,88,243733,0.0-52.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,89,243894,0.0-52.0-1.0,160.5,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,html-keyboard-response,90,246434,0.0-52.0-2.0,2539.2000000029802,,,<div class='center'><p>You should remember the island where a pirate robbed a ship.</p><p>Press 1 for true and press  2 for false.</p></div>,49,,,,,,,,,,,
+,correct,91,248451,0.0-53.0-0.0,null,,,<div class='center'><p>That's correct!</p></div>,null,<div class='center'><p>That's correct!</p></div>,,,,,,,,,,
+,html-keyboard-response,92,248927,0.0-53.0-1.0,475.5,,,<div class='center'><p>That's correct!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,q_all_corr,93,250929,0.0-54.0-0.0,null,,,<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>,null,<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p></div>,,,,,,,,,,
+,html-keyboard-response,94,253859,0.0-54.0-1.0,2929.10000000149,,,<div class='center'><p>Good job! You’re now ready to move on to the real game! Remember this game will be difficult but don't get discouraged and try your best!</p><p><b>[Press the space bar to continue]</b></p></div>,32,,,,,,,,,,,
+,do_welcome,95,257870,0.0-55.0-0.0,null,,,,,,null,,,,,,,,,
+,do_trial,96,261107,0.0-56.0-0.0,733.3000000044703,,,,,,49,1,0,0,0,forest,0,0.6,0.3,0.1,1,learn
+,html-keyboard-response,97,262110,0.0-56.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,98,265230,0.0-57.0-0.0,615.5,,,,,,49,0,1,0,0,forest,1,0.6919255040270114,0.21636910216555072,0.12967847080449296,0,learn
+,html-keyboard-response,99,266232,0.0-57.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,100,269078,0.0-58.0-0.0,341.19999999552965,,,,,,49,1,0,0,0,forest,2,0.7386935041006043,0.2391289642864423,0.2508931145162538,1,learn
+,html-keyboard-response,101,270079,0.0-58.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,102,272981,0.0-59.0-0.0,396.6000000014901,,,,,,49,1,0,1,0,forest,3,0.7837779626131282,0.30209606462371835,0.07894461187669427,1,learn
+,html-keyboard-response,103,273983,0.0-59.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,104,277084,0.0-60.0-0.0,595.3999999985099,,,,,,49,1,0,0,0,forest,4,0.7533560338831515,0.25325765825370716,0.21831043042832257,1,learn
+,html-keyboard-response,105,278086,0.0-60.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,106,281164,0.0-61.0-0.0,572.7999999970198,,,,,,49,1,0,1,0,forest,5,0.7629629525752819,0.3025659947598402,0.06476406480154603,1,learn
+,html-keyboard-response,107,282167,0.0-61.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,108,285252,0.0-62.0-0.0,580,,,,,,49,1,0,0,0,forest,6,0.7230125996324452,0.26525501530066187,0.13659204640639086,1,learn
+,html-keyboard-response,109,286254,0.0-62.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,110,289198,0.0-63.0-0.0,439.30000000447035,,,,,,49,0,1,0,0,forest,7,0.6381951248428775,0.3278624893018677,0.0788958788534944,0,learn
+,html-keyboard-response,111,290200,0.0-63.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,112,293164,0.0-64.0-0.0,459.30000000447035,,,,,,49,1,0,0,0,forest,8,0.7235899971699316,0.32472968508938416,0.08931941982210818,1,learn
+,html-keyboard-response,113,294167,0.0-64.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,114,297290,0.0-65.0-0.0,619.5,,,,,,49,1,1,0,0,forest,9,0.6319329242993404,0.24948663446557928,0.0904452764912541,1,learn
+,html-keyboard-response,115,298293,0.0-65.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,116,301100,0.0-66.0-0.0,301.6000000014901,,,,,,49,0,1,0,0,forest,10,0.6634165034737555,0.31767300315728825,0.07909036845015839,0,learn
+,html-keyboard-response,117,302103,0.0-66.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,118,304925,0.0-67.0-0.0,317.70000000298023,,,,,,49,1,0,0,0,forest,11,0.47726862912290385,0.1405833032732623,0.08048830527006377,1,learn
+,html-keyboard-response,119,305928,0.0-67.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,120,308864,0.0-68.0-0.0,431.79999999701977,,,,,,49,1,0,0,0,forest,12,0.6209858603733006,0.11570724119790823,0.13559275266333282,1,learn
+,html-keyboard-response,121,309866,0.0-68.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,122,312670,0.0-69.0-0.0,298.20000000298023,,,,,,49,1,0,0,0,forest,13,0.5505978323691884,0.16821034215278666,0.19473928524177841,1,learn
+,html-keyboard-response,123,313672,0.0-69.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,124,316813,0.0-70.0-0.0,635.2999999970198,,,,,,49,0,0,0,0,forest,14,0.6314162191832273,0.29239921091023646,0.11910253279851285,0,learn
+,html-keyboard-response,125,317815,0.0-70.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,126,320629,0.0-71.0-0.0,309.30000000447035,,,,,,49,1,1,1,0,forest,15,0.6155855888970931,0.27675590875224654,0.1939118389363733,1,learn
+,html-keyboard-response,127,321632,0.0-71.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,128,324545,0.0-72.0-0.0,408.20000000298023,,,,,,49,0,1,0,0,forest,16,0.6702408362030262,0.2897975761653206,0.11173445655759313,0,learn
+,html-keyboard-response,129,325547,0.0-72.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,130,329469,0.0-73.0-0.0,1417.1000000014901,,,,,,49,0,0,0,0,forest,17,0.6277423736354152,0.12461551739616734,0.06194051705431239,0,learn
+,html-keyboard-response,131,330471,0.0-73.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,132,333243,0.0-74.0-0.0,268.20000000298023,,,,,,51,1,0,0,0,forest,18,0.6568502127839306,0.29672979710399355,0.0955844349729436,0,learn
+,html-keyboard-response,133,334245,0.0-74.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,134,337086,0.0-75.0-0.0,336,,,,,,51,0,0,0,0,forest,19,0.5655382452332153,0.3283842032436077,0.14164892726676764,0,learn
+,html-keyboard-response,135,338089,0.0-75.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,136,341408,0.0-76.0-0.0,815.2999999970198,,,,,,51,1,1,1,0,forest,20,0.5472688351495648,0.35105748738905784,0.34596560122245107,1,learn
+,html-keyboard-response,137,342411,0.0-76.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,138,345216,0.0-77.0-0.0,301.3999999985099,,,,,,51,0,1,0,0,forest,21,0.44632718277838546,0.3250214355841087,0.2180648945760006,0,learn
+,html-keyboard-response,139,346219,0.0-77.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,140,349029,0.0-78.0-0.0,305.1000000014901,,,,,,50,0,0,0,0,forest,22,0.3498591217162824,0.2385701155947574,0.15029886558640612,0,learn
+,html-keyboard-response,141,350030,0.0-78.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,142,352845,0.0-79.0-0.0,310,,,,,,50,1,0,0,0,forest,23,0.516371875735818,0.27975029837783494,0.21235605512431513,0,learn
+,html-keyboard-response,143,353847,0.0-79.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,144,356627,0.0-80.0-0.0,275.6000000014901,,,,,,50,1,0,0,0,forest,24,0.415588600511758,0.262391753393579,0.05806868559695254,0,learn
+,html-keyboard-response,145,357629,0.0-80.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,146,360436,0.0-81.0-0.0,302.80000000447035,,,,,,49,0,0,1,0,forest,25,0.4863691638074532,0.20594461755103907,0.09350868207423574,0,learn
+,html-keyboard-response,147,361438,0.0-81.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,148,364220,0.0-82.0-0.0,277,,,,,,49,0,0,0,0,forest,26,0.5840452803450049,0.2840930134856646,0.06972365711279517,0,learn
+,html-keyboard-response,149,365222,0.0-82.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,150,368102,0.0-83.0-0.0,375.20000000298023,,,,,,51,0,0,0,0,forest,27,0.508174298657041,0.30633959753373974,0.08541605364779489,0,learn
+,html-keyboard-response,151,369104,0.0-83.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,152,372142,0.0-84.0-0.0,534.1000000014901,,,,,,49,1,1,0,0,forest,28,0.5200860041766896,0.21696847111786505,0.07713349036208425,1,learn
+,html-keyboard-response,153,373145,0.0-84.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,154,375980,0.0-85.0-0.0,330.09999999403954,,,,,,49,0,0,0,0,forest,29,0.449761187326295,0.3868380756526725,0.07108982386793693,0,learn
+,html-keyboard-response,155,376982,0.0-85.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_bye,156,378487,0.0-86.0-0.0,null,,,,,,null,,,,,,,,,
+,do_travel,157,387490,0.0-87.0-0.0,null,,,,,,null,,,,,,,,,
+,do_welcome,158,391504,0.0-87.0-1.0,null,,,,,,null,,,,,,,,,
+,do_trial,159,394560,0.0-88.0-0.0,550.3000000044703,,,,,,49,1,0,0,1,coast,30,1,0.4759301493869687,0.08850211442538777,1,learn
+,html-keyboard-response,160,395562,0.0-88.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,161,398555,0.0-89.0-0.0,488,,,,,,49,1,0,0,1,coast,31,1,0.44674166997959697,0.13559610870127886,1,learn
+,html-keyboard-response,162,399556,0.0-89.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,163,402417,0.0-90.0-0.0,357,,,,,,49,1,0,0,1,coast,32,1,0.4268835116570492,0.06485755079381426,1,learn
+,html-keyboard-response,164,403419,0.0-90.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,165,406227,0.0-91.0-0.0,304.1000000014901,,,,,,49,1,0,0,1,coast,33,0.8535378838553187,0.4721254437884369,0.08759781267467488,1,learn
+,html-keyboard-response,166,407230,0.0-91.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,167,410019,0.0-92.0-0.0,283.79999999701977,,,,,,49,1,0,0,1,coast,34,0.741502080987656,0.3162435059390127,0.0811398284214118,1,learn
+,html-keyboard-response,168,411021,0.0-92.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,169,413752,0.0-93.0-0.0,226.5,,,,,,49,0,0,0,1,coast,35,0.6627193774487359,0.39386833814255057,0.10450521245025313,0,learn
+,html-keyboard-response,170,414755,0.0-93.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,171,417544,0.0-94.0-0.0,284.20000000298023,,,,,,49,1,0,0,1,coast,36,0.5908021446521904,0.4212573667840407,0.13419130838378296,1,learn
+,html-keyboard-response,172,418546,0.0-94.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,173,421375,0.0-95.0-0.0,324.90000000596046,,,,,,49,0,1,0,1,coast,37,0.5503130245522047,0.3303715935458027,0.17423798459736645,0,learn
+,html-keyboard-response,174,422378,0.0-95.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,175,425276,0.0-96.0-0.0,393.69999999552965,,,,,,49,0,0,0,1,coast,38,0.4321077246049934,0.3615047187538781,0.14149956352587093,0,learn
+,html-keyboard-response,176,426278,0.0-96.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,177,429072,0.0-97.0-0.0,290,,,,,,49,1,0,1,1,coast,39,0.6448978613543926,0.41986936067157943,0.2113275770271101,1,learn
+,html-keyboard-response,178,430075,0.0-97.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,179,433172,0.0-98.0-0.0,593.3999999985099,,,,,,49,1,0,0,1,coast,40,0.5731372963279777,0.39034502604001364,0.0839223199026031,1,learn
+,html-keyboard-response,180,434175,0.0-98.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,181,436990,0.0-99.0-0.0,311.70000000298023,,,,,,49,1,1,0,1,coast,41,0.5721572915633604,0.37014300802930833,0.10128360614939118,1,learn
+,html-keyboard-response,182,437993,0.0-99.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,183,440822,0.0-100.0-0.0,323.5,,,,,,49,0,0,1,1,coast,42,0.435773961530081,0.5522702182727508,0.33218927717531005,0,learn
+,html-keyboard-response,184,441823,0.0-100.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,185,444659,0.0-101.0-0.0,330.79999999701977,,,,,,49,0,1,0,1,coast,43,0.3028617167867134,0.5786736126191452,0.3856490779123298,0,learn
+,html-keyboard-response,186,445662,0.0-101.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,187,448461,0.0-102.0-0.0,294.1000000014901,,,,,,49,1,1,0,1,coast,44,0.23913430161074092,0.4936290712360946,0.359892595842596,1,learn
+,html-keyboard-response,188,449464,0.0-102.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,189,452219,0.0-103.0-0.0,250.20000000298023,,,,,,49,0,0,0,1,coast,45,0.09458378913850268,0.40633771248311545,0.31143884230746166,0,learn
+,html-keyboard-response,190,453222,0.0-103.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,191,456307,0.0-104.0-0.0,580.6000000014901,,,,,,49,0,1,0,1,coast,46,0.31423935035099876,0.3764797132634545,0.25368018423608446,0,learn
+,html-keyboard-response,192,457310,0.0-104.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,193,460083,0.0-105.0-0.0,267.20000000298023,,,,,,49,0,1,0,1,coast,47,0.1323824257501177,0.5024602734001248,0.322461761659573,0,learn
+,html-keyboard-response,194,461086,0.0-105.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,195,463622,0.0-106.0-0.0,31.700000002980232,,,,,,50,0,1,0,1,coast,48,0.09473604499663037,0.4041296922878702,0.47055420523374625,1,learn
+,html-keyboard-response,196,464625,0.0-106.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,197,467382,0.0-107.0-0.0,252.39999999850988,,,,,,50,0,0,0,1,coast,49,0.11798679120952116,0.4075751899480713,0.47543333370642726,0,learn
+,html-keyboard-response,198,468385,0.0-107.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,199,470943,0.0-108.0-0.0,54.20000000298023,,,,,,50,0,1,0,1,coast,50,0.17167300858412257,0.6285572135120379,0.3669672056778579,1,learn
+,html-keyboard-response,200,471946,0.0-108.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,201,475016,0.0-109.0-0.0,565.1999999955297,,,,,,50,0,1,0,1,coast,51,0.12295758874263424,0.6523475276182678,0.40229334052593485,1,learn
+,html-keyboard-response,202,476019,0.0-109.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,203,478551,0.0-110.0-0.0,27.80000000447035,,,,,,50,0,0,0,1,coast,52,0.1403205252307849,0.7175766493695659,0.3090456953901976,0,learn
+,html-keyboard-response,204,479553,0.0-110.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,205,482353,0.0-111.0-0.0,294.8999999985099,,,,,,50,0,0,0,1,coast,53,0.15651692264963843,0.59751794864067,0.2166105011423948,0,learn
+,html-keyboard-response,206,483354,0.0-111.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,207,486126,0.0-112.0-0.0,268,,,,,,50,0,1,1,1,coast,54,0.10486960525729618,0.7369710363056672,0.24995027315433863,1,learn
+,html-keyboard-response,208,487128,0.0-112.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,209,489932,0.0-113.0-0.0,299.70000000298023,,,,,,50,1,1,0,1,coast,55,0.12778791489686564,0.7818051105818015,0.37053778287181216,1,learn
+,html-keyboard-response,210,490935,0.0-113.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,211,494668,0.0-114.0-0.0,1228.3000000044703,,,,,,50,0,0,0,1,coast,56,0.05235070000197167,0.6903660598219626,0.38743306328174876,0,learn
+,html-keyboard-response,212,495670,0.0-114.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,213,498825,0.0-115.0-0.0,649.2000000029802,,,,,,51,1,1,0,1,coast,57,0.26363982879006376,0.8016363694864969,0.2821855606657352,0,learn
+,html-keyboard-response,214,499827,0.0-115.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,215,502729,0.0-116.0-0.0,397.5,,,,,,51,0,1,1,1,coast,58,0.141233185369068,0.7905528307815692,0.23059157117182977,1,learn
+,html-keyboard-response,216,503732,0.0-116.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,217,506823,0.0-117.0-0.0,585.7000000029802,,,,,,51,0,1,1,1,coast,59,0.10568894417745371,0.653108718710426,0.24188002902347905,1,learn
+,html-keyboard-response,218,507825,0.0-117.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,219,510840,0.0-118.0-0.0,509.1000000014901,,,,,,51,0,1,0,1,coast,60,0.18044882476883575,0.65484650178339,0.16362711157840742,0,learn
+,html-keyboard-response,220,511843,0.0-118.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,221,514730,0.0-119.0-0.0,381.5,,,,,,51,0,1,0,1,coast,61,0.2598540263824034,0.7067295259054416,0.15216676928442638,0,learn
+,html-keyboard-response,222,515732,0.0-119.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,223,518636,0.0-120.0-0.0,398.8999999985099,,,,,,51,0,1,1,1,coast,62,0.2510148144452737,0.6198406073971582,0.2932539928622564,1,learn
+,html-keyboard-response,224,519637,0.0-120.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,225,522976,0.0-121.0-0.0,834.6000000014901,,,,,,50,0,1,0,1,coast,63,0.1483662584373528,0.48708316387860384,0.34188771039436133,1,learn
+,html-keyboard-response,226,523978,0.0-121.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,227,526929,0.0-122.0-0.0,445.80000000447035,,,,,,50,0,1,0,1,coast,64,0.10837081539690793,0.6012023082993472,0.17463027747421367,1,learn
+,html-keyboard-response,228,527932,0.0-122.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,229,530997,0.0-123.0-0.0,561,,,,,,49,0,0,0,1,coast,65,0.15664852950717564,0.6256463682180522,0.3849807451931837,0,learn
+,html-keyboard-response,230,532000,0.0-123.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,231,534794,0.0-124.0-0.0,288.80000000447035,,,,,,50,0,0,0,1,coast,66,0.15035877601288153,0.5994903453803099,0.4276026601767527,0,learn
+,html-keyboard-response,232,535795,0.0-124.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,233,538574,0.0-125.0-0.0,274.1000000014901,,,,,,50,0,0,0,1,coast,67,0.13963815178212696,0.5911626751417829,0.44784086912510285,0,learn
+,html-keyboard-response,234,539577,0.0-125.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,235,542388,0.0-126.0-0.0,305.5,,,,,,50,0,0,0,1,coast,68,0.09849682825786042,0.3752668930068576,0.3763511986913581,0,learn
+,html-keyboard-response,236,543391,0.0-126.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,237,547029,0.0-127.0-0.0,1132.5,,,,,,49,0,1,0,1,coast,69,0.2379474706931478,0.404833138979913,0.2447247904432127,0,learn
+,html-keyboard-response,238,548031,0.0-127.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_bye,239,549536,0.0-128.0-0.0,null,,,,,,null,,,,,,,,,
+,do_travel,240,558540,0.0-129.0-0.0,null,,,,,,null,,,,,,,,,
+,do_welcome,241,562558,0.0-129.0-1.0,null,,,,,,null,,,,,,,,,
+,do_trial,242,565525,0.0-130.0-0.0,461.8999999985099,,,,,,49,0,1,0,2,countryside,70,0.16121142347243292,1,0.16649773315982203,0,learn
+,html-keyboard-response,243,566528,0.0-130.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,244,569360,0.0-131.0-0.0,327.5,,,,,,49,0,1,0,2,countryside,71,0.08327713710072984,1,0.2182686505667504,0,learn
+,html-keyboard-response,245,570362,0.0-131.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,246,573243,0.0-132.0-0.0,376.3999999985099,,,,,,50,0,1,0,2,countryside,72,0.07997378573445399,0.8468159869748842,0.10419543434458554,1,learn
+,html-keyboard-response,247,574245,0.0-132.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,248,577540,0.0-133.0-0.0,789.5,,,,,,50,0,1,0,2,countryside,73,0.25753835131917535,0.6879390289955624,0.06104645260972903,1,learn
+,html-keyboard-response,249,578542,0.0-133.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,250,581781,0.0-134.0-0.0,733.7999999970198,,,,,,50,0,1,0,2,countryside,74,0.13229735432241874,0.6972829234474486,0.2558095463014779,1,learn
+,html-keyboard-response,251,582784,0.0-134.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,252,585750,0.0-135.0-0.0,462.20000000298023,,,,,,50,0,1,0,2,countryside,75,0.06362727815261568,0.717435234575859,0.2854267221389078,1,learn
+,html-keyboard-response,253,586752,0.0-135.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,254,589624,0.0-136.0-0.0,366.29999999701977,,,,,,50,0,0,0,2,countryside,76,0.08144058466761324,0.5911444202648534,0.40381287855401354,0,learn
+,html-keyboard-response,255,590625,0.0-136.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,256,593405,0.0-137.0-0.0,274.70000000298023,,,,,,50,0,1,1,2,countryside,77,0.08524990636103244,0.6935076927911714,0.3383498608311332,1,learn
+,html-keyboard-response,257,594407,0.0-137.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,258,597302,0.0-138.0-0.0,391.1000000014901,,,,,,50,0,0,0,2,countryside,78,0.19394084758853428,0.6543003624339191,0.23614981615765396,0,learn
+,html-keyboard-response,259,598303,0.0-138.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,260,601127,0.0-139.0-0.0,318.69999999552965,,,,,,50,0,0,0,2,countryside,79,0.1874840707908962,0.7013839183516606,0.27316717091646986,0,learn
+,html-keyboard-response,261,602130,0.0-139.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,262,604989,0.0-140.0-0.0,354.79999999701977,,,,,,50,1,0,0,2,countryside,80,0.17509051165651784,0.5216355110418139,0.20553590620974235,0,learn
+,html-keyboard-response,263,605991,0.0-140.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,264,608610,0.0-141.0-0.0,113.79999999701977,,,,,,51,1,0,1,2,countryside,81,0.3425943376555553,0.5906485319042463,0.24654395994758688,1,learn
+,html-keyboard-response,265,609613,0.0-141.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,266,612502,0.0-142.0-0.0,383.30000000447035,,,,,,51,0,0,0,2,countryside,82,0.47054254233041093,0.24040008877044025,0.16766261633021443,0,learn
+,html-keyboard-response,267,613504,0.0-142.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,268,616066,0.0-143.0-0.0,57.899999998509884,,,,,,51,1,0,1,2,countryside,83,0.604663868361993,0.19264958483354183,0.30976203424724363,1,learn
+,html-keyboard-response,269,617068,0.0-143.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,270,620267,0.0-144.0-0.0,694.2000000029802,,,,,,51,1,0,0,2,countryside,84,0.5916245486246559,0.1399474326425157,0.2927938305760201,0,learn
+,html-keyboard-response,271,621270,0.0-144.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,272,624043,0.0-145.0-0.0,268,,,,,,51,1,0,0,2,countryside,85,0.7082248670089787,0.07153059087328609,0.35925098496927876,0,learn
+,html-keyboard-response,273,625045,0.0-145.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,274,627887,0.0-146.0-0.0,336.30000000447035,,,,,,49,1,0,0,2,countryside,86,0.7143060020089369,0.10371980941013095,0.2619485922130504,1,learn
+,html-keyboard-response,275,628889,0.0-146.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,276,631856,0.0-147.0-0.0,461.90000000596046,,,,,,49,0,0,0,2,countryside,87,0.7098940525836291,0.10075085574197253,0.2903732693723989,0,learn
+,html-keyboard-response,277,632859,0.0-147.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,278,635625,0.0-148.0-0.0,261.70000000298023,,,,,,49,0,0,0,2,countryside,88,0.630786347208701,0.0949691115652772,0.2678488054042592,0,learn
+,html-keyboard-response,279,636628,0.0-148.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,280,639463,0.0-149.0-0.0,331.70000000298023,,,,,,51,1,0,1,2,countryside,89,0.6182888026157894,0.06741357706940622,0.3234010262525648,1,learn
+,html-keyboard-response,281,640465,0.0-149.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,282,643401,0.0-150.0-0.0,431.5,,,,,,51,0,0,1,2,countryside,90,0.5041057929536691,0.14917890884620813,0.1563263057907007,1,learn
+,html-keyboard-response,283,644404,0.0-150.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,284,647249,0.0-151.0-0.0,339.20000000298023,,,,,,51,1,0,0,2,countryside,91,0.5727058373029322,0.19094202357047443,0.1620966036596516,0,learn
+,html-keyboard-response,285,648251,0.0-151.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,286,651040,0.0-152.0-0.0,282.69999999552965,,,,,,51,0,0,1,2,countryside,92,0.5864471083386374,0.06339373688372542,0.2624180363149364,1,learn
+,html-keyboard-response,287,652043,0.0-152.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,288,654900,0.0-153.0-0.0,352.6000000014901,,,,,,51,1,0,0,2,countryside,93,0.608570010562863,0.2073166289473325,0.3176815585014347,0,learn
+,html-keyboard-response,289,655903,0.0-153.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,290,658756,0.0-154.0-0.0,348.90000000596046,,,,,,51,1,0,0,2,countryside,94,0.6426008183983629,0.07868907141569814,0.40272319370334936,0,learn
+,html-keyboard-response,291,659759,0.0-154.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,292,662546,0.0-155.0-0.0,281.70000000298023,,,,,,51,1,0,0,2,countryside,95,0.5458051940517337,0.09708824331983912,0.4410237191750775,0,learn
+,html-keyboard-response,293,663548,0.0-155.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,294,666337,0.0-156.0-0.0,285.20000000298023,,,,,,50,0,0,0,2,countryside,96,0.5837254846334059,0.06512811515085239,0.3900584105680015,0,learn
+,html-keyboard-response,295,667340,0.0-156.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,296,670136,0.0-157.0-0.0,292.29999999701977,,,,,,50,0,1,1,2,countryside,97,0.3837289829534396,0.14136795910364888,0.3782996580304343,1,learn
+,html-keyboard-response,297,671138,0.0-157.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,298,673968,0.0-158.0-0.0,324.1000000014901,,,,,,50,0,0,0,2,countryside,98,0.4309778836580487,0.1821456842732908,0.3194292412611541,0,learn
+,html-keyboard-response,299,674971,0.0-158.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,300,677766,0.0-159.0-0.0,291.5,,,,,,50,0,0,0,2,countryside,99,0.3896593823297102,0.1807087595952463,0.2604172693184427,0,learn
+,html-keyboard-response,301,678769,0.0-159.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,302,681580,0.0-160.0-0.0,306.70000000298023,,,,,,50,1,0,0,2,countryside,100,0.5529414212996533,0.09404557906763295,0.25053880163363706,0,learn
+,html-keyboard-response,303,682582,0.0-160.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,304,685459,0.0-161.0-0.0,372.5,,,,,,49,0,0,0,2,countryside,101,0.5954143019825257,0.06866823574697808,0.1876664137422465,0,learn
+,html-keyboard-response,305,686462,0.0-161.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,306,689399,0.0-162.0-0.0,431.59999999403954,,,,,,49,1,0,0,2,countryside,102,0.5039400317748368,0.10476184957116023,0.25172803073733857,1,learn
+,html-keyboard-response,307,690401,0.0-162.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,308,693222,0.0-163.0-0.0,315.5,,,,,,49,0,1,0,2,countryside,103,0.36420254811016867,0.2078105321152055,0.3745635631695436,0,learn
+,html-keyboard-response,309,694224,0.0-163.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,310,697009,0.0-164.0-0.0,280.70000000298023,,,,,,49,0,0,1,2,countryside,104,0.3716522416455888,0.1276708399571255,0.5271059390351304,0,learn
+,html-keyboard-response,311,698011,0.0-164.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,312,700584,0.0-165.0-0.0,67.39999999850988,,,,,,51,1,0,0,2,countryside,105,0.5156833724596835,0.10267890280244021,0.45384452163316974,0,learn
+,html-keyboard-response,313,701587,0.0-165.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,314,704419,0.0-166.0-0.0,328.29999999701977,,,,,,51,1,0,0,2,countryside,106,0.4938264858188922,0.06578638428259401,0.45771210047221134,0,learn
+,html-keyboard-response,315,705422,0.0-166.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,316,708444,0.0-167.0-0.0,518,,,,,,51,0,0,0,2,countryside,107,0.48945941271215504,0.11705082947124693,0.49636715750722415,0,learn
+,html-keyboard-response,317,709447,0.0-167.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,318,712776,0.0-168.0-0.0,825.1000000014901,,,,,,50,1,0,1,2,countryside,108,0.6986613471831237,0.1053171964204205,0.35243561786075445,0,learn
+,html-keyboard-response,319,713779,0.0-168.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,320,716748,0.0-169.0-0.0,464.79999999701977,,,,,,50,1,1,0,2,countryside,109,0.6863650196573413,0.1098451251763176,0.247681910381739,1,learn
+,html-keyboard-response,321,717750,0.0-169.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_bye,322,719254,0.0-170.0-0.0,null,,,,,,null,,,,,,,,,
+,do_travel,323,728257,0.0-171.0-0.0,null,,,,,,null,,,,,,,,,
+,do_welcome,324,732279,0.0-171.0-1.0,null,,,,,,null,,,,,,,,,
+,do_trial,325,735614,0.0-172.0-0.0,830.7000000029802,,,,,,49,1,0,0,3,highway,110,1,0.0772699771419991,0.31748850420951064,1,learn
+,html-keyboard-response,326,736616,0.0-172.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,327,739465,0.0-173.0-0.0,344.1000000014901,,,,,,49,1,0,1,3,highway,111,1,0.14312956048743528,0.394999308430033,1,learn
+,html-keyboard-response,328,740467,0.0-173.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,329,743278,0.0-174.0-0.0,307,,,,,,49,1,0,0,3,highway,112,0.8863774753874509,0.2061021219084292,0.2303472411163678,1,learn
+,html-keyboard-response,330,744280,0.0-174.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,331,747077,0.0-175.0-0.0,292,,,,,,49,1,0,0,3,highway,113,0.7552162937172838,0.18631486824309948,0.2598883615224575,1,learn
+,html-keyboard-response,332,748080,0.0-175.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,333,750972,0.0-176.0-0.0,388.3999999985099,,,,,,49,1,0,0,3,highway,114,0.6869395590054941,0.06817349072651936,0.3171175980800737,1,learn
+,html-keyboard-response,334,751974,0.0-176.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,335,755025,0.0-177.0-0.0,546.2999999970198,,,,,,49,0,0,0,3,highway,115,0.5583913239375727,0.24134804515780758,0.31862898178280835,0,learn
+,html-keyboard-response,336,756028,0.0-177.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,337,758793,0.0-178.0-0.0,260.09999999403954,,,,,,49,1,0,1,3,highway,116,0.6760865747001636,0.2795690017464557,0.3280481523540431,1,learn
+,html-keyboard-response,338,759795,0.0-178.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,339,762603,0.0-179.0-0.0,303.69999999552965,,,,,,49,1,0,0,3,highway,117,0.6924814210532734,0.2331427314067841,0.2031624312330675,1,learn
+,html-keyboard-response,340,763605,0.0-179.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,341,766512,0.0-180.0-0.0,403.19999999552965,,,,,,49,1,0,1,3,highway,118,0.688434838647982,0.13273789895340493,0.1869404295448172,1,learn
+,html-keyboard-response,342,767515,0.0-180.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,343,770409,0.0-181.0-0.0,389.8999999985099,,,,,,49,0,0,0,3,highway,119,0.39036180228433565,0.13510819539653957,0.2846735157276383,0,learn
+,html-keyboard-response,344,771411,0.0-181.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,345,774240,0.0-182.0-0.0,324.1000000014901,,,,,,49,0,0,1,3,highway,120,0.35396763282078375,0.11155602372648506,0.2778245470091835,0,learn
+,html-keyboard-response,346,775243,0.0-182.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,347,778023,0.0-183.0-0.0,275.3999999985099,,,,,,49,0,1,0,3,highway,121,0.2529826001334435,0.13884701214810508,0.30602490321040443,0,learn
+,html-keyboard-response,348,779025,0.0-183.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,349,781824,0.0-184.0-0.0,294,,,,,,49,0,0,1,3,highway,122,0.3127834491979006,0.14942851915680744,0.508775154249322,0,learn
+,html-keyboard-response,350,782826,0.0-184.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,351,785922,0.0-185.0-0.0,590.7999999970198,,,,,,50,0,0,1,3,highway,123,0.2895688678200809,0.3515481004013445,0.49437417680218104,0,learn
+,html-keyboard-response,352,786924,0.0-185.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,353,789801,0.0-186.0-0.0,372.1000000014901,,,,,,51,0,1,1,3,highway,124,0.09641162362594596,0.395927317710298,0.6203808969104768,1,learn
+,html-keyboard-response,354,790803,0.0-186.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,355,793553,0.0-187.0-0.0,245.39999999850988,,,,,,51,0,0,0,3,highway,125,0.12392301709731005,0.3696270358154223,0.6122183891934277,0,learn
+,html-keyboard-response,356,794556,0.0-187.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,357,797348,0.0-188.0-0.0,286.3999999985099,,,,,,51,0,1,1,3,highway,126,0.08871604571543174,0.32054529780301155,0.6388326788398585,1,learn
+,html-keyboard-response,358,798351,0.0-188.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,359,801288,0.0-189.0-0.0,432,,,,,,51,0,1,1,3,highway,127,0.1168957534572644,0.39290810748682453,0.6089111116203555,1,learn
+,html-keyboard-response,360,802290,0.0-189.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,361,805073,0.0-190.0-0.0,277.8999999985099,,,,,,51,0,1,0,3,highway,128,0.05066237421161041,0.25498866123314384,0.5875072528826017,0,learn
+,html-keyboard-response,362,806075,0.0-190.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,363,808874,0.0-191.0-0.0,294.30000000447035,,,,,,51,0,0,1,3,highway,129,0.18134684180335123,0.22572855670462402,0.5705756073675946,1,learn
+,html-keyboard-response,364,809876,0.0-191.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,365,812769,0.0-192.0-0.0,388.5,,,,,,51,0,0,1,3,highway,130,0.1849694689160038,0.28508059256247154,0.6985126990952685,1,learn
+,html-keyboard-response,366,813773,0.0-192.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,367,816609,0.0-193.0-0.0,332.20000000298023,,,,,,51,0,1,1,3,highway,131,0.06557546485590553,0.2127393521782907,0.5903255211688646,1,learn
+,html-keyboard-response,368,817613,0.0-193.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,369,820603,0.0-194.0-0.0,486.79999999701977,,,,,,51,0,0,1,3,highway,132,0.11656412077977,0.28334683052516907,0.5927693383639536,1,learn
+,html-keyboard-response,370,821606,0.0-194.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,371,824486,0.0-195.0-0.0,375.19999999552965,,,,,,51,0,0,1,3,highway,133,0.07366753690926375,0.29205980704638546,0.5564242206949414,1,learn
+,html-keyboard-response,372,825489,0.0-195.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,373,828585,0.0-196.0-0.0,591.1999999955297,,,,,,51,0,0,0,3,highway,134,0.1310189087243919,0.20168475945798078,0.5808532247235532,0,learn
+,html-keyboard-response,374,829588,0.0-196.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,375,832409,0.0-197.0-0.0,315.8999999985099,,,,,,51,0,0,1,3,highway,135,0.06998022478073185,0.26781211254403614,0.508440086408537,1,learn
+,html-keyboard-response,376,833410,0.0-197.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,377,836237,0.0-198.0-0.0,322.6000000014901,,,,,,51,0,0,0,3,highway,136,0.05106297232368985,0.2962302674642266,0.504391936882479,0,learn
+,html-keyboard-response,378,837239,0.0-198.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,379,839903,0.0-199.0-0.0,160,,,,,,51,1,0,0,3,highway,137,0.12409657550973238,0.1549915326283068,0.5106224290082839,0,learn
+,html-keyboard-response,380,840906,0.0-199.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,381,843677,0.0-200.0-0.0,266.1000000014901,,,,,,51,0,0,0,3,highway,138,0.11297658754666162,0.2505641709650511,0.4677960456756935,0,learn
+,html-keyboard-response,382,844680,0.0-200.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,383,847544,0.0-201.0-0.0,359.1000000014901,,,,,,51,0,0,1,3,highway,139,0.1430742117328815,0.17846178972033377,0.47622801027635564,1,learn
+,html-keyboard-response,384,848546,0.0-201.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,385,851474,0.0-202.0-0.0,422.79999999701977,,,,,,51,0,0,0,3,highway,140,0.07764227415410542,0.2786267812751762,0.4548311047860696,0,learn
+,html-keyboard-response,386,852477,0.0-202.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,387,855334,0.0-203.0-0.0,352.5,,,,,,51,0,1,0,3,highway,141,0.0960042788814976,0.1065795216615675,0.4844887250651165,0,learn
+,html-keyboard-response,388,856335,0.0-203.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,389,858973,0.0-204.0-0.0,132.5,,,,,,50,0,0,1,3,highway,142,0.09220483507463875,0.27816706114792583,0.3924186310773962,0,learn
+,html-keyboard-response,390,859976,0.0-204.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,391,862888,0.0-205.0-0.0,406.8999999985099,,,,,,50,0,0,0,3,highway,143,0.0683138134605132,0.3042737060876109,0.4795102992924872,0,learn
+,html-keyboard-response,392,863890,0.0-205.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,393,866803,0.0-206.0-0.0,407.90000000596046,,,,,,49,0,1,1,3,highway,144,0.15900133504951508,0.35322234988009515,0.7023247935486212,0,learn
+,html-keyboard-response,394,867805,0.0-206.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,395,870621,0.0-207.0-0.0,311.69999999552965,,,,,,49,0,0,1,3,highway,145,0.15139511440838088,0.44021019512760484,0.6277447823891185,0,learn
+,html-keyboard-response,396,871624,0.0-207.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,397,874504,0.0-208.0-0.0,375.3999999985099,,,,,,49,1,0,1,3,highway,146,0.06244091429514974,0.40878299593908524,0.6958811339028718,1,learn
+,html-keyboard-response,398,875506,0.0-208.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,399,878322,0.0-209.0-0.0,311.79999999701977,,,,,,49,0,0,1,3,highway,147,0.1639394586977663,0.4407960697002298,0.6486529872387986,0,learn
+,html-keyboard-response,400,879325,0.0-209.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,401,882133,0.0-210.0-0.0,303.19999999552965,,,,,,49,0,0,1,3,highway,148,0.19931025692755971,0.44828181174087306,0.6601996492004599,0,learn
+,html-keyboard-response,402,883134,0.0-210.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_trial,403,886134,0.0-211.0-0.0,494.6000000014901,,,,,,51,0,0,0,3,highway,149,0.19438118886925498,0.46765630983746886,0.5319645324329914,0,learn
+,html-keyboard-response,404,887136,0.0-211.0-1.0,null,,,<p></p>,null,,,,,,,,,,,
+,do_bye,405,888642,0.0-212.0-0.0,null,,,,,,null,,,,,,,,,
+,do_travel,406,897646,0.0-213.0-0.0,null,,,,,,null,,,,,,,,,
